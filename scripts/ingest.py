@@ -1,15 +1,22 @@
 """One-time ingestion script — builds ChromaDB vector database.
 
 Usage:
-    python scripts/ingest.py [--icar] [--kcc] [--all] [--kcc-limit N]
+    python scripts/ingest.py [--icar] [--kcc] [--all] [--kcc-limit N] [--start-page N] [--batch-sleep S]
 
 Options:
-    --icar        Ingest ICAR PDFs + text + markdown into icar_knowledge
-    --kcc         Bulk-ingest KCC transcripts into kcc_transcripts
-    --all         Both (default when no flag given)
-    --kcc-limit   Max KCC pages to fetch (default 200 = 20k records)
+    --icar          Ingest ICAR PDFs + text + markdown into icar_knowledge
+    --kcc           Bulk-ingest KCC transcripts into kcc_transcripts
+    --all           Both (default when no flag given)
+    --kcc-limit     Max KCC pages to fetch (default 200 = 20k records)
+    --start-page    Resume KCC from this page number (0-indexed, default 0)
+    --batch-sleep   Seconds to sleep between KCC batches to avoid 429 (default 2)
 
-Idempotent: skips already-populated collections.
+Resume after 429 crash:
+    Check the last logged page number, then run:
+    python scripts/ingest.py --kcc --start-page 39 --batch-sleep 5
+    (use the last successful page, not the one that crashed)
+
+Progress is safe: ChromaDB persists to disk after every batch.
 """
 
 from __future__ import annotations
@@ -17,6 +24,7 @@ from __future__ import annotations
 import argparse
 import logging
 import sys
+import time
 from pathlib import Path
 
 # Make project root importable
@@ -40,6 +48,36 @@ def _make_embeddings() -> GoogleGenerativeAIEmbeddings:
         project=settings.gcp.project_id,
         location=settings.gcp.location,
     )
+
+
+def _add_with_retry(
+    retriever: RAGRetriever,
+    docs: list,
+    max_retries: int = 5,
+    base_sleep: float = 10.0,
+) -> bool:
+    """Add documents with exponential backoff on 429 errors.
+
+    Returns True on success, False if all retries exhausted.
+    """
+    for attempt in range(max_retries):
+        try:
+            retriever.add_documents(docs)
+            return True
+        except Exception as exc:
+            msg = str(exc)
+            if "429" in msg or "RESOURCE_EXHAUSTED" in msg:
+                wait = base_sleep * (2 ** attempt)
+                logger.warning(
+                    "429 rate limit on attempt %d/%d — sleeping %.0fs then retrying…",
+                    attempt + 1, max_retries, wait,
+                )
+                time.sleep(wait)
+            else:
+                logger.error("Unexpected error adding docs: %s", exc)
+                return False
+    logger.error("All %d retries exhausted. Skipping this batch.", max_retries)
+    return False
 
 
 # ---------------------------------------------------------------------------
@@ -113,7 +151,7 @@ def ingest_icar(embeddings: GoogleGenerativeAIEmbeddings) -> None:
 
             chunks = loader.chunk(raw_docs)
             logger.info("  → %d chunks", len(chunks))
-            retriever.add_documents(chunks)
+            _add_with_retry(retriever, chunks)
             total_chunks += len(chunks)
         except Exception as exc:
             logger.error("Failed to ingest %s: %s", rel_path, exc)
@@ -126,8 +164,20 @@ def ingest_icar(embeddings: GoogleGenerativeAIEmbeddings) -> None:
 # KCC ingestion
 # ---------------------------------------------------------------------------
 
-def ingest_kcc(embeddings: GoogleGenerativeAIEmbeddings, max_pages: int = 200) -> None:
-    """Bulk-ingest KCC transcripts into kcc_transcripts collection."""
+def ingest_kcc(
+    embeddings: GoogleGenerativeAIEmbeddings,
+    max_pages: int = 200,
+    start_page: int = 0,
+    batch_sleep: float = 2.0,
+) -> None:
+    """Bulk-ingest KCC transcripts into kcc_transcripts collection.
+
+    Args:
+        embeddings: Embeddings instance.
+        max_pages: Maximum number of pages to fetch.
+        start_page: Page to start from (use to resume after a crash).
+        batch_sleep: Seconds to sleep between batches (throttle to avoid 429).
+    """
     retriever = RAGRetriever(
         settings.rag.collections["kcc"],
         embeddings,
@@ -135,9 +185,21 @@ def ingest_kcc(embeddings: GoogleGenerativeAIEmbeddings, max_pages: int = 200) -
     )
 
     existing = retriever.count()
-    if existing > 1000:
-        logger.info("kcc_transcripts already has %d docs — skipping KCC ingestion.", existing)
+
+    # Skip only if start_page=0 AND already fully populated (safety threshold)
+    if start_page == 0 and existing > 1000:
+        logger.info(
+            "kcc_transcripts already has %d docs. "
+            "To resume an incomplete run use --start-page N.",
+            existing,
+        )
         return
+
+    if start_page > 0:
+        logger.info(
+            "Resuming KCC ingestion from page %d (collection has %d existing docs).",
+            start_page, existing,
+        )
 
     if not settings.data_gov_api_key:
         logger.warning(
@@ -148,28 +210,44 @@ def ingest_kcc(embeddings: GoogleGenerativeAIEmbeddings, max_pages: int = 200) -
     total_docs = 0
     limit = 100
 
-    for page_num in range(max_pages):
+    for page_num in range(start_page, start_page + max_pages):
         offset = page_num * limit
-        logger.info("KCC page %d/%d (offset=%d)…", page_num + 1, max_pages, offset)
-        records = kcc_loader.fetch_page(offset=offset, limit=limit)
+        logger.info(
+            "KCC page %d/%d (offset=%d, collection total=%d)…",
+            page_num + 1,
+            start_page + max_pages,
+            offset,
+            retriever.count(),
+        )
 
+        records = kcc_loader.fetch_page(offset=offset, limit=limit)
         if not records:
             logger.info("Empty page returned — stopping KCC ingestion.")
             break
 
         docs = kcc_loader.records_to_documents(records)
         if docs:
-            retriever.add_documents(docs)
-            total_docs += len(docs)
-            logger.info("  → %d docs added (total: %d)", len(docs), total_docs)
+            success = _add_with_retry(retriever, docs)
+            if success:
+                total_docs += len(docs)
+                logger.info("  → %d docs added (total this run: %d)", len(docs), total_docs)
+            else:
+                logger.error(
+                    "Failed to add batch at page %d. Safe to resume with --start-page %d",
+                    page_num, page_num,
+                )
+                break
 
         # Stop early if we got fewer records than the limit (last page)
         if len(records) < limit:
             logger.info("Last KCC page reached.")
             break
 
-    logger.info("KCC ingestion complete. Total docs added: %d", total_docs)
-    logger.info("kcc_transcripts now has %d docs.", retriever.count())
+        if batch_sleep > 0:
+            time.sleep(batch_sleep)
+
+    logger.info("KCC ingestion complete. Total docs added this run: %d", total_docs)
+    logger.info("kcc_transcripts now has %d docs total.", retriever.count())
 
 
 # ---------------------------------------------------------------------------
@@ -183,13 +261,22 @@ def main() -> None:
     parser.add_argument("--all", action="store_true", dest="all_", help="Ingest everything (default)")
     parser.add_argument("--kcc-limit", type=int, default=200, metavar="N",
                         help="Max KCC pages to fetch (default: 200)")
+    parser.add_argument("--start-page", type=int, default=0, metavar="N",
+                        help="Resume KCC from this page number (default: 0)")
+    parser.add_argument("--batch-sleep", type=float, default=2.0, metavar="S",
+                        help="Seconds to sleep between KCC batches to avoid 429 (default: 2)")
     args = parser.parse_args()
 
     # Default to --all when no specific flag is given
     run_icar = args.icar or args.all_ or not (args.icar or args.kcc)
     run_kcc = args.kcc or args.all_ or not (args.icar or args.kcc)
 
-    logger.info("Initialising Vertex AI embeddings (%s)…", settings.models.embedding)
+    # --start-page implies --kcc only
+    if args.start_page > 0:
+        run_icar = False
+        run_kcc = True
+
+    logger.info("Initialising embeddings (%s)…", settings.models.embedding)
     embeddings = _make_embeddings()
     logger.info("Embeddings ready.")
 
@@ -199,7 +286,12 @@ def main() -> None:
 
     if run_kcc:
         logger.info("=== KCC ingestion ===")
-        ingest_kcc(embeddings, max_pages=args.kcc_limit)
+        ingest_kcc(
+            embeddings,
+            max_pages=args.kcc_limit,
+            start_page=args.start_page,
+            batch_sleep=args.batch_sleep,
+        )
 
     logger.info("All done.")
 
