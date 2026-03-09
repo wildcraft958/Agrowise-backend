@@ -568,19 +568,49 @@ agromind-backend/
 > **Complete each phase fully. Present summary and WAIT for approval.**
 
 ### Phase 1: Project Skeleton + Config + Wrap Tools
-**Status:** `TODO`
-- [ ] `pyproject.toml` (deps: `langchain-google-vertexai`, `langchain-community`, `langchain-chroma`, `chromadb`, `fastapi`, `uvicorn`, `httpx`, `pydantic-settings`, `pyyaml`, `firebase-admin`, `pytest`, `ruff`, `mypy`)
-- [ ] `config.yaml` + `src/agromind/config.py` (pydantic settings with YAML loader)
-- [ ] RED/GREEN/REFACTOR: Config loading — YAML defaults, env overrides, model switching
-- [ ] RED/GREEN/REFACTOR: Wrap all 5 tool modules as LangChain `@tool`s (6 tools total)
-- [ ] RED/GREEN/REFACTOR: Verify `ChatVertexAI` initializes with config values (mocked)
+**Status:** `COMPLETE` ✓
+- [x] `pyproject.toml` (all deps including `beautifulsoup4`, `lxml` added)
+- [x] `config.yaml` + `src/agromind/config.py` (pydantic-settings with YAML source, env override)
+- [x] RED/GREEN/REFACTOR: Config loading — YAML defaults, env overrides, model switching (5 tests)
+- [x] RED/GREEN/REFACTOR: All 5 tool modules wrapped as LangChain `@tool`s — **15 tools total** (2 mandatory + 13 optional) with full feature coverage (56 tests)
+- [x] RED/GREEN/REFACTOR: Verify `ChatVertexAI` + `VertexAIEmbeddings` initialize with config values (mocked)
+
+**Tools in `src/agromind/agent/tools.py`:**
+| Tool | Type | Wraps |
+|---|---|---|
+| `cibrc_safety_check` | MANDATORY | `CIBRCClient.check_chemical_safety` |
+| `imd_weather_check` | MANDATORY | `IMDClient.get_full_crop_advisory` |
+| `cibrc_check_batch` | optional | `CIBRCClient.check_batch` |
+| `cibrc_list_banned` | optional | `CIBRCClient.list_banned` |
+| `cibrc_list_restricted` | optional | `CIBRCClient.list_restricted` |
+| `cibrc_list_proposed_ban` | optional | `CIBRCClient.list_proposed_ban` |
+| `kcc_search` | optional | `KCCClient.search_queries` |
+| `kcc_get_by_state` | optional | `KCCClient.get_by_state` |
+| `soil_moisture_analysis` | optional | `SoilMoistureClient.get_by_district/state` |
+| `evapotranspiration_calc` | optional | `EvapotranspirationClient.get_by_district/state` |
+| `imd_crop_stages` | optional | `IMDClient.get_crop_stages` |
+| `imd_mausam_weather` | optional | `IMDClient.get_mausam_crop_weather` |
+| `imd_crop_calendar` | optional | `IMDClient.get_mausam_crop_calendar` |
+| `imd_wheat_disease_risk` | optional | `IMDClient.get_wheat_disease_risk` |
+| `imd_pest_info` | optional | `IMDClient.get_pest_info` |
+
+**Notes:**
+- Old `langchain.tools.Tool` commented blocks removed from all `tools/` files (clean)
+- `YamlSettingsSource` custom pydantic-settings source: priority = env vars > YAML > defaults
+- `beautifulsoup4` + `lxml` added to `pyproject.toml` (required by `imd_tool.py`)
 
 ### Phase 2: Geo-Resolution Layer
 **Status:** `TODO`
-- [ ] RED/GREEN/REFACTOR: `LocationResolver`, `NeighbourGraph`, `IMDStationMapper`, `MandiLocator`, `CropNormalizer` — all paths from `config.yaml`
+- [ ] Inspect actual CSV headers before writing any loader (`head -3` each file)
+- [ ] RED/GREEN/REFACTOR: `LocationResolver` — `Location hierarchy.csv`
+- [ ] RED/GREEN/REFACTOR: `NeighbourGraph` — `District Neighbour Map India.csv`
+- [ ] RED/GREEN/REFACTOR: `IMDStationMapper` — `IMD Agromet advisory locations.csv`
+- [ ] RED/GREEN/REFACTOR: `MandiLocator` — `Agmark Mandis and locations.csv` + `Mandi (APMC) Map.csv`
+- [ ] RED/GREEN/REFACTOR: `CropNormalizer` — `Agmark crops.csv`
 
 ### Phase 3: Context Enrichment — Wikipedia + ICAR RAG + KCC Bulk
 **Status:** `TODO`
+- [ ] Check each PDF for extractable text before ingesting (some may need OCR)
 - [ ] RED/GREEN/REFACTOR: Wikipedia multilingual loader
 - [ ] RED/GREEN/REFACTOR: PDF + MD ingestion → ChromaDB (Vertex AI embeddings via config)
 - [ ] RED/GREEN/REFACTOR: KCC bulk paginated → ChromaDB
@@ -594,7 +624,7 @@ agromind-backend/
 **Status:** `TODO`
 - [ ] RED/GREEN/REFACTOR: System prompt with mandatory tool instructions
 - [ ] RED/GREEN/REFACTOR: Context injection (wiki + ICAR + KCC + geo)
-- [ ] RED/GREEN/REFACTOR: `ChatVertexAI.bind_tools()` with all 7 tools
+- [ ] RED/GREEN/REFACTOR: `ChatVertexAI.bind_tools()` with all 15 tools
 - [ ] RED/GREEN/REFACTOR: Mandatory tool validator + retry
 - [ ] RED/GREEN/REFACTOR: CIBRC safety post-filter
 

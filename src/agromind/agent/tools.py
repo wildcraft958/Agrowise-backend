@@ -329,6 +329,116 @@ def imd_crop_calendar(crop: str, start_week: int) -> str:
         return _to_json({"error": str(e), "crop": crop, "start_week": start_week})
 
 
+@tool
+def cibrc_list_banned() -> str:
+    """Return the complete list of all agricultural chemicals BANNED in India.
+
+    Use this when a farmer asks what chemicals to avoid, or to cross-check a
+    chemical recommendation against India's prohibited substances.
+
+    Returns:
+        JSON array of banned chemical names (CIBRC registered bans).
+    """
+    try:
+        return _to_json(_cibrc_client.list_banned())
+    except Exception as e:
+        return _to_json({"error": str(e)})
+
+
+@tool
+def cibrc_list_restricted() -> str:
+    """Return all RESTRICTED chemicals with their specific crop/use conditions.
+
+    Restricted chemicals are legal but only for certain crops, doses, or
+    application methods. Use this to give accurate advisory on permitted uses.
+
+    Returns:
+        JSON array of {chemical_name, restriction_details, formulations}.
+    """
+    try:
+        return _to_json(_cibrc_client.list_restricted())
+    except Exception as e:
+        return _to_json({"error": str(e)})
+
+
+@tool
+def cibrc_list_proposed_ban() -> str:
+    """Return chemicals currently registered but proposed for ban by the Indian Government.
+
+    These chemicals (from May 2020 proposal) are still legal but should be
+    replaced with safer alternatives. Use this to proactively advise farmers
+    against chemicals that may be banned soon.
+
+    Returns:
+        JSON array of {chemical_name, reason} for each proposed-ban chemical.
+    """
+    try:
+        return _to_json(_cibrc_client.list_proposed_ban())
+    except Exception as e:
+        return _to_json({"error": str(e)})
+
+
+@tool
+def imd_wheat_disease_risk(
+    stage: str,
+    max_temp: float,
+    min_temp: float,
+    humidity: float,
+    rainfall: float = 0.0,
+) -> str:
+    """Calculate wheat disease risk based on current weather parameters.
+
+    Checks current temperature, humidity, and rainfall against IMD thresholds
+    for wheat diseases (Yellow Rust, Brown Rust, Karnal Bunt, etc.).
+    Use this for wheat-specific disease risk queries when you already have
+    weather data but don't need the full advisory.
+
+    Args:
+        stage: Wheat growth stage, e.g. "Anthesis", "Heading", "Grain Filling"
+        max_temp: Current maximum temperature in °C
+        min_temp: Current minimum temperature in °C
+        humidity: Current relative humidity in %
+        rainfall: Current rainfall in mm (default 0.0)
+
+    Returns:
+        JSON with disease risk assessment per disease for the given conditions.
+    """
+    try:
+        result = _imd_client.get_wheat_disease_risk(
+            stage=stage,
+            tmax=max_temp,
+            tmin=min_temp,
+            rh=humidity,
+            rainfall=rainfall,
+        )
+        return _to_json(result)
+    except Exception as e:
+        return _to_json({"error": str(e), "stage": stage})
+
+
+@tool
+def imd_pest_info(state: str, crop: str, stage: str) -> str:
+    """Get pest information for a crop at a specific growth stage in a state.
+
+    Returns pest names, symptoms, and management advice from IMD WebGIS.
+    Use this for targeted pest queries when the farmer reports specific symptoms
+    or asks about a particular crop stage without needing the full weather advisory.
+
+    Args:
+        state: Indian state name, e.g. "Uttar Pradesh", "Bihar"
+        crop: Crop name, e.g. "wheat", "rice", "cotton"
+        stage: Growth stage, e.g. "Flowering", "Tillering", "Boll Formation"
+
+    Returns:
+        JSON with pest names, symptoms, and recommended management actions.
+    """
+    try:
+        result = _imd_client.get_pest_info(state=state, crop=crop, stage=stage)
+        return _to_json(result)
+    except Exception as e:
+        return _to_json({"error": str(e), "state": state, "crop": crop, "stage": stage})
+
+
 # ---------------------------------------------------------------------------
 # All tools list (for bind_tools and enforcement checks)
 # ---------------------------------------------------------------------------
@@ -336,6 +446,9 @@ def imd_crop_calendar(crop: str, start_week: int) -> str:
 MANDATORY_TOOLS = [cibrc_safety_check, imd_weather_check]
 OPTIONAL_TOOLS = [
     cibrc_check_batch,
+    cibrc_list_banned,
+    cibrc_list_restricted,
+    cibrc_list_proposed_ban,
     kcc_search,
     kcc_get_by_state,
     soil_moisture_analysis,
@@ -343,5 +456,7 @@ OPTIONAL_TOOLS = [
     imd_crop_stages,
     imd_mausam_weather,
     imd_crop_calendar,
+    imd_wheat_disease_risk,
+    imd_pest_info,
 ]
 ALL_TOOLS = MANDATORY_TOOLS + OPTIONAL_TOOLS

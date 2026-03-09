@@ -8,12 +8,17 @@ from langchain_core.tools import BaseTool
 from agromind.agent.tools import (
     ALL_TOOLS,
     cibrc_check_batch,
+    cibrc_list_banned,
+    cibrc_list_proposed_ban,
+    cibrc_list_restricted,
     cibrc_safety_check,
     evapotranspiration_calc,
     imd_crop_calendar,
     imd_crop_stages,
     imd_mausam_weather,
+    imd_pest_info,
     imd_weather_check,
+    imd_wheat_disease_risk,
     kcc_get_by_state,
     kcc_search,
     soil_moisture_analysis,
@@ -202,7 +207,100 @@ class TestIMDCropCalendar:
 
 
 def test_all_tools_count():
-    assert len(ALL_TOOLS) == 10  # 2 mandatory + 8 optional
+    assert len(ALL_TOOLS) == 15  # 2 mandatory + 13 optional
+
+
+# ---------------------------------------------------------------------------
+# CIBRC reference list tools
+# ---------------------------------------------------------------------------
+
+class TestCIBRCListBanned:
+    def test_is_langchain_tool(self):
+        assert isinstance(cibrc_list_banned, BaseTool)
+
+    def test_name(self):
+        assert cibrc_list_banned.name == "cibrc_list_banned"
+
+    def test_returns_json_array(self):
+        with patch("agromind.agent.tools._cibrc_client") as mock_client:
+            mock_client.list_banned.return_value = ["Aldrin", "DDT", "Endrin"]
+            result = cibrc_list_banned.invoke({})
+        data = json.loads(result)
+        assert isinstance(data, list)
+        assert "Aldrin" in data
+
+
+class TestCIBRCListRestricted:
+    def test_is_langchain_tool(self):
+        assert isinstance(cibrc_list_restricted, BaseTool)
+
+    def test_name(self):
+        assert cibrc_list_restricted.name == "cibrc_list_restricted"
+
+    def test_returns_json_array(self):
+        mock_result = [{"chemical_name": "Chlorpyrifos", "restriction_details": "Not on veg"}]
+        with patch("agromind.agent.tools._cibrc_client") as mock_client:
+            mock_client.list_restricted.return_value = mock_result
+            result = cibrc_list_restricted.invoke({})
+        data = json.loads(result)
+        assert isinstance(data, list)
+
+
+class TestCIBRCListProposedBan:
+    def test_is_langchain_tool(self):
+        assert isinstance(cibrc_list_proposed_ban, BaseTool)
+
+    def test_name(self):
+        assert cibrc_list_proposed_ban.name == "cibrc_list_proposed_ban"
+
+    def test_returns_json_array(self):
+        mock_result = [{"chemical_name": "Acephate", "reason": "Highly toxic"}]
+        with patch("agromind.agent.tools._cibrc_client") as mock_client:
+            mock_client.list_proposed_ban.return_value = mock_result
+            result = cibrc_list_proposed_ban.invoke({})
+        data = json.loads(result)
+        assert isinstance(data, list)
+
+
+# ---------------------------------------------------------------------------
+# IMD wheat disease risk + pest info
+# ---------------------------------------------------------------------------
+
+class TestIMDWheatDiseaseRisk:
+    def test_is_langchain_tool(self):
+        assert isinstance(imd_wheat_disease_risk, BaseTool)
+
+    def test_name(self):
+        assert imd_wheat_disease_risk.name == "imd_wheat_disease_risk"
+
+    def test_returns_json_string(self):
+        mock_result = {"success": True, "diseases": [{"disease": "Yellow Rust"}]}
+        with patch("agromind.agent.tools._imd_client") as mock_client:
+            mock_client.get_wheat_disease_risk.return_value = mock_result
+            result = imd_wheat_disease_risk.invoke({
+                "stage": "Anthesis", "max_temp": 28.0,
+                "min_temp": 14.0, "humidity": 75.0,
+            })
+        data = json.loads(result)
+        assert "diseases" in data
+
+
+class TestIMDPestInfo:
+    def test_is_langchain_tool(self):
+        assert isinstance(imd_pest_info, BaseTool)
+
+    def test_name(self):
+        assert imd_pest_info.name == "imd_pest_info"
+
+    def test_returns_json_string(self):
+        mock_result = {"pests": [{"name": "Aphid", "management": "Spray neem"}]}
+        with patch("agromind.agent.tools._imd_client") as mock_client:
+            mock_client.get_pest_info.return_value = mock_result
+            result = imd_pest_info.invoke({
+                "state": "Punjab", "crop": "wheat", "stage": "Flowering"
+            })
+        data = json.loads(result)
+        assert "pests" in data
 
 
 # ---------------------------------------------------------------------------
