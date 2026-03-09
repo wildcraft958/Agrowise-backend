@@ -235,52 +235,6 @@ class SoilMoistureClient:
         return json.dumps(data, indent=2, ensure_ascii=False)
 
 
-# ---------------------------------------------------------------------------
-# LangChain Tool Wrappers (uncomment when backend is ready)
-# ---------------------------------------------------------------------------
-# from langchain.tools import Tool
-#
-# def soil_moisture_langchain_tools(api_key: str = _SAMPLE_API_KEY) -> list:
-#     client = SoilMoistureClient(api_key=api_key)
-#     return [
-#         Tool(
-#             name="SoilMoisture_GetByDistrict",
-#             func=lambda q: client.dump_json(
-#                 # q format: "State|District|Year|Month"
-#                 client.get_by_district(*[p.strip() for p in q.split("|")])
-#             ),
-#             description=(
-#                 "Fetch daily soil moisture readings for a specific district. "
-#                 "Input: pipe-separated string 'State|District|Year|Month', "
-#                 "e.g. 'Maharashtra|Pune|2024|6'. Year and Month are optional."
-#             ),
-#         ),
-#         Tool(
-#             name="SoilMoisture_GetByState",
-#             func=lambda q: client.dump_json(
-#                 # q format: "State|Year|Month"
-#                 client.get_by_state(*[p.strip() for p in q.split("|")])
-#             ),
-#             description=(
-#                 "Fetch daily soil moisture readings for all districts in a state. "
-#                 "Input: pipe-separated string 'State|Year|Month', "
-#                 "e.g. 'Rajasthan|2024|5'. Year and Month are optional."
-#             ),
-#         ),
-#         Tool(
-#             name="SoilMoisture_MonthlySummary",
-#             func=lambda q: client.dump_json(
-#                 # q format: "State|Year|Month"
-#                 client.monthly_summary(*[p.strip() for p in q.split("|")])
-#             ),
-#             description=(
-#                 "Get a summary (total records, districts, agencies) of soil moisture "
-#                 "data for a state in a given month. "
-#                 "Input: pipe-separated string 'State|Year|Month', e.g. 'Punjab|2024|7'."
-#             ),
-#         ),
-#     ]
-
 
 # ---------------------------------------------------------------------------
 if __name__ == "__main__":

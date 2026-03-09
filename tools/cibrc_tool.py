@@ -238,45 +238,6 @@ class CIBRCClient:
         return json.dumps(data, indent=2, ensure_ascii=False)
 
 
-# ---------------------------------------------------------------------------
-# LangChain Tool Wrappers (uncomment when backend is ready)
-# ---------------------------------------------------------------------------
-# from langchain.tools import Tool
-#
-# def cibrc_langchain_tools() -> list:
-#     client = CIBRCClient()
-#     return [
-#         Tool(
-#             name="CIBRC_Check_Chemical",
-#             func=lambda name: client.dump_json(client.check_chemical_safety(name)),
-#             description=(
-#                 "Check if an agricultural chemical is banned, restricted, or registered "
-#                 "for use in India. ALWAYS call before recommending any pesticide or fungicide. "
-#                 "Input: chemical name string, e.g. 'Chlorpyrifos'"
-#             ),
-#         ),
-#         Tool(
-#             name="CIBRC_Check_Batch",
-#             func=lambda q: client.dump_json(client.check_batch([n.strip() for n in q.split(",")])),
-#             description=(
-#                 "Check multiple chemicals at once. "
-#                 "Input: comma-separated names, e.g. 'Mancozeb, Aldrin, Neem Oil'"
-#             ),
-#         ),
-#         Tool(
-#             name="CIBRC_List_Banned",
-#             func=lambda _: client.dump_json(client.list_banned()),
-#             description="Returns the complete list of all chemicals BANNED in India.",
-#         ),
-#         Tool(
-#             name="CIBRC_List_Restricted",
-#             func=lambda _: client.dump_json(client.list_restricted()),
-#             description="Returns all RESTRICTED chemicals with their specific crop/use conditions.",
-#         ),
-#     ]
-
-
-# ---------------------------------------------------------------------------
 if __name__ == "__main__":
     logging.basicConfig(level=logging.WARNING)
     client = CIBRCClient()

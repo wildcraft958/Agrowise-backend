@@ -237,60 +237,6 @@ class KCCClient:
         return json.dumps(data, indent=2, ensure_ascii=False)
 
 
-# ---------------------------------------------------------------------------
-# LangChain Tool Wrappers (uncomment when backend is ready)
-# ---------------------------------------------------------------------------
-# from langchain.tools import Tool
-#
-# def kcc_langchain_tools(api_key: str = _SAMPLE_API_KEY) -> list:
-#     client = KCCClient(api_key=api_key)
-#     return [
-#         Tool(
-#             name="KCC_GetByState",
-#             func=lambda q: client.dump_json(
-#                 # q format: "State|Year|Month"
-#                 client.get_by_state(*[p.strip() for p in q.split("|")])
-#             ),
-#             description=(
-#                 "Fetch Kisan Call Centre (KCC) farmer query transcripts for a state. "
-#                 "Use this to find real farmer questions and expert answers as context "
-#                 "for agricultural advisory responses. "
-#                 "Input: pipe-separated string 'State|Year|Month', "
-#                 "e.g. 'Punjab|2024|6'. Year and Month are optional."
-#             ),
-#         ),
-#         Tool(
-#             name="KCC_SearchQueries",
-#             func=lambda q: client.dump_json(
-#                 # q format: "keyword|State|Year|Month"  (State/Year/Month optional)
-#                 (lambda parts: client.search_queries(
-#                     parts[0],
-#                     state=parts[1] if len(parts) > 1 else None,
-#                     year=parts[2]  if len(parts) > 2 else None,
-#                     month=parts[3] if len(parts) > 3 else None,
-#                 ))([p.strip() for p in q.split("|")])
-#             ),
-#             description=(
-#                 "Search Kisan Call Centre transcripts by keyword. Returns farmer questions "
-#                 "and expert answers matching the keyword. Use for RAG context retrieval. "
-#                 "Input: pipe-separated 'keyword|State|Year|Month' — State/Year/Month optional, "
-#                 "e.g. 'wheat rust|Punjab' or 'irrigation schedule'."
-#             ),
-#         ),
-#         Tool(
-#             name="KCC_MonthlySummary",
-#             func=lambda q: client.dump_json(
-#                 # q format: "State|Year|Month"
-#                 client.monthly_summary(*[p.strip() for p in q.split("|")])
-#             ),
-#             description=(
-#                 "Get a summary (total call count, field names) of KCC data "
-#                 "for a state in a given month. "
-#                 "Input: pipe-separated string 'State|Year|Month', e.g. 'Maharashtra|2024|7'."
-#             ),
-#         ),
-#     ]
-
 
 # ---------------------------------------------------------------------------
 if __name__ == "__main__":

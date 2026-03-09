@@ -5,13 +5,7 @@ A self-contained Python module wrapping ALL useful endpoints from:
   - https://webgis.imd.gov.in/agro/   (JSON APIs)
   - https://mausamsankalp.imd.gov.in  (HTML scraping)
 
-Currently: Standalone functions you can call directly.
-Future:    Drop-in as LangChain Tools — see bottom of file.
-
-Install:
-    pip install requests beautifulsoup4 lxml
-
-Usage (standalone):
+Usage:
     from imd_tool import IMDClient
     client = IMDClient()
 
@@ -22,11 +16,6 @@ Usage (standalone):
     # Mausam Sankalp (scraped HTML → clean JSON)
     weather = client.get_mausam_crop_weather(state_code="AP", district="Anantapur", block="Gooty")
     calendar = client.get_mausam_crop_calendar(crop="wheat", start_week=10)
-
-Usage (as LangChain tool — future):
-    from imd_tool import imd_langchain_tools
-    tools = imd_langchain_tools()
-    agent = initialize_agent(tools, llm, ...)
 """
 
 import requests
@@ -835,117 +824,6 @@ class IMDClient:
             ),
         }
 
-
-# ---------------------------------------------------------------------------
-# LangChain Tool Wrappers (future — uncomment when backend is ready)
-# ---------------------------------------------------------------------------
-#
-# pip install langchain
-#
-# from langchain.tools import Tool
-#
-# def imd_langchain_tools() -> list:
-#     """Returns LangChain Tools wrapping all IMD APIs."""
-#     client = IMDClient()
-#
-#     def _parse_kv(query: str) -> dict:
-#         return dict(p.split("=", 1) for p in query.split(",") if "=" in p)
-#
-#     def _crop_advisory(query: str) -> str:
-#         """Input: state=Punjab,crop=wheat,stage=Tillering,tmax=28,tmin=12,rh=65"""
-#         try:
-#             p = _parse_kv(query)
-#             result = client.get_full_crop_advisory(
-#                 state=p["state"], crop=p["crop"], stage=p["stage"],
-#                 tmax=float(p["tmax"]), tmin=float(p["tmin"]),
-#                 rh=float(p["rh"]), rainfall=float(p.get("rainfall", 0))
-#             )
-#             return json.dumps(result, indent=2)
-#         except Exception as e:
-#             return f"Error: {e}"
-#
-#     def _mausam_weather(query: str) -> str:
-#         """Input: state_code=AP,district=Anantapur,block=Gooty"""
-#         try:
-#             p = _parse_kv(query)
-#             result = client.get_mausam_crop_weather(
-#                 state_code=p["state_code"], district=p["district"], block=p["block"]
-#             )
-#             return json.dumps(result, indent=2, default=str) if result else "No data."
-#         except Exception as e:
-#             return f"Error: {e}"
-#
-#     def _mausam_calendar(query: str) -> str:
-#         """Input: crop=wheat,start_week=10"""
-#         try:
-#             p = _parse_kv(query)
-#             result = client.get_mausam_crop_calendar(
-#                 crop=p["crop"], start_week=int(p["start_week"])
-#             )
-#             return json.dumps(result, indent=2, default=str) if result else "No data."
-#         except Exception as e:
-#             return f"Error: {e}"
-#
-#     def _crop_stages(query: str) -> str:
-#         """Input: state=Punjab,crop=wheat"""
-#         try:
-#             p = _parse_kv(query)
-#             result = client.get_crop_stages(p["state"], p["crop"])
-#             return json.dumps(result, indent=2) if result else "No data."
-#         except Exception as e:
-#             return f"Error: {e}"
-#
-#     def _pest_info(query: str) -> str:
-#         """Input: state=UP,crop=wheat,stage=Flowering"""
-#         try:
-#             p = _parse_kv(query)
-#             result = client.get_pest_info(p["state"], p["crop"], p["stage"])
-#             return json.dumps(result, indent=2) if result else "No data."
-#         except Exception as e:
-#             return f"Error: {e}"
-#
-#     def _full_location_report(query: str) -> str:
-#         """Input: state_code=PB,district=Ludhiana,block=Ludhiana,webgis_state=Punjab,
-#                   crop=wheat,stage=Tillering,tmax=28,tmin=12,rh=65"""
-#         try:
-#             p = _parse_kv(query)
-#             result = client.get_full_location_report(
-#                 state_code=p["state_code"], district=p["district"], block=p["block"],
-#                 webgis_state=p["webgis_state"], crop=p["crop"], stage=p["stage"],
-#                 tmax=float(p["tmax"]), tmin=float(p["tmin"]),
-#                 rh=float(p["rh"]), rainfall=float(p.get("rainfall", 0))
-#             )
-#             return json.dumps(result, indent=2, default=str)
-#         except Exception as e:
-#             return f"Error: {e}"
-#
-#     return [
-#         Tool(name="IMD_Crop_Advisory",
-#              func=_crop_advisory,
-#              description="Full WebGIS advisory: thresholds, disease risk, pest info, warnings. "
-#                          "Input: 'state=Punjab,crop=wheat,stage=Tillering,tmax=28,tmin=12,rh=65'"),
-#         Tool(name="IMD_Mausam_Weather",
-#              func=_mausam_weather,
-#              description="Historical weekly weather + thresholds from Mausam Sankalp for a "
-#                          "specific district/block. Input: 'state_code=AP,district=Anantapur,block=Gooty'"),
-#         Tool(name="IMD_Mausam_Calendar",
-#              func=_mausam_calendar,
-#              description="Crop lifecycle weather calendar from Mausam Sankalp given sowing week. "
-#                          "Input: 'crop=wheat,start_week=10'"),
-#         Tool(name="IMD_Crop_Stages",
-#              func=_crop_stages,
-#              description="List phenological growth stages for a crop in a state. "
-#                          "Input: 'state=Punjab,crop=wheat'"),
-#         Tool(name="IMD_Pest_Info",
-#              func=_pest_info,
-#              description="Pest information for a crop at a growth stage. "
-#                          "Input: 'state=UP,crop=wheat,stage=Flowering'"),
-#         Tool(name="IMD_Full_Location_Report",
-#              func=_full_location_report,
-#              description="Combined WebGIS + Mausam Sankalp report for a location. "
-#                          "Input: 'state_code=PB,district=Ludhiana,block=Ludhiana,"
-#                          "webgis_state=Punjab,crop=wheat,stage=Tillering,tmax=28,tmin=12,rh=65'"),
-#     ]
 
 
 # ---------------------------------------------------------------------------

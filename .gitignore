@@ -211,3 +211,7 @@ serviceAccountKey.json
 agrowise-192e3-*.json
 *.json
 !data/crop_catalogue.json
+!package.json
+
+# Vector store
+chroma_db/

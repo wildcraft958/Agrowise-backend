@@ -235,53 +235,6 @@ class EvapotranspirationClient:
         return json.dumps(data, indent=2, ensure_ascii=False)
 
 
-# ---------------------------------------------------------------------------
-# LangChain Tool Wrappers (uncomment when backend is ready)
-# ---------------------------------------------------------------------------
-# from langchain.tools import Tool
-#
-# def et_langchain_tools(api_key: str = _SAMPLE_API_KEY) -> list:
-#     client = EvapotranspirationClient(api_key=api_key)
-#     return [
-#         Tool(
-#             name="ET_GetByDistrict",
-#             func=lambda q: client.dump_json(
-#                 # q format: "State|District|Year|Month"
-#                 client.get_by_district(*[p.strip() for p in q.split("|")])
-#             ),
-#             description=(
-#                 "Fetch daily evapotranspiration (ET) readings for a specific district. "
-#                 "ET is critical for irrigation scheduling and crop water-requirement estimates. "
-#                 "Input: pipe-separated string 'State|District|Year|Month', "
-#                 "e.g. 'Karnataka|Tumkur|2022|8'. Year and Month are optional."
-#             ),
-#         ),
-#         Tool(
-#             name="ET_GetByState",
-#             func=lambda q: client.dump_json(
-#                 # q format: "State|Year|Month"
-#                 client.get_by_state(*[p.strip() for p in q.split("|")])
-#             ),
-#             description=(
-#                 "Fetch daily evapotranspiration readings for all districts in a state. "
-#                 "Input: pipe-separated string 'State|Year|Month', "
-#                 "e.g. 'Maharashtra|2022|8'. Year and Month are optional."
-#             ),
-#         ),
-#         Tool(
-#             name="ET_MonthlySummary",
-#             func=lambda q: client.dump_json(
-#                 # q format: "State|Year|Month"
-#                 client.monthly_summary(*[p.strip() for p in q.split("|")])
-#             ),
-#             description=(
-#                 "Get a summary (total records, districts, agencies) of evapotranspiration "
-#                 "data for a state in a given month. "
-#                 "Input: pipe-separated string 'State|Year|Month', e.g. 'Punjab|2022|8'."
-#             ),
-#         ),
-#     ]
-
 
 # ---------------------------------------------------------------------------
 if __name__ == "__main__":

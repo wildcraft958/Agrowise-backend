@@ -26,6 +26,8 @@ dependencies = [
     # Data processing
     "pandas>=2.0",
     "pypdf>=4.0",
+    "beautifulsoup4>=4.12",
+    "lxml>=5.0",
 
     # Voice
     # sarvam-ai SDK or raw httpx calls — add when Phase 8 begins
