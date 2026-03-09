@@ -20,8 +20,8 @@ import logging
 import time
 from pathlib import Path
 
-from google.cloud import documentai
 from google.api_core.client_options import ClientOptions
+from google.cloud import documentai
 
 logger = logging.getLogger(__name__)
 
@@ -96,8 +96,9 @@ def ocr_pdf(
 
 def _count_pdf_pages(pdf_bytes: bytes) -> int:
     """Count pages in a PDF without loading the full file into memory."""
-    from pypdf import PdfReader
     import io
+
+    from pypdf import PdfReader
     reader = PdfReader(io.BytesIO(pdf_bytes))
     return len(reader.pages)
 

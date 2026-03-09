@@ -691,19 +691,37 @@ agromind-backend/
 **Notes:** `enabled=False` disables Firebase entirely for local dev (no SA JSON needed)
 
 ### Phase 7: Disease Diagnosis
-**Status:** `TODO`
-- [ ] RED/GREEN/REFACTOR: Image preprocessing
-- [ ] RED/GREEN/REFACTOR: `diagnosis_tool` (Gemini vision via Vertex AI)
-- [ ] RED/GREEN/REFACTOR: End-to-end with Cloud Storage
+**Status:** `COMPLETE` ✅ — 18 tests passing
+
+| Module | Purpose |
+|---|---|
+| `diagnosis/image.py` | `load_image_bytes`, `validate_image` (size+format), `encode_base64` |
+| `diagnosis/detector.py` | `DiseaseDetector` — Gemini vision, returns JSON diagnosis dict |
+
+**Output schema:** `{disease, confidence, severity, affected_area_pct, recommendations, additional_notes}`
+**Fallback:** Non-JSON LLM response → `{raw, disease: "unknown", confidence: 0.0}`
+**Error:** LLM exception → `{error: "..."}`
 
 ### Phase 8: Voice Pipeline (Sarvam AI)
-**Status:** `TODO`
-- [ ] RED/GREEN/REFACTOR: ASR + TTS clients (provider configurable)
-- [ ] RED/GREEN/REFACTOR: Voice audio in Cloud Storage
+**Status:** `COMPLETE` ✅ — 15 tests passing
+
+| Module | Purpose |
+|---|---|
+| `voice/asr.py` | `SarvamASR` — WAV/MP3 → transcript via Sarvam API (`saarika:v2`) |
+| `voice/tts.py` | `SarvamTTS` — text → MP3 bytes via Sarvam API (`bulbul:v1`) |
+
+**Notes:** Both return safe fallbacks on error (empty string / empty bytes). Language configurable per-call.
 
 ### Phase 9: FastAPI Routes
-**Status:** `TODO`
-- [ ] RED/GREEN/REFACTOR: `POST /agromind/chat`, `POST /diagnosis`, `GET /health`
+**Status:** `COMPLETE` ✅ — 13 tests passing
+
+| Route | Module | Purpose |
+|---|---|---|
+| `GET /health` | `api/health.py` | Liveness probe → `{status, version}` |
+| `POST /agromind/chat` | `api/chat.py` | Agent pipeline → `{answer, tool_trace, safety_violation, violations}` |
+| `POST /diagnosis` | `api/diagnosis.py` | Image diagnosis → `{disease, confidence, severity, recommendations}` |
+
+**Entry point:** `src/agromind/main.py` — `uvicorn agromind.main:app --reload --port 8000`
 
 ### Phase 10 (Deferred): Community, IVR, Edge AI
 - Community — Firestore client-side from PWA

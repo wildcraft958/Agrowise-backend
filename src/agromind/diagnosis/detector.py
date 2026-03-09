@@ -83,4 +83,5 @@ class DiseaseDetector:
             return json.loads(raw_text)
         except (json.JSONDecodeError, ValueError):
             logger.warning("DiseaseDetector: non-JSON response: %s", raw_text[:200])
-            return {"raw": raw_text, "disease": "unknown", "confidence": 0.0, "recommendations": []}
+            return {"raw": raw_text, "disease": "unknown", "confidence": 0.0,
+                    "recommendations": []}
