@@ -23,6 +23,10 @@ dependencies = [
     # Firebase
     "firebase-admin>=6.5",
 
+    # Document AI (OCR for scanned PDFs)
+    "google-cloud-documentai>=3.0",
+    "langchain-google-community>=3.0",
+
     # Data processing
     "pandas>=2.0",
     "pypdf>=4.0",

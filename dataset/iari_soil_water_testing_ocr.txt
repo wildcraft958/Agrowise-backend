@@ -1,0 +1,3574 @@
+Soil and Water Testing Methods
+A Laboratory Manual
+M
+A.B. GHOSH
+J.C. BAJAJ
+REHANUL HASAN
+DHYAN SINGH
+TARI
+ON OF SOIL SCIENCE AND AGRICULTURAL CHEMISTRY
+INDIAN AGRICULTURAL RESEARCH INSTITUTE
+NEW DELHI-110012
+1983
+FOREWORD
+Soil testing in India had its modest beginning in 1955-56 with
+the setting up of 24 soil testing laboratories under the overall supervision
+and control of the Indian Agricultural Research Institute, New
+Delhi, valuable material support as well as technical assistance being
+provided by the United States of America through its Technical Co-
+operation Mission (later on USAID). As a result of the growing
+interest, the programme made rapid strides and today the country is
+having one of the world's largest chain of soil testing laboratories, both
+static and mobile, operated by Central and State Governments, Agri-
+cultural Universities, Research Institutions, Fertilizer Industry as well as
+some cooperative and private organisations, with the IARI having
+continued to take the responsibility of technical coordination.
+Realising the great importance of the programme and the need
+for trained personnel, the IARI, in collaboration with the USAID
+(TCM) initiated, as early as in 1958, a Short Course Training in
+Soil Testing with a view to have a uniform standard in the laboratory
+procedures and also to provide a wider perspective in the concepts
+of soil testing to the scientists working in the various laboratories.
+Since then the Division of Soil Science and Agricultural Chemistry of
+the Institute has been regularly organising the Refresher Training
+Course for the benefit of the Soil Chemists incharge of the soil
+testing laboratories. The pioneering role played by Dr. S.P. Raychaudh-
+uri, the then Head of the Division in initiating the programme
+and by (Late) Dr. R. V. Tamhane, Dr. N. P. Datta and Dr. B.
+Ramamoorthy, all former Special Officer (Soil Testing) and later on
+Head of the Division and also by Dr. Gilbert R. Muhr of the USAID
+in the development of soil testing work in India and in the organisa-
+tion of the Training Course has been unique and will be remembered
+by all those who are engaged in research and extension of soil testing
+service in the country. Dr. T.D. Biswas, former Head of the Division,
+was mainly responsible for the reorientation and strengthening of the
+course curricula particularly with regard to instrumentation, which is
+an important component of soil test methodology. So far, more
+than 400 scientists from all parts of the country have undergone
+this training in twenty-five such courses conducted at this Institute; the
+XXV Course has just been completed 
+early this month.
+It is considered very appropriate to mark this great occasion of
+25 years 
+of the training 
+programme by publishing a suitable Laboratory
+Manual on Soil and Water Testing Methods
+. From what once used to
+be a few cyclostyled sheets of 
+instructions to the trainees, the
+lecture materials and practical exercises 
+have been gradually enlarg-
+ed in size and revised over the 
+years in keeping with the expansion
+in the scope of the training. The 
+group of scientists led by Dr.
+A.B. Ghosh who have been 
+primarily responsible for the efficient
+conduct of the Training Course 
+for the last several years has spared
+no efforts in updating this 
+publication and making it quite comprehen-
+sive and purposeful for the benefit 
+of the scientists, technical staff
+and students engaged in 
+soil testing work.
+It is hoped that this Manual will serve the need to fulfil a self-
+contained 
+laboratory 
+guidebook in soil test methodology and meet
+the long-felt demand.
+Division of Soil Science and
+Agricultural Chemistry
+IARI, New Delhi-110012
+N.N. GOSWAMI
+Head of the Division
+Acknowledgements
+The authors sincerely acknowledge the various sources from
+which 
+they have freely 
+drawn the necessary materials for the compila-
+tion of this Manual
+. Particular mention may be made of the instruc-
+tion materials 
+prepared from time to time by the earlier leaders of the
+soil testing 
+training programme in this Division, the USDA HAND-
+BOOK No.60 
+(L.A. Richards Ed.) and the publication SOIL TESTING
+IN INDIA (
+G.R. Muhr, N.P. Datta, H. Sankarasubramoney, V.K. Leley
+and R.L. Donahue
+) brought out by the USAID (1965). The lecture
+notes by the 
+members of the teaching faculty have also been of great
+help in giving 
+the Manual a proper shape.
+Grateful thanks are expressed to Dr. N.N. Goswami, Head of the
+Division 
+of Soil Science 
+and Agricultural Chemistry, IARI for giving
+his valuable 
+suggestions in revising and updating the Manual to its
+present form 
+and constant all round support. The foreword kindly
+written by him 
+visibly reflects his keen interest in its publication on the
+occasion of 
+Twenty-five years of Short Course Training in Soil Testing
+in this Institute
+.
+December 15, 1983
+December 20, 1983
+A.B. GHOSH
+J.C. BAJAJ
+REHANUL HASAN
+DHYAN SINGH
+Contents
+COLLECTION AND PREPARATION OF SOIL
+SAMPLES FOR ANALYSIS
+Section A
+SOIL TEST METHODOLOGY
+I. Soil Texture
+II. Determination of Soil Reaction (pH)
+III. Measurement of Electrical Conductivity
+IV. Biological and Chemical Methods for
+Page
+1
+5
+6
+8
+Estimation of Available Nitrogen
+9
+1. Nitrogen mineralization under aerobic
+conditions
+10
+2. Anaerobic incubation
+10
+3. Mineralizable nitrogen (alkaline
+permanganate method)
+11
+V. Estimation of Organic Carbon
+12
+1. Walkley and Black rapid titration
+12
+2. Colorimetric method of estimation
+13
+VI. Determination of Nitrate Nitrogen
+14
+VII. Estimation of Available Phosphorus
+1. Olsen's method
+16
+17
+2. Bray's No. 1 procedure
+18
+VIII.
+Available Potassium Determination
+21
+IX. Lime Requirement of Acid Soils
+22
+X. Gypsum Requirement of Alkali Soils
+24
+XI. Phosphorus Fixing Characteristics of Soil
+25
+XII. Potassium Fixing Capacity of Soil
+26
+(Contd.)
+(VIII)
+Page
+XIII. Soil Test for Available Sulphur
+29
+1. Phosphate extractable sulphur
+30
+2. Colorimetric procedure for sulphur estimation
+32
+XIV. Estimation of Available Zinc
+33
+1. Determination of DTPA extractable zinc
+XV. Determination of Available Copper, Iron and
+33
+Manganese
+34
+Section B
+QUALITY RATING OF IRRIGATION WATER
+Collection of Irrigation Water Sample
+36
+1. Determination of pH
+37
+2. Electrical Conductivity Measurement
+37
+3. Estimation of Calcium and Magnesium
+37
+4. Determination of Sodium and Potassium
+38
+5. Carbonates and Bicarbonates
+39
+6. Residual Sodium Carbonate (RSC)
+40
+7. Determination of Chloride
+40
+8. Estimation of Nitrate in Irrigation Water
+41
+9. Estimation of Sulphate
+42
+10. Boron in Irrigation Water
+43
+11. Water Class Rating
+45
+12. Interpretation of Results
+45
+Section C
+INSTRUMENTS IN THE SOIL TESTING LABORATORY
+1. Measurement of pH
+2. Electrical Conductivity Determination
+3. Colorimetry
+4. Flame Photometry
+5. Atomic Absorption Spectrophotometry
+REFERENCES
+Appendices (I to X)
+Annexure (I)
+49
+53
+55
+58
+61
+65
+67 to 76
+77
+COLLECTION AND PREPARATION OF SOIL
+SAMPLES FOR ANALYSIS
+The importance of having a truly representative sample can be very
+well realized from the fact that only a minute fraction of the huge soil
+mass of the field is actually used for analysis in the laboratory. While
+collecting samples the following aspects should be carefully considered.
+The sample must properly represent the area. A field can be
+treated as a single sampling unit only if it is appreciably uniform in all
+respects. Variation in slope, colour, texture, crop growth and manage-
+ment should be taken into account and separate sets of composite
+samples need to be collected from each of such area. Recently fertilized
+plots, bunds, channels, marshy tracts and spots near trees, wells, compost
+piles or other non-representative locations must be carefully avoided
+during sampling.
+The root penetration of plants is an important consideration for
+ascertaining the depth of sampling. Fields growing cereals and other
+seasonal crops are normally sampled up to 0-15 cm (generally expressed
+as plough layer). For deep rooted crops like sugarcane, horticultural
+plants or under dry farming conditions it may be necessary to obtain
+samples from different depths or layers.
+In case of saline-alkali soils, salt crusts (visible or suspected) on the
+soil surface should be sampled separately and the depth of sampling
+recorded. Generally the sample may be drawn to the plough depth.
+Sampling Procedure
+To obtain a composite sample, small portions of soil are to be
+collected up to the desired depth (0-15 cm or more) by means of suitable
+sampling tools from at least 10 to 15 well distributed spots (from each
+sampling unit) after scrapping off the surface litter, if any. When crops
+are planted in rows samples can be drawn in between the lines, if not
+recently fertilized.
+1
+The soil collected in this manner should be thoroughly mixed (by
+hand) on a clean piece of cloth, polythene sheet or thick paper and the
+bulk reduced by quartering and about 500g (1/2 kg) of the composite
+sample is retained. The soil must be quickly air dried in shade at room
+temperature and put in cloth or polythene bags with suitable description
+and identification marks.
+Sampling tools
+Samples can be drawn with any of these hand implements namely,
+(i) soil tube (auger), (ii) screw type auger, (iii) post-hole auger, (iv) kassi
+(spade) and (v) khurpi (a common gardening hand tool).
+For sampling of soft and moist soil the tube auger, spade or khurpi
+is quite satisfactory. A screw type auger may prove more convenient on
+hard/dry soil while the post-hole auger is useful for sampling excessively
+wet area like rice field. If a spade or khurpi is used, a V-shaped cut may
+be first made (up to the plough layer) and a uniformly 1.5 cm (approx.)
+thick slice is taken out. Augers are necessary for sampling from lower
+depths.
+The various steps involved in the proper collection of representative
+soil samples in the field and their handling are depicted in figure 1.
+Precautions in collection and storing of samples: Care in handling
+the soil samples against contamination is extremely important. Special
+precautions are necessary if the samples are to be tested for micronutrient
+elements. Any possibility of contact with chemicals, fertilizers or manures
+must be avoided. Cotton, jute or plastic bags which had previously
+been containing fertilizers, salt or lime should not be used at any stage.
+Soil samples should preferably be stored in clean cloth or polythene bags.
+Glass, porcelain or polythene jars are useful in keeping few selected
+samples for long duration. The bags can be re-used only after thorough
+washing and drying.
+Information sheet: In addition to the location, field number, name
+of cultivator and identification marks, relevant information regarding
+slope, drainage, irrigation, previous cropping history, fertilizer use etc.
+of the field (s) must be recorded and sent alongwith the soil samples.
+This is a specific requirement in soil testing work and must be insisted
+upon. A specimen of the information sheet to be filled up is given in
+appendix. I. This can be partly modified if felt necessary.
+2
+SAMPLE EACH FIELD SEPARATELY
+2
+TAKE A COMPOSITE SAMPLE
+WHEN AREAS WITHIN A FIELD DIFFER IN CROP
+BROWTH, IN THE APPEARANCE OF SOIL, IN
+ELEVATION, OR ARE KNOWN TO HAVE BEEN
+EROFFED OR MANURED DIFFERENTLY, DIVIDE
+THE FIELD ACCORDINGLY AND SAMPLE EACH
+AREA SEPARATELY.
+TAKE A COMPOSITE SAMPLE FROM EACH AREA.
+SCRAPE AWAY SURFACE LITTER. THEN DRAW A
+SMALL SAMPLE FROM SURFACE TO PLOUGH
+DEPTH (OR 0-15 CM) IN 15-20 SPOTS.COLLECT
+THESE IN A CLEAN CLOTH BAG. IF YOU USE A
+KHURPI OR A KASSI, FIRST DIG A V-SHAPED
+HOLE AND TAKE ONE THIN SLICE.
+SAMPLE BETWEEN LINES IN PLANTED CROPS 4
+WHEN CROPS HAVE BEEN PLANTED IN ROWS,
+SAMPLE IN BETWEEN LINES. DO NOT SAMPLE
+UNUSUAL AREAS, AVOID RECENTLY FERTILIZED
+AREAS, OLD BUNDS, MARSHY SPOTS, NEAR
+FREES OR COMPOST PILES OR OTHER
+HON REPRESENTATIVE LOCATIONS.
+MIX SAMPLE THOROUGHLY
+MOUND OF S016
+QUARTERED
+MIK AFC
+QUARTER NEW
+MOUND
+REMOVE
+E&G
+REMOVE
+AEC
+REPEAT
+PROCESS
+MIX THE SAMPLE WELL BY STIRRING WITH
+HANDS ON A CLEAN PIECE OF CLOTH, PAPER
+OR POLYTHENE SHEET. DISCARD ALL BUT
+85 Kg. OF SOIL BY THE PROCESS OF
+QUARTERING QUARTERING ENSURES A
+REPRESENTATIVE FINAL SAMPLE DRY IN SHADE
+AND FILL IN CLOTH OR POLYTHENE BAG.
+USE PROPER SAMPLING TOOLS
+AUGER
+SOIL TUBE
+KASSI
+(SPADE)
+KHURPI
+USE PROPER SAMPLING TOOLS. SAMPLES CAN
+BE TAKEN QUITE SATISFACTORILY WITH A
+SOIL TUBE, AN AUGER, A KASSI OR A KHURPI
+SOIL TUBE AND AUGER, ARE MORE SUITED FOR
+DRAWING SAMPLES FROM LOWER DEPTHS.
+6
+PACKING AND MARKING
+PIACE A DURABLE LABEL INSIDE AND A TAG
+OUTSIDE THE BAG GIVING DETAILS OF THE
+LOCATION, DEPTH OF SAMPLING.NUMBER
+THE SOIL SAMPLE BAGS.TIE THE BAG
+PROPERLY FOR SENDING TO SOIL TESTING
+LABORATORY.
+Prepared By: m.bahuja
+Fig. 1. Procedure for collection and handling of soil samples
+3
+Registration of samples: As soon as the samples arrive at the
+laboratory these are to be serially registered giving the date and other
+relevant particulars furnished in the information sheet. The Sample
+Register being the most valued permanent document of the Soil Testing
+Laboratory all entries must be meticulously recorded in a systematic
+manner.
+Processing of soil samples for analysis: The air-dry soil is normally
+passed through 2 mm sieve for analysis. Before sieving, the soil clods
+should be lightly crushed in wooden pestle and mortar. Plant residues,
+gravel and other foreign matter retained on the sieve are discarded. If
+the gravel content is substantial a note may be taken of that. For certain
+types of analysis, it becomes necessary to grind the soil further so as to
+pass it through sieves of finer mesh size (0.2-0.5 mm).
+-:0:-
+Typ of out n's
+1. Red soil
+2. day
+3. Alluvium
+4 Entisol
+Indi
+Section A
+I lyhe
+1. Alluvial bou
+2. Black Boil
+3. Red Breil
+SOIL TEST METHODOLOGY
+4. belents soil
+5. And Boil
+6. forest Emonta bol
+7. Mosch soil
+Some selected physical, physico-chemical and chemical tests such as
+determination of texture, pH (soil reaction), electrical conductivity,
+mineralizable nitrogen and available phosphorus and potassium are
+usually carried out to evaluate such of the soil properties which are
+known to have a direct impact on the productivity of the soil as well as
+its fertility status. A qualitative assessment of the free calcium carbonate
+content, if any, is also made in case of neutral and alkaline soils.
+1. SOIL TEXTURE
+The texture is determined by a rapid procedure by feel or rubbing
+the soil between the thumb and the fingers. Proficiency is gained through
+experience, trial and error and comparison with samples of known
+textural class.
+Steps for texture determination: A small quantity of the dry soil
+is moistened and mixed thoroughly on a glass or porcelain dish so as to
+form a soft ball and then worked until stiff and squeezed out between
+thumb and fore-finger. The feel to fingers, ease of forming ball, sticki-
+ness or grittiness, whether forming soil ribbons or merely crumbling on
+squeezing etc. are to be noted. The texture is classified as follows:
+Very light
+Sand
+Light
+Loamy sand
+Sandy loam
+Medium
+Loam
+: Very gritty, does not form ball, does not stain finger.
+: Very gritty, forms ball but very easily broken, stains
+finger slightly.
+: Moderately gritty, forms fairly firm ball which is easily
+broken, definitely stains finger.
+: Neither very gritty nor very smooth, forms firm ball but
+does not ribbon, stains finger appreciably.
+Silt loam
+Heavy
+Clay loam
+: Smooth or sticky, buttery feel, forms firm ball, stains
+and has a slight tendency to ribbon with flaky surface.
+: Moderately sticky, slightly gritty feel, forms moderately
+hard ball when dry, stains, ribbons out on squeezing but
+the ribbon breaks easily.
+Silty clay loam: Same as above but very smooth, shows flaking on
+ribbon surface, similar to silt loam.
+Very heavy
+Clay
+: Very sticky feel, forms ball which when dry can not be
+crushed by fingers, stains heavily, squeezes out at right
+moisture into long (2-5 cm) ribbon.
+The textural class of known soil samples taken for comparison is
+correctly ascertained from the percentage distribution of sand, silt and
+clay determined according to the international pipette method (Piper
+1966) and using the standard triangular diagram.
+II. DETERMINATION OF SOIL REACTION (pH)
+The pH value which is a measure of the hydrogen (or hydroxyl)
+ion activity of the soil-water system indicates whether the soil is acidic,
+neutral or alkaline in reaction. Since crop growth suffers much both
+under very low (strongly acidic) as well as high (alkali) pH, suitable
+reclamation measures become necessary. Presence of neutral soluble
+salts (as in saline soils) is not normally reflected in the pH but when in
+large excess they tend to suppress the ionic activity.
+Instrument
+The instrument for pH measurement commonly used is a glass
+electrode pH meter with calomel reference electrode including salt
+bridge. Most digital pH meters have single (combined) electrode
+assembly. The instrument being a potentiometer, the pH scale has to be
+calibrated before use with buffer solutions of known pH values.
+Since the dissociation/ionic activity increases with temperature the
+pH scale of 0 to 14 is valid only for a particular temperature (25°C).
+Thus all instruments are provided with temperature setting/correction
+knob which must be made use of.
+Reagent
+Standard buffer solutions: These may be of pH 4.0, 7.0 or 92 in
+pure water or in other ranges of expected pH value. In case of buffer
+tablets (available commercially) a single piece is to be dissolved in freshly
+double distilled water and made up to 100ml. It is necessary to prepare a
+fresh buffer after every few days as the solutions do not keep for long. A
+0.05M analytical grade (AR) potassium hydrogen phthalate (KHCH₄O4
+mol. wt. 204.14) gives a pH of 4.0 (actually 3.97) at 25°C and this can
+also be used as a standard buffer. A stock solution of 0.25M is prepared
+by dissolving 51.04 g of the pure dry salt in warm water and making up
+to 1 litre. Three to four drops of toluene are added to prevent growth of
+mould. A dilution of 10 ml of this solution to 50 ml with water gives
+0 05M solution.
+Procedure for pH measurement
+(a) pH in saturated soil paste: This is prepared by adding small
+amounts of distilled water to a portion of soil while working with a
+spatula. At saturation, the soil paste glistens, flows slightly when the
+container is tilted, slides freely and cleanly off the spatula. After mixing,
+it should be allowed to stand with a cover above the container for about
+an hour. Free water must not collect on the soil surface nor should the
+paste stiffen markedly or lose its glistening appearance on standing The
+pH meter is to be set for the temperature and calibrated with two buffers,
+one in the acidic side and the other in alkaline or neutral range. The
+electrodes (glass and calomel or combined) are carefully inserted in the
+paste and pH measurement is made. The electrode is moved a little to
+ensure removal of water film around it and pH reading is again taken
+when it is constant.
+(b) Soil to water ratio of 1:2: 20g of soil is taken in a 100 ml
+beaker to which 40 ml of distilled water is added. The suspension is
+stirred at regular intervals for 30 minutes and the pH is recorded. The
+suspension must be stirred well just before the electrodes are immersed
+and readings taken.
+(c) pH in 0.01M CaCl2 solution : To 20g of soil in a beaker 40 ml
+of 0.01M CaCl2 solution (1.470g AR CaCl2.2H2O/litre) is added. The
+suspension is shaken thoroughly (30 minutes) and the pH is recorded.
+The reading is shifted downwards in comparison to the pH value obtained
+in water suspension. With acid soils it normally ranges from 4 to 5 and
+7
+in calcareous ones between 6.9 and 7.2. The pH of near neutral soil in
+CaCl₂ solution is usually around 6.
+N.B. Before each determination the electrodes must be washed with
+a jet of distilled water and water removed from the surface with a piece
+of filter or blotting paper.
+III. MEASUREMENT OF ELECTRICAL CONDUCTIVITY
+Since ions are the carrier of electricity, the electrical conductivity
+(EC) of the soil-water system rises according to the content of soluble
+salts in the soil giving rise to more of ion pairs on dissociation as it
+happens in case of a dilute solution. Thus the measurement of EC can be
+directly related to the soluble salts concentration of the soil at any
+particular temperature.
+Instrument
+The apparatus for measuring electrical conductivity consists of an
+AC salt bridge or electrical resistance bridge and conductivity cell having
+electrodes coated with platinum black. The instrument is also available
+as an already calibrated assembly (solubridge) for giving directly the
+conductivity of solutions in millimhos per cm at 25°C.
+Reagent
+Standard potassium chloride solution: 0.7456g of dry reagent grade
+potassium chloride is dissolved in freshly prepared double distilled water
+and made to one litre. At 25°C it gives an electrical conductivity of
+1411.8×10-6 (0.0014118) mhos/cm or 1.41 mmhos/cm. The conductivity
+bridge is to be calibrated and cell constant determined with the help of
+this solution. Even if the scale is marked directly in mmhos/cm (as in
+solubridge) it is necessary to check and calibrate the instrument with the
+KCl solution.
+Procedure
+20g of soil is shaken intermittently with 40 ml of distilled water in
+a 150 ml Erlenmeyer (conical) flask for one hour and allowed to stand.
+Alternatively, the clear extract after pH determination can be used for
+electrical conductivity measurement. The conductivity of the super-
+natant liquid is determined with the help of the salt (conductivity) bridge.
+The measurement of EC (expressed in mmhos/cm) is to be adjusted for
+a known temperature (usually 25°C) of the solution by setting the knob
+provided for this purpose.
+Test for calcium carbonate
+A qualitative rapid test for free calcium carbonate (CaCO3) is made
+by observing the intensity of effervescence (due to CO2 evolution) when
+about 10ml of dilute hydrochloric acid (1+3) is added to a small quantity
+(about 5g) of air dry soil taken on a watch glass. The amount of CaCO3
+present in the soil can be broadly categorized as (i) traces, (ii) low,
+(iii) medium (iv) high and (v) very high on the basis of the effervescence.
+For soils showing high and very high degree of effervescence a
+separate quantitative assay can be made by reacting a known weight of
+sample with a known volume of excess standard (N/2 or N/5) HCl and
+back titration (after warming and shaking) of unreacted acid with stan-
+dard alkali (Piper 1966). The nett quantity of acid consumed can be
+attributed to the presence of free calcium carbonate.
+IV. BIOLOGICAL AND CHEMICAL METHODS FOR ESTIMA-
+TION OF AVAILABLE NITROGEN
+The major part (more than 90%) of soil nitrogen exists in complex
+combination in the organic matter (humus) fraction. It becomes available
+to crops after breakdown to simple forms followed by mineralization.
+This type of transformation is mostly biological in nature. Therefore,
+methods involving the determination of mineral forms of nitrogen
+(NH4-N and NO3-N) produced on incubation of soil under aerobic and
+anaerobic conditions are generally followed. These are considered to be
+quite satisfactory as index of nitrogen availability in arable soils.
+Incubation under waterlogged conditions may be preferred over aerobic
+incubation. Besides this, estimation of CO2 produced or evaluation of the
+microbial growth or pigment production on incubation of soil samples
+with nitrogen-free readily decomposable organic material or nutrient
+media and microbial cultures, is also carried out.
+The chemical methods for determination of soil nitrogen availability
+involve either direct or indirect estimation of total N or measurement of
+a fraction of easily hydrolysable nitrogen by employing solutions of
+dilute acids or alkali. Distillation with alkaline potassium permanganate
+solution has often been adopted for estimating the readily oxidisable
+and reactive forms of soil nitrogen.
+One of the most widely used rapid soil testing techniques for the
+assessment of available nitrogen is based upon the estimation of readily
+oxidisable organic carbon which roughly represents 58% of the soil
+This approach has been
+organic matter is non-
+organic matter, the seat of nitrogen in soil.
+found to work fairly well unless the bulk of the
+humic in nature and the organic carbon values are on the very high
+side.
+1 Nitrogen mineralization (ammonification and nitrification) under aerobic
+conditions (Keeney and Bremner 1966)
+Procedure: 10g of air-dry soil (sieved through 2 mm) is intimately
+mixed with 30g of acid-washed quartz sand (30-60 mesh) and transferred
+to a 250 ml wide-mouth square type bottle containing 6 ml of distilled
+water and mixed thoroughly. The material is distributed evenly on the
+bottom. The bottle is closed with a rubber stopper having a central hole
+through which a glass/plastic tube is connected to the mixture (soil and
+sand) for aeration. The incubation is carried out at 30°C for 14 days.
+At the end of this period, the stopper is removed and 100 ml of 2N KCI
+is added and the neck of the bottle is fitted back with a solid rubber
+stopper. The suspension is shaken for one hour on a mechanical shaker
+and filtered (Whatman No.1). 20 ml aliquot of the clear filtrate is taken
+in a 250 ml boiling flask to which about 80 ml of distilled water plus 0.2g
+each of MgO (freshly ignited and cooled) and Devarda's alloy are added
+and distilled at a moderate speed. The distillate is collected in a 150 ml
+conical flask containing 20 ml of 2% boric acid solution having 20 ml/1
+methyl red-bromocresol green mixed indicator (as given under 3 on page
+11 in case of alkaline KMnO4-N) and the ammonia liberated titrated
+against standard acid. The amount of (NH4+NO3+NO₂) nitrogen
+present in the soil without incubation is deducted from the figure for
+incubated soil to obtain the quantity of N released. A blank determina-
+tion without soil is also necessary.
+2. Anaerobic incubation (Subbiah and Bajaj 1962; Warring and Bremner
+1964)
+(Ammonia released under waterlogged conditions)
+Procedure for micro estimation:
+12.5 ± 1.0 ml of distilled water is
+placed in a 16 mm × 150 mm test tube or 150 ml conical flask and 5g of
+air-dry (2mm) soil is added to this. The tube/flask is stoppered and
+incubated at 40°C for seven days. The contents are transferred to a
+conical flask (150 ml) and 25 ml of 4N KCl or 50 ml of 2N KCl is added
+and shaken (1/2 hr) mechanically. The suspension is filtered immediately.
+A suitable aliquot of the clear filtrate is distilled with 0.5g of MgO
+(freshly ignited) and the distillate collected in a conical flask containing
+20 ml of boric acid along with mixed indicator (as in the case of aerobic
+incubation). The distillate is titrated against standard acid (0.02N
+H₂SO₄). The ammonia content of the soil without incubation is deter-
+mined according to the same procedure and deducted from the amount
+obtained after incubation.
+Macro estimation: For this purpose, 20g of soil is mixed with
+equal weight of quartz sand in 100 ml conical flask. The soil is submerg-
+ed with distilled water to a level of 2 cm above the surface. It is incu-
+bated for one week at 35°C. Thereafter the contents are leached with
+200ml of IN NaCl and ammonia (displaced) is estimated by distilling with
+freshly ignited MgO.
+The procedure has been found suitable as an index of nitrogen
+availability for rice, bajra (pearl millet) and wheat and also as a single
+extractant for the simultaneous extraction of NPK for rice.
+3. Mineralizable nitrogen (Alkaline permanganate method)
+(Subbiah and Asija 1956)
+The procedure involves distilling the soil with alkaline potassium
+permanganate solution and determination of the ammonia liberated
+which serves as an index of the available/mineralizable nitrogen status.
+Reagents required
+(i) 0.32% potassium permanganate solution
+(ii) 2.5% sodium hydroxide
+(iii) Liquid paraffin (extra pure)
+(iv) 0.02N sulphuric acid
+(v) 2% boric acid solution containing 20 ml of mixed indicator
+per litre
+(vi) Mixed indicator: 0.066g methyl red plus 0.099g bromocre-
+sol green dissolved in 100 ml of 95% alcohol
+Procedure
+In a 800 ml dry Kjeldahl flask, 20g of soil is taken. To this 20 ml
+of water is added followed by 100 ml each of 0.32% KMnO4 and 2.5%
+NaOH solutions. The frothing during boiling is prevented by liquid
+11
+10
+paraffin (1 ml) and bumping by adding a few glass beads. The contents
+are distilled in a Kjeldahl assembly at a steady rate and the liberated
+ammonia collected in a conical flask (250 ml) containing 20 ml of boric
+acid solution (with mixed indicator). With the absorption of ammonia
+the pinkish colour turns to green. Nearly 100 ml of distillate is to be
+collected in about 30 minutes which is titrated with 0.02N H2SO4 to the
+original shade (pinkish). Blank correction (without soil) is to be made
+for the final calculation.
+Calculation
+Mineralizable N (kg/ha)=R×0.02×1×0.014×2.24×100=R×31.36
+20
+where R=volume of 0.02N H2SO4 required for titration
+V. ESTIMATION OF ORGANIC CARBON
+1. Walkley and Black (1934) rapid titration
+The organic matter (humus) in the soil gets oxidized by chromic
+acid (potassium dichromate plus conc. sulphuric acid) utilizing the heat
+of dilution of sulphuric acid. The unreacted dichromate is determined by
+back titration with ferrous (ammonium) sulphate (redox titration).
+Reagents
+(i) IN potassium dichromate (49.04g of AR grade K2Cr2O7 per
+litre of solution)
+(ii) 0.5N (approx.) ferrous ammonium sulphate (196g of the
+hydrated crystalline salt per litre containing 20 ml of conc.
+H₂SO₄). This solution is relatively more stable and con-
+venient to work than that of ferrous sulphate.
+(iii) Diphenylamine indicator: 0.5g diphenylamine dissolved in a
+mixture of 20 ml of water and 100 ml of conc. H2SO4
+(iv) Concentrated sulphuric acid (sp.gr. 1.84) containing 1.25 per
+cent silver sulphate (In case of soils free from chlorides use
+of Ag2SO4 can be avoided)
+(v) Ortho-phosphoric acid (85%) and/or sodium fluoride
+(chemically pure).
+12
+Procedure
+The soil is ground and completely passed through 0.2 mm sieve.
+and 1.00 g is placed at the bottom of a dry 500ml conical flask (Corning/
+Pyrex). 10 ml of IN K2Cr2O, is pipetted in and swirled a little. The flask
+is kept on asbestos sheet. Then 20 ml of H2SO4 (containing 1.25%
+Ag₂SO₄)is run in and swirled again two or three times. The flask is allowed
+to stand for 30 minutes and thereafter 200ml of distilled water is added.
+After incorporation of 10 ml of phosphoric acid or 0.5g sodium fluoride
+and 1ml of diphenylamine indicator the contents are titrated with ferrous
+ammonium sulphate solution till the colour flashes from blue-violet to
+green. A combination of H3PO4 and NaF is found to give a sharper end
+point. Simultaneously, a blank is run without soil. If more than 7 ml of
+the dichromate solution is consumed the determination must be repeated
+with a smaller quantity (0.25-0.50g) of soil.
+Calculation
+Organic carbon (%)=
+10(B-T)
+B
+×0.003 ×
+100
+wt. of soil
+where B-volume (in ml) of ferrous ammonium sulphate solution requir-
+ed for blank titration; and
+T=volume of ferrous ammonium sulphate needed for soil sample.
+2. Colorimetric method of estimation (Datta et al. 1962)
+The oxidation of soil organic matter is carried out by dichro-
+mate-sulphuric acid mixture and the intensity of the green colour of the
+chromium sulphate formed is measured to give directly the amount of
+carbon oxidised.
+Instrument
+Photo-electric colorimeter (double cell) preferably of Klett-
+Summerson type
+Reagents
+(i) 1N (AR grade) potassium dichromate (49.04 g/1)
+(ii) Concentrated sulphuric acid (sp. gr. 1.84) with 1.25 g of silver
+sulphate per 100 ml (not needed if chlorides are absent)
+(iii) Sucrose (AR grade), anhydrous
+13
+Procedure
+One gram of soil (passed through 0.2 mm sieve) is taken in a dry
+100 ml conical flask (Pyrex/Corning). 10 ml of IN K2Cr2O7 is added and
+swirled a little followed by 20 ml of conc. sulphuric acid and swirled
+again. After keeping for 30 minutes on an asbestos sheet the content in
+the flask is carefully centrifuged to a clear state. The green chromium
+sulphate colour of the supernatant layer is read in the colorimeter after
+adjusting the blank solution (without soil) to zero using 660 mµ (red)
+filter.
+Calculation
+Organic carbon (%)
+=Colorimeter reading (R) x factor (from standard curve)
+Preparation of standard calibration curve
+One to 25 mg of anhydrous sucrose (AR) are weighed out and
+placed in separate 100 ml dry conical flasks. 10 ml of IN K2Cr2O, solution
+is added to each followed by 20 ml of conc. H2SO4. The 
+flasks are swirled
+a little and kept for half an hour. Thereafter readings are taken 
+in the
+colorimeter using 660 mµ filter after adjusting the blank to zero
+. A curve
+is drawn plotting the concentrations of carbon (in sucrose) and colori-
+meter readings (R) and the factor is calculated from sucrose
+. With
+Klett-Summerson colorimeter the factor comes to 0.0042 with 
+possibility
+of little variation,
+Note: Instead of centrifuging (after addition of K2Cr2O, and H2SO4 to soil) the flasks
+can be kept overnight and the supernatant 
+solution carefully decanted off for
+colorimeter reading. This avoids the chance of any 
+damage to the centrifuge
+due to accidental spilling of the concentrated aid and a 
+large number of
+samples can be handled at the same time. If chromic acid 
+crystals appear,
+specially in cold climate, the addition of 10ml of 
+water to each flask after half
+an hour's reaction has been found to be helpful before 
+keeping them overnight.
+The standard curve must be prepared in an identical 
+manner. However, for
+clayey soils centrifuging becomes necessary as these do not 
+settle properly for
+colorimetric measurements.
+VI. DETERMINATION OF NITRATE NITROGEN
+(Phenol disulphonic acid method)
+A nitrate in contact with sulphuric acid produces nitric acid
+which in dry condition (in presence of excess concentrated sulphuric
+acid) causes nitration of phenol disulphonic acid. The 
+product is like a
+14
+nitrophenolic type indicator giving intense yellow colour in alkaline
+medium which can be subjected to colorimetric determination. The
+reaction must proceed in cold otherwise nitric acid may be lost by volati-
+lization.
+Instrument
+Photo-electric colorimeter (double cell type)
+Reagents
+(i) Calcium sulphate (CaSO4: 2H₂O) or calcium oxide (chemically
+pure)
+(ii) Phenol disulphonic acid (in sulphuric acid): This is prepared
+by taking 25g of pure phenol (C6H5 OH, crystal white) in a
+dry conical flask (500 ml) or tall beaker (Corning/Pyrex) to
+which 150 ml concentrated AR sulphuric acid (nitrate-
+free) and 75 ml AR fuming sulphuric acid (nitrate-free) are
+mixed very carefully and the contents are kept on boiling
+water bath for 2 hours, covered with a watch glass. On
+cooling, the phenol disulphonic acid (in excess sulphuric acid)
+is stored in amber coloured bottle. In case fuming sulphuric
+acid is not available the same amount of concentrated
+sulphuric acid may be added instead and kept on the boiling
+water bath for at least six hours.
+(iii) Liquor ammonia (laboratory reagent 0.88 sp. gr., diluted with
+equal volume of water)
+(iv) Potassium nitrate (analytical grade)
+Procedure
+20g of soil is shaken continuously with 50 ml distilled water for
+one hour in a 100 ml conical flask fitted with rubber stopper. A pinch of
+CaSO, or CaO is added and again shaken thoroughly for a few minutes
+to help in quick settling of the soil, and the contents filtered through a
+dry filter paper (Whatman No. 1 or equivalent). First few ml of the
+filtrate may be rejected. 20 ml of the clear aliquot is transferred to a 50
+ml porcelain or silica dish, evaporated to dryness on steam bath and
+cooled to room temperature. Three ml of phenol disulphonic acid
+reagent is allowed to react with the residue by rotating the dish. After 10
+minutes, 15 ml of distilled water is added and stirred with a glass rod.
+15
+On cooling, the contents are washed down into 100 ml volumetric flask
+or stoppered cylinder. Ammonia (1:1) is to be added slowly with
+mixing till the solution is alkaline as indicated by the development of
+yellow colour due to the presence of nitrate. Then another 2 ml of
+ammonia is added and the volume made up (100 ml) with distilled water.
+Intensity of yellow colour is read in the photo-electric colorimeter using
+420 mµ (blue) filter.
+Preparation of standard curve for nitrate: A stock solution
+containing 100 ppm nitrate-nitrogen (NO3-N) is prepared by dissolving
+0.7215 g of AR grade potassium nitrate (oven-dried and cooled) and
+made to one litre. This is diluted ten times to give a 10 ppm NO3-N
+solution. Aliquots (2, 5, 10, 15, 20 and 25 ml) are evaporated on
+boiling water bath to dryness in small porcelain dishes (or beakers).
+When cool, 3 ml of phenol disulphonic acid is added and the yellow
+colour is developed and read as described above. A blank (without
+nitrate) must be run and correction made by adjusting the colorimeter to
+zero with blank. A calibration curve is drawn between concentration of
+NO3-N and colorimeter reading.
+Calculation
+NO3-N (kg/ha) =µg of NO3-N in test solution X
+50 1 2.24×106
+XX
+20 20
+106
+=µg of NO3-N in test solution × 0.28
+VII. ESTIMATION OF AVAILABLE PHOSPHORUS (IN SOIL)
+Phosphorus in soil occurs as orthophosphate in several forms and
+combinations and only a small fraction of the total amount present may
+be available to plants which is of direct relevance in assessing the
+phosphorus fertility level.
+A wide variety of chemical soil tests for available P has been
+proposed which extract variable quantities of phosphorus. 
+These
+include, water, carbonated water, solution of neutral 
+salts namely KCl
+and CaCl₂, strong mineral acids of different concentrations (2.5
+% HCl,
+0.2Ν ΗΝΟ3, 0.2N H₂SO₄), weak organic acids like citric (1
+%), lactic and
+acetic (2.5%), buffered dilute acid solutions both organic and 
+inorganic,
+such as Truog's reagent (0.002N sulphuric acid and ammonium 
+sulphate
+pH 3.0), Egner's lactate extractant (ammonium lactate-lactic 
+acid pH
+3.8), Morgan's solution (sodium acetate-acetic acid pH 4.8
+) and alkaline
+16
+extractants such as NaOH (0.1N), K₂CO₃ (1 and 2%) and NaHCO3
+(0.5M). Use of chelating agents (like EDTA or DTPA) and specifiic
+chemicals for anionic exchange has been suggested for extracting certion
+forms of adsorbed and chemically bound phosphate in the soil system.
+The extractants have been developed either from the concept of
+simulating the action of plant roots or to obtain a suitable measure of
+the readily soluble inorganic forms to represent the plant available soil
+phosphorus. Thus, the estimation of specific categories of soil Pconsi-
+dered to be of significance to crop growth has lead to the introduction of
+neutral NH₁F (ammonium fluoride) solution as an extractant for adsorb-
+ed phosphate and NH₁F-HCl combination for adsorbed plus acid solu-
+ble form. A 0.5M NaHCO3 solution adjusted to pH 8.5 has been designed
+to control the ionic activity of calcium through the solubility product of
+CaCO, in case of neutral and calcareous soils. In this process, the most
+reactive (high specific surface) form of P is extracted from the phosphates
+of iron, aluminium and calcium present in the soil.
+In soil testing work, the available phosphorus content is readily
+determined by extraction with suitable reagents according to specified
+soil to solution ratio and time of shaking. In the filtered extract,
+phosphorus is estimated colorimetrically by adding ammonium molybdate
+and thereafter reducing the molybdenum-phosphate complex in acidic
+medium. The intensity of blue colour on reduction provides a measure
+for the concentration of P in the test solution. The two extractants and
+procedures normally used are given below.
+1. Olsen's method (Olsen et al. 1954)
+The extracting reagent for Olsen's P is 0.5 molar sodium bicarbo-
+nate (pH 8.5) prepared by dissolving 42.0g of NaHCO3 (laboratory
+reagent) in distilled water to give one litre of the solution. The pH is
+adjusted to 8.5 with small quantities of 10% NaOH. The method has been
+found widely applicable in slightly acid, neutral and calcareous soils.
+To 2.5g of soil in 100 ml conical flask a little of Darco G 60 or
+equivalent grade of activated carbon (free of phosphorus) is added
+followed by 50 ml of Olsen's reagent. A blank is to be run without soil.
+The flasks are shaken for 30 minutes on a platform type shaker and the
+contents filtered immediately through dry filter paper (Whatman No.1)
+into clean and dry beakers or vials. In the filtrate phosphorus is
+17
+estimated colorimetrically by Dickman and Bray's (excess acid)
+procedure.
+Note: The activated carbon (even if marked phosphorus-free) is likely to contain
+traces of P which have to be removed by repeated washings with Olsen's
+reagent followed by warm distilled water. The material should test free of
+phosphorus when extracted with Olsen's reagent. The sodium bicarbonate
+should also be tested free from any phosphate contamination.
+2. Bray's No. 1 method (Bray and Kurtz 1945)
+This procedure is primarily meant for soils which are moderately
+to strong acid (pH around 5.5 or less). The Bray's No. 1 reagent consists
+of 0.03N NH₁F in 0.025N HCl solution. 2.775 g of NH₁F (AR/LR) is
+added to 2.5 litres of 0.025N HCl (checked against standard NaOH
+solution) and dissolved.
+5g of soil and 50 ml of the reagent are shaken in 100 ml conical
+flask for exactly 5 minutes and filtered. To avoid interference of fluoride,
+7.5 ml of 0.8M boric acid (50g of H3BO3 per litre) can be added to 5 ml
+of the extract, if necessary. In the extract, phosphorus is estimated
+colorimetrically by Dickman and Bray's method.
+Colorimetric estimation of phosphorus (Dickman and Bray 1940)
+Instrument
+Photo-electric colorimeter (double cell, preferably of Klett-Summer-
+son type)
+Reagents
+(i) Dickman and Bray's reagent (for Bray's No. 1 method): 15g of
+ammonium molybdate (AR) is dissolved in 300 ml of distilled
+water, warmed to about 60°C and filtered, if necessary, after
+cooling. To this, 350 ml of 10N HCl is added and made up to
+one litre. The normality of the HCl should be adjusted
+correctly by titration.
+(ii) Dickman and Bray's reagent having excess of acid for Olsen's
+method: 15g of ammonium molybdate (AR) is dissolved in
+300 ml of warm water (about 60°C), cooled and filtered if
+necessary. To this, 400 ml of 10N HCl is added and made up
+to one litre.
+18
+(fil) Stannous chloride solution: 10g of crystalline stannous chloride
+(LR) is dissolved in 25 ml of concentrated HCl by warming
+and stored in an amber coloured bottle, carefully avoiding all
+contact with air. This is 40% SnCl2 stock solution. Just
+before use, 0.5 ml is diluted to 66 ml with distilled water. A
+piece of tin metal (AR) added will keep the stock solution for
+long.
+Note: For phosphorus estimation Pyrex glass apparatus (particularly new ones) are to
+be avoided to minimise contamination with arsenic, which interferes in the
+analysis. All the glasswares should be cleaned with chromic acid and thoroughly
+washed.
+Procedure
+5 ml of soil extract is pipetted into a 25 ml volumetric flask to
+which 5 ml of the Dickman and Bray's (i or ii) reagent is poured in. In
+case of Olsen's method, the reagent (ii) should be added drop by drop
+with constant shaking till the effervescence due to CO₂ evolution ceases.
+The neck of the flask is washed down and the contents diluted to about
+22 ml. Then one ml of the diluted stannous chloride solution is added
+and volume made up to mark. The intensity of the blue colour is measu-
+red (using 660 mµ filter) just after 10 minutes and the concentration of P
+determined from the standard curve. This is very important as the
+colour starts fading after some time. With each set of samples a blank
+(without soil) must be taken. With good quality reagents colorimeter
+reading for blank is negligible.
+Colorimetric estimation of phosphorus by ascorbic acid method
+(Watanabe and Olsen 1965)
+Reagents
+(i) 12g of ammonium molybdate (AR) is dissolved in 250 ml of
+distilled water. In 100 ml of distilled water a solution of
+0.291g of antimony potassium tartrate is prepared separately.
+Both these solutions are added to 1000 ml of approx. 5N
+H2SO4 (140 ml conc. H₂SO₄ in one litre), mixed thoroughly
+and made to two litres with distilled water.
+(ii) Ascorbic acid solution : 1.056g of ascorbic acid (LR) is dissolved
+in 200 ml of reagent (i) and mixed well. This should be pre-
+pared fresh as and when required.
+19
+5 ml aliquot of the Olsen's extract is pipetted into a 25 ml volume-
+tric flask and carefully acidified with 5N H₂SO₄ to pH 5. This can be
+easily done by taking 5 ml of the extracting reagent in a separate 25 ml
+flask and determining the volume of acid required to bring the pH of the
+solution to 5 using p-nitrophenol indicator the yellow colour of which
+disappears at this pH. On adjustment of the pH it is diluted to 20 ml
+with distilled water and 4 ml of reagent (ii) added. The volume is made
+up to mark and the contents shaken well. After waiting for 10 minutes
+the intensity of the blue colour is read in a photoelectric colorimeter using
+730-840 mµ filter. A blank must also be run (without soil) alongwith.
+The colour is relatively more stable than with stannous chloride
+reduction.
+Standard curve for phosphorus
+Analytical grade potassium dihydrogen orthophosphate (KH2PO4)
+is dried in air oven at 60°C for 1 hr and after cooling (desiccator) exactly
+0.439g is dissolved in about half a litre of distilled water. 25 ml of 7N
+H2SO4 (approx.) is added and made up to one litre with distilled water.
+This gives a 100 ppm stock solution of P (100 µg P per ml). From this,
+a 2 ppm P solution is made (50 times dilution). For preparation of the
+standard curve different concentrations of P (1, 2, 3, 4, 5 and 10 ml of 2
+ppm P soln.) are taken in 25 ml volumetric flasks. To these, 5 ml of the
+extracting reagent (Bray's/Olsen's) is added and the colour is developed
+as described above by adding Dickman and Bray's reagent (i/ii) and
+stannous chloride. In case of ascorbic acid method the colour is develop-
+ed after pH adjustment of the aliquot. The colorimeter reading is taken
+against 660 mµ (red) filter just after 10 minutes. The curve is plotted
+taking the colorimeter reading on the vertical axis and the amount of P
+(in µg) in the horizontal one.
+Calculation
+Available P (kg/ha)
+=R X
+Total volume of the extractant
+Volume of aliquot
+2.24×106
+106
+X
+X
+1
+Weight of soil taken
+where R=µg P in the aliquot (to be seen from the standard curve).
+20
+Olsen's P (kg/ha)
+=RX
+Bray's P (kg/ha)
+-RX
+50
+5
+1
+X 2.5×2.24
+=µg of P×8.96
+50×5×2.24 =µg of P×4.48
+VIII. AVAILABLE POTASSIUM DETERMINATION
+The term available potassium incorporates both exchangeable and
+water soluble forms of the nutrient present in soil. The readily exchage-
+able plus water soluble K is determined in the neutral normal ammonium
+acetate extract of soil. The ammonium ion provides a sharp and rapid
+separation from exchange complex while other cations bring about a
+gradual replacement of either lesser or greater amount of K which gene-
+rally increases with the period of contact. The estimation of potassium
+in the extract is carried out with the help of flame photometer. Chemical
+methods being rather elaborate and time-consuming are not suitable for
+soil testing purpose.
+Non-exchangeable K (not lattice-bound) is attributed to contribute
+appreciably towards the potassium available to crops. The most
+commonly employed extractants are the strong inorganic acids like 6N
+H₂SO₄, hot IN HCl and boiling IN HNO3. The procedure for determi-
+nation involves either the prior removal of exchangeable K or conditions
+are made sufficiently vigorous to extract both exchangeable (including
+water soluble) and a portion of non-exchangeable forms from which
+the former is subtracted.
+Instruments
+meter
+Flame photometer, direct reading type and glass electrode pH
+Reagents
+(i) Neutral normal ammonium acetate: Solutions of 2N acetic
+acid (glacial) and 2N ammonium hydroxide are prepared (by
+titration with standard alkali and acid) and equal volumes of
+the two are mixed in a large beaker and on cooling the pH
+adjusted to 7.0 with acetic acid or ammonia.
+(ii) Potassium chloride solution: A stock solution of 1000 µg
+K/ml is made by dissolving 1.908 g of AR grade potassium
+21
+
+
+Procedure
+chloride (dried at 60°C for 1 hr) in distilled water and
+making up the volume to 1 litre.
+5g of soil is shaken with 25 ml of neutral normal ammonium
+acetate (pH 7) for 5 minutes and filtered immediately through a dry
+filter paper (Whatman No.1). First few ml of the filtrate may be rejected.
+Potassium concentration in the extract is determined in the flame
+photometer after necessary setting and calibration of the instrument.
+Standard curve for potassium
+From the stock solution, measured aliquots are diluted (in 50 or
+100 ml vol. flasks) with the ammonium acetate solution to give 10 to
+40 ppm of K. After attaching the appropriate filter and adjusting the gas
+and air pressure (as per directions given in the operation manual) the
+flame photometer reading is set at zero for the blank (ammon. acetate)
+and at 100 for 40 ppm K. The curve is obtained by plotting the readings
+against the different concentrations (10, 15, 20, 25, 30, 40 ppm) of K.
+Any fluctuation in gas and air pressure does not allow steady reading in
+the meter and must be taken care of.
+Calculation
+Available K (kg/ha)
+=RX
+Volume of the extract
+Weight of soil taken
+X
+2.24 × 108
+106
+where R=ppm of K in the extract (obtained from standard curve)
+=ppm of K×11.2
+Procedure for the determination of non-exchangeable potassium
+(Wood and DeTurk 1940)
+To 5g of the sieved soil (2 mm) placed in a dry 100 ml conical flask
+50 ml of IN HNO3 is pipetted in and the contents heated on a hot plate
+(low heat) under reflux (fitted with cork and long glass tube) for 10
+minutes after boiling starts. On cooling, the suspension is filtered
+through dry Whatman No. 1 filter paper and potassium estimated flame
+photometrically after appropriate dilution. The non-exchangeable K is
+obtained by subtracting the ammonium acetate K from this value.
+IX. LIME REQUIREMENT OF ACID SOIL
+While a slightly acidic condition is often favourable for crop growth
+a higher degree of soil acidity mostly exerts an adverse effect and hence
+22
+such acid soils need lime application to improve the productivity. The
+quantity of lime required to bring the pH to the desired level will vary
+according to the nature of the soil. Number of laboratory methods are
+available for this purpose The procedure given by Shoemaker et al.
+(1961) is being widely followed for determining the lime requirement of
+acid soils of pH less than 6.0. A glass electrode pH meter is the instru-
+ment needed.
+Reagent
+Extractant buffer: 1.8g nitrophenol, 2.5 ml triethanolamine, 3.0g
+potassium chromate, 2.0g calcium acetate and 53.1g calcium chloride
+dihydrate (all chemically pure) are dissolved in a litre of water and the
+pH adjusted to 7.5 with dilute NaOH solution.
+Procedure
+To 5g of air-dry soil taken in a dry 50 ml beaker, 5 ml distilled
+water and 10 ml of the extractant buffer are added and stirred continuo-
+usly for 10 minutes or intermittently for 20 minutes. The pH of the
+suspension is determined on the basis of which the requirement of lime
+is read from the following table. The values are given in tons of pure
+calcium carbonate per acre required to bring the soil to the pH indicated
+and are to be converted to their equivalents of the form of agricultural
+lime to be used. For expressing in metric units i.e., tonnes/ha, the
+figures are to be multiplied by 2.51.
+Lime requirement to bring the soil to the desired pH level according
+to pH value of the soil-buffer suspension
+pH of soil-
+buffer
+suspension
+Lime required to bring the soil to indicated pH
+(in tons/acre of pure calcium carbonate)
+pH 6.0
+pH 6.4
+pH 6.8
+6.7
+1.0
+1.2
+1.4
+6.6
+1.4
+1.7
+1.9
+6.5
+1.8
+2.2
+2.5
+6.4
+2.3
+2.7
+3.1
+6.3
+2.7
+3.2
+3.7
+6.2
+3.1
+3.7
+4.2
+6.1
+3.5
+4.2
+4.8
+6.0
+3.9
+4.7
+5.4
+23
+Table (contd.)
+5.9
+4.4
+5.2
+6.0
+5.8
+4.8
+5.7
+6.5
+5.7
+5.2
+6.2
+7.1
+5.6
+5.6
+6.7
+7.7
+5.5
+6.0
+7.2
+8.3
+5.4
+6.5
+7.7
+8.9
+5.3
+6.9
+8.2
+9.4
+5.2
+7.4
+8.6
+10.0
+5.1
+7.8
+9.1
+10.6
+5.0
+8.2
+9.6
+11.2
+4.9
+8.6
+10.1
+11.8
+4.8
+9.1
+10.6
+12.4
+X. GYPSUM REQUIREMENT OF ALKALI SOIL
+The reclamation of alkali soil (pH in water suspension exceeding
+8.5) requires gypsum treatment for replacement of sodium ions from the
+exchange complex. The sodium so released has to be leached out by
+flooding. The gypsum requirement can be determined by adding a
+known excess of saturated solution of gypsum (CaSO4.2H2O) to soil and
+estimating its unreacted amount by EDTA (versenate) titration
+(Schoonover 1952).
+Reagents
+(i) Saturated calcium sulphate solution: About 5g of pure CaSO4.
+2H₂O taken in one litre of distilled water shaken mechanically
+for 10 minutes and filtered
+(ii) Ammonium chloride-ammonium hydroxide buffer of pH 10:
+67.5g of pure ammonium chloride dissolved in 570 ml of con-
+centrated ammonia solution (sp. gr. 0.88) and diluted to one
+litre with distilled water and adjusted to pH 10 (Caution: Liq.
+ammonia should be refrigerated before opening the bottle)
+(iii) Eriochrome black T indicator: 0.5g of eriochrome back T
+(solochrome black) and 4.5g of hydroxylamine hydrochloride
+(AR) dissolved in 100 ml of 95% ethyl alcohol
+(iv) 0.01N calcium chloride solution: 0.500g of AR grade calcium
+carbonate taken in little excess of AR HCl (about 10 ml of dil.
+acid) and the solution made up to one litre with distilled water
+24
+(v) Standard versenate (EDTA) solution 0.01N: 2.0g of disodium
+dihydrogen ethylene-diamine-tetra acetic acid and 0.05g of
+MgCl, (AR) dissolved in water and diluted to 1 litre; the
+solution to be standardized against 0.01N calcium chloride
+Procedure
+5g of soil is placed in a 250 ml conical flask to which 100 ml of the
+saturated CaSO4 solution is poured in, shaken for 5 minutes and filtered
+(Whatman No.1). After rejecting first few ml, 5 ml of the extract is
+pipetted into a 100 ml flask or porcelain dish and diluted to about 25 ml
+with distilled water. One ml of NH4CI-NH4OH buffer and 3 to 4 drops
+of eriochrome black T indicator are added and titrated with the standard
+EDTA solution until the colour changes from wine red to blue. Simi-
+larly, 5 ml of the saturated CaSO4 solution is titrated separately (blank).
+Calculation
+Milliequivalent (m.e.) per litre of Ca or Ca+Mg
+ml of the versenate solution used normality of the versenate
+soln. × 1000
+ml of aliquot taken
+Gypsum requirement in m.e. per 100g
+(Ca conc. of added gypsum solution in m.e./1
+minus Ca+Mg conc. of filterate in m.e./1)
+×2
+Gypsum requirement: in metric tons (tonnes) per hectare (30 cm soil
+depth)
+1.72×m.e. of gypsum per 100g soil ×2.47
+XI. PHOSPHORUS FIXING CHARACTERISTICS OF SOIL
+Soils vary appreciably in their phosphorus fixing capacity, those
+dominating in sesquioxides and kaolinitic type of clays having tendency
+to fix or immobilize larger amounts of phosphorus from the soluble
+phase. The phosphorus fixing capacity can be experimentally determined
+as per procedure outlined by Waugh and Fitts (1966). A double cell
+photo-electric colorimeter is needed for phosphorus estimation.
+Reagent
+Standard phosphorus solution: A stock solution of 2500 ppm of P
+is prepared by dissolving 9.440g of pure anhydrous monocalcium phos-
+Pro, CL (HP)dallel wir and made to one litre. (Old stock
+25
+of MCP may not completely go into solution and should not be used).
+It is desirable to check the concentration of P by Dickman and Bray's
+method (1940) after appropriate dilution. Out of this, solutions of
+different concentrations are prepared (by dilution) such that by adding
+one ml of each to 2.0g of soil the resultant concentration of added P
+would be 0, 25, 50, 75, 100, 125, 250, 375 and 500 ppm.
+Procedure
+2g of soil is weighed out (in duplicate) in separate 100 ml conical
+flasks. One ml of the solutions of different concentrations of P are added
+to each so that they cover the range from 0 to 500 ppm as stated above.
+The flasks are plugged with cotton wool and allowed to incubate for 96
+hours at room temperature and thereafter the phosphorus is extracted by
+Olsen's or Bray's method and estimated colorimetrically (Item VII) as
+the case may be.
+The results of extracted P are plotted (Y-axis) on the graph sheet
+against added P (X-axis). The curve is examined carefully and the point
+where there is an abrupt increase in extractable P is located. From this
+inflexion point (on the curve) the corresponding value of X is found out
+i.e., approximate amount of P required to be added to more than over-
+come the effect of fixation. If the fixation curve is linear its shape may
+be considered to work out the amount of P to be applied which would
+take into account the fixing capacity.
+Calculation (for percentage P fixation)
+Amount of available P in control (without P added)
+Amount of available P in test sample
+Amount of available P extracted
+Amount of P added
+Amount of P fixed
+Percentage of P fixation (% of added P)
+XII. POTASSIUM FIXING CAPACITY OF SOIL
+a ppm
+b ppm
+(b-a)=x ppm
+c ppm
+(c-x) ppm
+(c-x)
+x 100
+C
+On addition of fertilizer potash to soil, potassium ions from solution
+readily go into non-exchangeable or fixed form which apparently has a
+restricted availability to crops. The fixation characteristics differ
+26
+according to the soil type, its texture, nature of dominating clay minerals
+and also in relation to submerged or arable conditions. The procedure
+given below has been adopted from the All India Coordinated Project on
+Soil Test and Crop Response Correlation, for finding out the potassium
+ising capacity (STCR 1968). A flame photometer (direct reading type)
+is needed for estimation of potassium in test solutions.
+Reagents
+(i) Potassium chloride (AR grade) for preparing solution of
+different concentrations of K
+(ii) Neutral normal ammonium acetate solution
+(Preparation described under item VIII)
+Procedure
+1. For sandy to sandy loam soils
+The following enrichment in respect of K is to be adopted :
+0, 10, 20, 30, 40, 50, 100, 200, 300, 600 and 1000 ppm K. Soil to
+solution ratio is 1:2 i.e., 5g/10 ml.
+The determination of potassium fixing capacity is carried out for
+rice and wheat growing soils as is given under (a) and (b), respectively.
+(a) Soils growing rice
+Standard solution of 1000 ppm K (1.908g of KCl/1) is prepared
+and diluted so as to give the following concentrations:
+Solution A: 10 ppm K (5 ml stock solution diluted to 500 ml)
+S lution B: 100 ppm K (50 ml stock solution to 500 ml)
+5g samples of sieved soil (2 mm) are taken in duplicate in 100 ml
+conical flasks. KCl solution and distilled water are added by pipette as
+given in the table below to give the various levels of exchangeable K.
+27
+added are
+Levels of exch. K
+in µg per 5g of
+soil
+KCl solution
+Distilled
+to be added
+water
+Levels of exch. K
+KCI solution to
+Distilled
+(ml)
+in pg per 5g soil
+be added
+water (ml)
+0 (control)
+0
+10
+0
+0
+10
+10
+1 ml solution A
+9
+10
+1 ml of soln. A
+9
+20
+2 ml solution A
+8
+20
+2 ml of soln. A
+8
+30
+3 ml solution A
+7
+30
+3 ml of soln. A
+7
+40
+4 ml solution A
+6
+40
+4 ml of soln. A
+6
+50
+5 ml solution A
+5
+100
+1 ml of soln. B
+9
+100
+1 ml solution B
+200
+2 ml of soln. B
+४
+9
+200
+2 ml solution B
+400
+4 ml of soln. B
+6
+8
+400
+4 ml solution B
+6
+800
+8 ml of soln. B
+2
+600
+6 ml solution B
+4
+1000
+2 ml of soln. C
+8
+1000
+1 ml stock solution
+9
+2000
+4 ml of soln. C
+6
+3000
+6 ml of soln. C
+4
+4000
+8 ml of soln. C
+2
+Calculation
+The flasks are stoppered after mixing the contents and equilibriated
+for 72 hours at room temperature. 25 ml of neutral normal ammonium
+acetate is added and shaken for five minutes. The suspension is filtered
+and the K content in the filtrate is determined with the help of flame
+photometer (Item VIII).
+(b) For soils growing wheat
+5g of soil is weighed (in duplicate) in porcelain basin and half of
+the required amounts of KCl and distilled water are added, mixed
+thoroughly and allowed to dry in shade for 24 hours. After drying,
+1/4th amounts of the required KCl and distilled water are mixed well
+and again allowed to dry for 24 hours. Thereafter the remaining 1/4th
+quantity of both is added and dried as before. The determination of
+water soluble and exchangeable K is carried out as given above under
+rice growing soils.
+2. For loam to heavy clay soils
+The following enrichment for K is to be adopted :
+0, 10, 20, 30, 40, 100, 200, 400, 800, 1000, 2000, 3000 and 4000 ppm
+K by using Solution A: 10 ppm K; Solution B: 100 ppm K; and
+Solution C: 500 ppm K.
+The neutral normal ammoniun acetate extractable K in the control
+sample is deducted from the K content of each treated soil sample. The
+difference so obtained (Y) is subtracted from the amount of K added (X).
+The fixed K (X-Y) is expressed as the percentage of K added.
+Per cent K fixed=
+(X-Y)
+X
+× 100
+NIII. SOIL TEST FOR AVAILABLE SULPHUR
+Chemical tests for estimation of available sulphur are of recent
+interest in soil testing work particularly in some reported sulphur
+deficient areas and for certain crops whose requirement of this nutrient
+is high enough, often exceeding that of phosphorus.
+Of several extracting procedures suggested for available sulphur
+determination, starting from distilled water for dissolving out the sulphate
+form to different chemical extractants, the use of phosphate solution has
+often been preferred for screening the soil for its sulphur fertility status.
+A number of other reagents have also been tried such as, Olsen's,
+29
+28
+Morgan's and Bray's, normal magnesium acetate and 0.15 per cent
+calcium chloride solution.
+As regards the estimation of sulphur in the extract turbidimetric
+procedure is being most widely followed. The extent of turbidity due to
+fine suspension of barium sulphate formed by reacting sulphate ions with
+barium chloride in solution can be accurately measured in the nephelo-
+meter (working on the principle of scattered light) but within the range
+of low concentration spectrophotometer or even colorimeter can work
+fairly satisfactorily.
+Recently, a new colorimetric method of sulphur estimation has been
+developed in the Soil Testing Laboratory of the I.A.R.I., New Delhi,
+based on the earlier suggestion of Nemeth (1964). In this procedure,
+barium chromate reacting with sulphate in solution precipitates the
+latter as BaSO, releasing equivalent quantity of chromate ion which is
+subjected to colorimetric measurement. The method can work quite
+well for a variety of extractants except those containing phosphate
+because when the reaction of the medium is changed from acidic to
+alkaline for removing unreacted barium chromate, barium phosphate
+also gets precipitated thus affecting the final colour intensity.
+Two procedures of extraction and estimation of sulphur (as
+sulphate) are being described here.
+1. Phosphate extractable sulphur (Ensminger 1954)
+In a 250 ml conical flask, 20g of air-dried processed soil is shaken
+with 100 ml of 500 ppm P solution prepared from potassium dihydrogen
+orthophosphate or monocalcium phosphate (KH2PO4 2.195 g/litre or
+Ca(H2PO4)2. H₂O 1.888 g/litre) for 30 minutes. The extract is filtered
+through Whatman No. 42 filter paper and the sulphate determined in a
+suitable aliquot by turbidimetric procedure.
+Turbidimetric method for sulphate estimation
+Reagents
+(Massoumi and Cornfield 1963)
+(i) Nitric acid 25% (approx.) prepared from AR grade HNO3
+(ii) Acetic-phosphoric acid: 900 ml of AR glacial acetic acid mixed
+with 300 ml of AR orthophosphoric acid
+30
+acacia is dissolved in 500 ml of hot water and the hot solution
+Altered through Whatman No. 42 filter paper. The nitrate is
+cooled and then diluted to one litre with dilute acetic acid.
+(iv) Barium sulphate seed suspension: 18g of AR grade barium
+chloride is dissolved in 44 ml of hot water and 0.5 ml of the
+concentrated standard sulphate solution (given below). is added
+brought to boiling and cooled quickly. Then 4 ml of the gum
+acacia-acetic acid solution is put in. The seed suspension is
+prepared a fresh every day before use.
+(v) Barium chloride: BaCl, analytical grade reagent ground to
+pass through Imm sieve.
+(vi) Concentrated standard sulphate solution: (2mg S/ml): 1.080g
+of oven-dried AR potassium sulphate dissolved in distilled
+water and diluted to 100 ml.
+(vii) Working standard sulphate solution (10 µg S/ml): 5 ml of the
+concentrated standard solution is diluted to one litre with
+distilled water.
+Procedure
+A suitable aliquot of the extract (not more than 15 ml and contain-
+ing less than 120 µg of sulphate sulphur) is taken in a 25 ml volumetric
+flask to which 2.5 ml of 25% nitric acid and 2 ml of acetic-phosphoric
+acid are added and diluted to about 22 ml. The flask is stoppered and
+shaken. Then 0.5 ml of barium sulphate seed suspension (which must
+be shaken just before use) and 0.2 g of barium chloride crystals are added
+successively. The flask is stoppered and inverted three times. After 10
+minutes it is inverted 10 times and after 5 minutes another 5 times.
+Allowing for another 5 minutes, 1 ml of gum acacia-acetic acid solu-
+tion is put in and diluted to volume and inverted 3 times and set aside for
+1 hr. Then the flask is again inverted 10 times and reading taken in
+Klett-Summerson colorimeter against blue filter (optimum transmission
+at approximately 440 mg) or in spectrophotometer. The concentration
+of sulphur is found out from the standard curve.
+Preparation of standard curve for Sulphate Sulphur
+0, 1, 3, 5, 8, 10 and 12 ml of the working standard sulphate solu-
+Hon are placed in separate 25 ml volumetric flasks and proceeded as
+described above.
+31
+The standards are to be prepared each time a batch of sample is
+analysed and also a blank test with the reagents is to be run side be side.
+2. Colorimetric procedure for available Sulphur estimation using Barium
+Chromate (Palaskar et al. 1981)
+The sulphur is extracted in 0.15% CaCl2. 2H₂O solution in 1:5
+soil to solution ratio using 10-20 g of soil and 30 minutes shaking time
+(Williams and Steinbergs 1959). Sulphur is estimated in a suitable
+aliquot (5-10 ml) of the filtered (Whatman No. 42) extract.
+Reagents
+(i) Barium chromate solution: AR grade 0.1N in 1.5N HCI
+(ii) Ammonium hydroxide: 5N (approx.)
+(iii) Standard sulphate solution: (100 ppm S) prepared from AR
+grade potassium sulphate
+Procedure
+5 ml of barium chromate solution is pipetted into 100 ml volume-
+tric flask to which 1.2 ml of 5N ammonium hydroxide is added in order
+to reduce the free acidity to about 0. 05N. No turbidity should appear.
+Measured aliquot of soil extract is poured in so as to keep the sulphate
+sulphur content in the flask below 2000 µg. After shaking and standing
+for about half an hour 1 ml of ammonium hydroxide is added to precipi-
+tate the unreacted barium chromate. The volume is made up to 100 ml
+with distilled water. The flask is stoppered and inverted 2-3 times and
+the content is filtered through dry Whatman No. 42 filter paper, rejecting
+the first few ml of filtrate. The intensity of yellow colour in the filtrate
+is measured in photoelectric colorimeter using deep blue (420 mµ) filter,
+and the concentration found out from the standard curve.
+It is necessary that the test solution should have a pH around 2 to
+3 before barium chromate is added. In case of alkaline extract the pH
+has to be brought down with required amount of 6N HCI.
+Preparation of standard curve
+From 100 ppm working solution of sulphate sulphur, 0, 4, 8, 16,
+and 20 ml are taken into 100 ml volumetric flasks and the colour inten-
+sity read as given above. Blank correction is to be made.
+32
+precipitated out with ferric salt (FeCl3) and ammonia during the same operation
+of removal of precipitated barium sulphate and chromate but if excessive
+amount of phosphate is present in the test solution turbidimetric estimation is
+recommended.
+NIV, ESTIMATION OF AVAILABLE ZINC
+Soil test for micronutrient elements is still at the developing stage.
+Of late, their quick estimation has become possible with the help of
+atomic absorption spectrophotometer. In recent years, zinc has been
+receiving much attention as there are several reports of its deficiency and
+significant crop response to zinc application. To some extent, iron
+deficiency has also been observed in certain areas while deficiency of
+manganese and copper has been reported to a much lesser extent.
+Several reagents have been employed from time to time for the
+extraction of available micronutrients in soil out of which DTPA appears
+as quite promising having a wider applicability. Four micronutrient
+elements viz, zinc, iron, manganese and copper can be estimated in a
+single extraction with DTPA by setting the instrument for each of them
+and using the respective standard curve.
+Note
+Adequate precautions must be observed against any likely contamination from
+the reagents and glasswares in micronutrient assay work. Only double
+distilled water should be used.
+Determination of DTPA extractable Zinc
+(Lindsay and Norvell 1969, 1978)
+Instrument
+Atomic absorption spectrophotometer (AAS)
+Reagents
+(1) DTPA (Diethylene-triamine penta acetic acid) 0.005M solution
+(1) TEA (Triethanolamine) 0.1M (AR or extra pure)
+(i) CaCl, 2H₂O (AR) 0.01M solution
+(iv) Zine metal (AR or guaranteed reagent)
+(v) Dilute HCI (AR HCl diluted with double distilled water 1: 5)
+33
+1.470g CaCl2.2H2O in a beaker. To this 20 to 25 ml of double distilled
+water is added and 13.3 ml of TEA followed by 100 ml of double distilled
+water. This is transferred to one litre volumetric flask with 3-4 washings
+and the volume made up to mark with water. The pH of the solution
+is adjusted to 7.3 with dilute HCl.
+Procedure
+To 10g of soil in 100 ml conical flask, 20 ml DTPA reagent is added
+and shaken for two hours. The extract is filtered (Whatman No. 40/42)
+and zinc estimated with the help of atomic absorption spectrophotometer.
+Standard curve for Zinc
+One gram of pure zinc metal is dissolved completely in minimum
+amount of dilute HCl and made up to one litre with double distilled
+water in an already used (not new) volumetric flask (Corning/Pyrex) and
+then transferred to a plastic bottle. This stock solution contains 1000 µε
+Zn/ml. A working standard of 25 µg/ml is prepared by diluting 2.5 ml
+of the stock solution to 100 ml.
+In six 100 ml volumetric flasks required aliquots are taken and
+standards of 0, 0.5, 1.0, 1.5, 2.0 and 2.5 ppm zinc solution are made and
+the standard curve prepared against the readings of the atomic absorption
+spectrophotometer after necessary setting and calibration of the instru
+ment (AAS).
+Calculation
+In the same manner as given in case of potassium (item VIII) after
+taking into account the dilution factors.
+XV. DETErmination OF AVAILABLE COPPER, IRON AND
+MANGANESE
+A mention has been made about the appearance of copper, iron
+and manganese deficiency in certain places. At the same time, toxicity
+due to excessive occurrence of some elements particularly iron and man
+ganese has also been brought to light in acidic soils. Not much attempt
+however, has been made to estimate the available boron, molybdenum
+34
+toxicity. The following method has found favour for the estimation of
+copper, iron and manganese over the colorimetric procedures (Lindsay
+&Norvell 1978).
+The same DTPA extract of soil obtained for the estimation of
+available Zn can be utilized for determination of available Cu, Fe and
+Mn as well. A separate standard curve for each element is prepared
+and the appropriate (specific) hollow cathode lamp used on the AAS.
+The required standard solutions are prepared as follows;
+Copper
+A stock solution of 1000 ppm Cu is obtained by dissolving exactly
+one gram of the pure (AR grade) metal (wire or turning) in 50 ml of
+dilute (1: 1) HNO3 and finally diluting to 1000 ml with double (glass)
+distilled water. From this, working solutions (0.25, 0.5, 1.5, 2.0, 2.5 and
+3 ppm) are prepared (by dilution) in 100 ml volumetric flasks.
+Iron
+To prepare a stock solution of 1000 ppm Fe, exactly 1g of AR
+grade Fe metal is dissolved in 50 ml of dilute HNO3 and made to one
+litre with double distilled water. Working solutions (1, 2, 4, 6, 8, and
+10 ppm) are made in 100 ml volumetric flasks by appropriate dilution.
+Manganese
+1.583g of MnO2 (AR) or 1.0g of pure Mn metal dissolved in 50 ml
+of dilute HNO, and made up to one litre gives a stock solution of 1000
+ppm Mn. In 100 ml volumetric flasks requisite quantities of the stock
+solution are diluted to obtain working concentrations of 1, 2, 4, 6, 8 and
+10 ppm Mn.
+The amounts of these nutrients in soil are calculated in a similar
+manner as for available potassium (Item VIII).
+35
+Section B
+QUALITY RATING OF IRRIGATION WATER
+Water is the most universal solvent and its all naturally occurring
+sources are bound to contain variable quantities of dissolved solids and
+gases. Sometimes, suspended and colloidal organic and inorganic
+materials occur as well. Different types of laboratory tests of water
+are carried out depending on its use from the point of view of industry,
+public health or agriculture. Thus a water considered to be of poor
+quality for industrial or domestic purpose may be quite suitable for
+irrigation in which case total soluble salts, nature and concentration of
+various ions and particularly the proportion of the divalent and monova
+lent cations are of specific relevance in judging the water quality.
+Collection of irrigation Water Sample
+The sample of irrigation water is collected in about 500 ml glass or
+polythene bottles (stoppered) which should preferably be transparent
+The container must be thoroughly cleaned before use and should be
+rinsed 3 to 4 times with the water from which the sample is to be drawn.
+Brand new bottles are better to avoid and when used the cleaning and
+washing have to be more rigorous after keeping these filled with water
+for one or two days.
+If the source of irrigation water is a tank, canal or river the sample
+should be drawn either from a spot away from the sides or from the mid
+stream. This can be easily managed with the help of a small bucket tied
+at the end of a long pole. The tubewell or hand pump is to be run for
+about 10 minutes prior to sampling and for open well, several buckets of
+water have to be thrown out first. About half a litre of the sample
+quite sufficient. The water sample after proper marking and labelling
+must be sent to the laboratory immediately for testing to avoid an
+change or deterioration. If a few days delay is inevitable then 2 or
+drops of pure toluene may be added to prevent bacterial activity.
+36
+The water sample is straightway taken for analysis. Any little
+amount of sediment if present may be allowed to settle down. In very
+few orses it becomes necessary to filter the water (Whatman No. 1) for
+testing purpose.
+| Determination of pH
+The pH is determined by taking about 50 ml of the water sample in
+a 100 ml clean beaker and immersing the electrodes of the pH meter as
+described under soil analysis (Item II, Section A).
+2. Electrical Conductivity measurement (for Soluble Salts)
+The cell of the conductivity meter or solubridge is filled with the
+water sample and the electrical conductivity (EC) is measured as in case
+of water extract or clear suspension of soil (Item III) and expressed as
+mmhos/cm at 25°C (sometimes the unit of expression is micrommhos/cm
+that is 1/1000th of millimhos/crn when the EC is rather low),
+3. Estimation of Calcium and Magnesium
+The usual method for the determination of Ca+Mg is by versenate
+(EDTA) titration (Cheng and Bray 1951).
+Reagents
+(1) Standard versenate solution: An approximately 0.01N solution
+of ethylene diamine tetra-acetic acid disodium salt (versenate) is
+prepared by dissolving 2.0g in distilled water to which 0.05g of
+magnesium chloride (MgCl2.6H₂0) is added and diluted to one
+litre. This is to be standardized against 0.01N calcium chloride
+solution prepared by accurately weighing out 0.500g AR grade
+CaCO3 (oven dried) and dissolving in minimum excess of dilute
+ICI (AR) followed by making up to one litre with distilled
+water.
+(1)Ammonium chloride-ammonium hydroxide buffer (pH.10): 67.5g
+pure ammonium chloride dissolved in 570 ml of concentrated
+ammonium hydroxide and made to one litre and to pH
+10. (Caution: Ammonia bottle must be citration (or to the
+th phenolphthalein)
+temperature before opening).
+and the titration con-
+37
+(iii) Eriochrome black T (Solochrome black) indicator: 0.5g of
+eriochrome black T and 4.5g of hydroxylamine hydrochloride
+(AR) dissolved in 100 ml of 95% ethyl alcohol.
+Procedure
+5 ml of the water sample in a porcelain dish (8 cm dia.) is diluted to
+about 25ml with distilled water. One ml of ammonium chloride-hydroxide
+buffer and 3 to 4 drops of eriochrome black T indicator are added and
+titrated with the standard versenate solution. The colour change is from
+wine red to blue or bluish green. At the end point no tinge of the red
+colour should remain.
+Calculation
+From the volume of 0.01N EDTA (standardized against 0.01N
+CaCl₂) solution required for titration the concentration of Ca+Mg is
+directly obtained in me./litre as follows :
+m.e./l of Ca+Mg=ml of versenate soln used × normality of
+versenate solution X
+100
+ml of aliquot taken
+4. Determination of Sodium and Potassium
+Small amounts of sodium and potassium are generally present even
+in the best quality irrigation water. The concentration of sodium may
+be quite high in saline water with EC greater than 1 mmhos/cm and
+containing relatively less amount of Ca and Mg. The concentration of
+potassium is generally low. Obviously, these estimations are of interest
+when the water sample tests saline (i.e., having EC above 1.0 mmhos/cm
+at 25°C).
+Instrument
+The determinations of Na and K are carried out directly with
+the help of flame photometer using appropriate filters and standard
+curves prepared by taking known concentrations of Na and K.
+Standard curve for Sodium
+As the working concentration of sodium in flame photometr
+must be sent to elatively higher than that of potassium the strength of
+change or deterior conveniently expressed in milliequivalents per lite
+drops of pure toluen 45g of NaCl (AR) dissolved in water and made
+38
+Dette givee 100 m.e./1 of Na. From this, solutions having 5, 10, 20,
+and me. Na/t are prepared. A curve is drawn by plotting
+Asme photometer readings on the Y-axis against concentrations of Na on
+asis. The concentration of Na in the unknown sample is read from
+the curve
+Standard curve for Potassium
+A stock solution of 1000 ppm K prepared in distilled water contains
+190g of AR grade KCl per litre. Dilute solutions having 2, 5, 10, 15
+and 25 ppm K are obtained from the above in 100 ml volumetric flasks.
+Standard curve is prepared by plotting flame photometer readings against
+concentrations of K.
+K (m.e./litre)=ppm K (from the curve)÷39
+or, ppm K×0.0256
+5. Carbonates and Bicarbonates
+(Richards 1954)
+The estimation is based on simple acidimetric titration using
+different indicators which work in alkaline pH range (above 8.2) or in
+acidie pll (below 6.0).
+Reagents
+(Phenolphthalein indicator: 0.25% solution in 60% ethyl alcohol
+(1) Methyl orange indicator: 0.5% solution in 95% alcohol
+(1) Standard sulphuric acid (0.01N)
+Procedure
+in a porcelain dish 5 ml of the water sample (containing not more
+than one milliequivalent of carbonate plus bicarbonate) is diluted
+with distilled water to about 25 ml. A pink colour produced with
+fow 13 to 3) drops of phenolphthalein indicates presence of carbonate
+and it is titrated with 0.01N sulphuric acid until the colour just dis-
+Sppears (phenolphthalein end point) because of alkali carbonate being
+nserted to bicarbonate. This burette reading (volume used) is designa-
+dat V. To the colourless solution from this titration (or to the
+riginal sample of water if there was no colour with phenolphthalein)
+to drops of methyl orange indicator are added and the titration con-
+39
+tinued with brisk stirring to the methyl orange end point (yellow) and
+the final reading noted which is marked as Z.
+Calculation
+(a) Carbonates (milliequivalents/litre)
+=2YX normality of H₂SO₄X
+(b) Bicarbonates (m.e./litre)
+1000
+ml of aliquot
+1000
+=2Yx 2 or 4Y
+=(Z-2Y)× normality of H₂SO₄X ml of aliquot
+=(Z-2Y)×2
+In case carbonate is absent: Z×2
+6. Residual Sodium Carbonate (RSC)
+This is an important character for assessing the suitability of irriga-
+tion water in consideration of likely sodium hazard. It is calculated from
+the analysis data for carbonates, bicarbonates and calcium plus magne-
+sium in the following manner:
+RSC (m.e./1)=(CO3+HCO3¯) (Ca²++Mg2+)
+all expressed in m.e./1.
+The classification of irrigation water according to RSC is given
+below:
+Residual sodium carbonate (RSC) Interpretation regarding suitability
+of the water from the point of view
+of sodium hazard.
+(m.e./1)
+Less than 1.25
+1.25 to 2.50
+Above 2.50
+7. Determination of Chloride
+Can be safely used for irrigation
+Marginal (to be used with due caution)
+Unsuitable
+Chloride is invariably present in small amounts in almost all natural
+waters and its content goes up appreciably with increasing salinity.
+40
+This estimation (by Mohr's titration) may be carried out when
+the electrical conductivity of the water sample is greater than 1 mmhos/
+cm at 25°C.
+Reagents
+(i) 0.02N sodium chloride: 1.170g of NaCl (AR grade, dried at
+80°C for 1 hour) is dissolved in double distilled water and made
+to one litre
+(ii) 0.02N silver nitrate: 3.40g of silver nitrate is dissolved in double
+distilled water and made up to one litre. This to be standardized
+against the standard NaCl solution and stored in amber coloured
+bottle away from light
+(iii) Potassium chromate indicator: 5% aqueous solution of pure
+K2CrO4
+Procedure
+5 ml of the sample (the one after carbonate/bicarbonate titration
+can also be used) is taken in a porcelain dish and diluted to about 25 ml
+with water. After adding 5 to 6 drops of K2CrO4 indicator it is titrated
+with the standard AgNO3 solution (with stirring) till the first brick red
+tinge appears.
+Calculation
+1 ml of 0.02N AgNO3 :: 0.00071g of chloride
+Chloride in m.e./litre=Vx4
+where V is the volume of 0.02N AgNO3 used in titration.
+M. Estimation of Nitrate in Irrigation Water
+Beneficial effect of nitrates on crop production has been reported
+specially in brackish waters. The presence of K and NO3 ions in appre-
+lable amounts has been found to partially counteract the effect of
+salinity and sodium hazards of irrigation water on crop growth.
+River or canal waters unless contaminated with sewage, effluent,
+tity or industrial wastes, generally contain quite low amount of nitrate.
+Nome groundwaters may have appreciable nitrate concentration.
+41
+Details of the instrument employed, reagents required and prepara
+tion of standard curve have been given earlier under testing of soil
+extract for nitrate nitrogen (Item VI, Section A).
+Procedure
+A suitable volume (10-50 ml depending upon the nitrate content)
+of the water sample is evaporated to dryness over water bath in a 50 ml
+beaker or dish. On cooling, the yellow colour is developed with phenol
+disulphonic acid followed by addition of ammonia and the nitrate
+concentration determined colorimetrically as described under item VI
+relating to soil testing.
+9. Estimation of Sulphate
+While traces of sulphate occur universally its content can be
+appreciable in most saline waters showing EC values more than 1 mmhos/
+cm (25°C).
+Sulphates in solution are quantitatively precipitated in HCl medium
+and estimated gravimetrically as BaSO4. The sulphate content in many
+irrigation waters may be quite low and therefore a large volume of the
+sample has to be first concentrated by eveporating to about 100 ml
+The gravimetric procedure itself is time consuming. Turbidimetrie
+and colorimetric methods of determination of sulphate have been
+described earlier (ItemXIII under soil testing) and the same are alon
+applicable for water analysis. The procedure given here is based on
+EDTA titration as described by Jackson (1973).
+Reagents
+(i) 0.02N MgCl2. BaCl2 and EDTA solutions: While AR grade
+BaCl2 can be directly weighed out and dissolved, Mg Cl, being
+highly hygroscopic, the required quantity of AR magnesium
+metal or MgCO3 may be dissolved in little excess of dilute H
+and made up to volume. The EDTA solution must be
+standardized against 0.02N CaCl₂ (Item 3 in water analysis)
+(ii) Buffer solution: This consists of 8.25g of NH4Cl plus 115 ml
+of NH4OH (sp. gr. 0.88) in a litre. The amount of NIHO
+may be so adjusted that 10 ml of this solution added to 50 ml
+of water sample can give a pH of 10.
+42
+()Standard calcium solution: A 0.02N solution is prepared by
+dissolving 1.001g dried CaCO3 (AR) in minimum quantity of
+dilute HCl and made up to one litre with water.
+(iv) Eriochrome black T indicator: 0.5g of the indicator and 4.5g
+of hydoxylamine hydrochloride (AR) dissolved in 100 ml of
+95% ethyl alcohol
+Fraredure
+The Cat + Mg2+ content of the sample is obtained by direct
+iliation with EDTA (Item 3 section B). In another aliquot, CO3+
+content is found out by titration with standard HCl (0.02N).
+a third aliquot, a measured volume of standard HCl equivalent to the
+otal alkalinity (HCO3 + CO3") with a slight excess is added and boiled
+destroy carbonates and drive off CO2. Then a known volume of
+Mandard BaCl, is run into this and boiled for a few seconds. On cooling,
+mi of buffer and 5 drops of eriochrome black T indicator are added
+and litrated with the standard EDTA solution to the first end point.
+This is not taken as final as the accuracy is rather poor even if the
+arnate solution contains some Mg2+. Therefore, after adding a known
+quantity of standard MgCl2 solution, a second end point is reached with
+FHIA titration as followed for Ca+Mg determination.
+Fabulation
+Milliequivalents of sulphate =B+Ba+Mg-Tin which B is blank
+me of Ca + Mg in the original sample, Ba is m.e. of barium, Mg
+of magnesium added and T is the milliequivalent of versenate
+(A) required in the total titration of the sample after adding Ba
+Me
+Horon in Irrigation Water
+The range between the limits of deficiency and toxicity of boron (an
+satial micronutrient element) is very narrow. Some irrigation waters
+patticularly those from entrapped underground sources or springs may
+ntain excessive amount of boron which is very harmful for plant growth.
+Thus, a water otherwise testing alright in respect of pH, EC, RSC, etc.
+san be quite unsuitable for irrigation because of likely boron hazard.
+all such cases, estimation of boron must be carried out.
+Of the few selective organic compounds that form coloured
+amplexes with boron (normally present as borate), the use of curcumin,
+43
+vorondependent colour developed with this. The reagent forms coloured
+of the colour of the reagent and
+lakes with Be, Fe, Al or Mg in alkaline condition 
+and so an acid medium
+is to be maintained. Interference due to 
+nitrates (when more than 90 ppm)
+can be eliminated by evaporating the water to 
+dryness after adding 10
+ml of saturated solution of pure Ca(OH)
+2 followed by ignition and
+extraction with 0.05N HCl (Jackson 1973).
+Special precaution regarding the use of glasswares: Since hard or
+resistant 
+glass is made of boro-silicates, such 
+glasswares must not be used
+at any stage, unless specially made boron-
+free. Ordinary soda glass,
+silica or polythene wares are quite suitable for 
+boron estimation
+Reagents
+(i) Ethyl alcohol 95%: Distilled in boron-free glass or in metallic
+assembly and stored in soda glass 
+or polyethylene bottles.
+(ii) Curcumin-oxalic acid : 0.04g of finely ground pure curcumin
+and 5.0g of AR oxalic acid are 
+dissolved in 95% ethyl alcohol (i)
+and the solution is stored in amber 
+coloured soda glass bottle
+in a cool and dark place. A fresh 
+reagent must be prepared
+after every few days.
+(iii) Standard boron solution: A stock solution of 100 ppm B is
+obtained by dissolving 0.572g of 
+dried AR grade boric acid
+(H3BO3) in distilled water (not glass 
+distilled) and making the
+volume to one litre. A working 
+solution of 10 ppm Bis
+prepared from this by dilution.
+Procedure
+A suitable aliquot of the water sample (containing 0.2 to 5 µg of B)
+which 
+is made slightly acidic (with 0.05N HCI
+) is thoroughly mixed with
+4 ml of curcumin-oxalic acid reagent in a 250 
+ml beaker and evaporated
+to 
+dryness at 55°-60°C on a hot plate or water 
+bath. It is further baked
+for 15 
+minutes at this temperature. After 
+cooling, the residue is tritur-
+ated with 25 ml of 95% ethyl alcohol to extract 
+the rosecynanine coloured
+complex 
+and filtered (Whatman No. 1) directly 
+into the colorimeter tube.
+The colour intensity is read spectrophotometrically 
+at 540 mµ and within
+a 
+maximum 
+period of 2 hours.
+44
+are
+In separate 250 ml beakers, 0, 1, 2, 3, 4, 6, 8 and 10 ml of the 10
+ppm B solution are transferred and the colour developed and measured
+as stated above. The spectrophotometric/colorimeter readings
+plotted on the Y-axis and concentrations of B on the X-axis to obtain
+the standard curve.
+Calculation
+Boron (ppm) in water
+µg B read from the standard curve
+ml of water sample taken
+11. Water Class Rating
+The rating of the water as regards its suitability for irrigation is
+done by referring to the standard chart available in the Soil Testing
+Laboratory (Fig. 2). The experimentally determined value of Ca+Mg
+(in m.e./1) is spotted in the chart and a perpendicular is drawn from that
+point. The EC value of the water (in the chart) is to be seen and from
+that point a slanting line is drawn exactly in a similar manner in which
+the line from a next higher value has been drawn. The point where the
+EC line intersects the perpendicular drawn from the Ca+Mg spot
+would lie in a certain zone which gives the water class (Fig. 2). Now a
+perpendicular from this point of intersection is extended to the SAR
+line meeting it at some point. This point denotes approximately the
+SAR (sodium adsorption ratio) of the water sample. SAR can also be
+calculated from the relation:
+SAR=
+(
+12. Interpretation of Results
+Na+
+Ca+++Mg++ 2
+2
+In evaluating the quality of irrigation water, soil and plant charac-
+teristics namely texture and the salt tolerance of the crop to be irrigated
+have to be considered as shown below (Richards 1954). The salinity
+appraisal of soils and salt tolerance characteristic of crops are given in
+appendices V to VII.
+45
+e
+CS3
+C253
+CS2
+IS
+25
+20
+SIXDA
+19-
+18-
+C252
+Q
+CS
+Q
+e
+6
+C354
+C4S
+15-
+C353
+SODIUM ADSORPTION RATIO (SAR).
+6
+slanting lines
++ Ca + Mg in m.e./1
+ON X axis
+SCALE:
+↑
+E.C. in mmhos/cm for start of
+6
+5
+C3S2
+Q
+15
+20
+AS
+CS
+S
+53
+CA
+01- 80-90-90-10٥٠ ٠٤٥٠
+↑↑
++2 +3 +4-5-6-7-09-10
+X axis
+PREPARED BY:
+Ca+Mg: fl
+SOIL TESTING
+LAB., I. A. R.I.
+EC: 01
+Fig. 2. Water
+43
+C3S1
+CA
+C553
+000
+e
+CA
+←
+→
+土
+-3-4-5-6-7-8-9-10
+-30-40-50-60-
+3456-7-8-91-0
+2
+4 5 6 7-89
+به ما
+Class
+Soil texture
+Rating
+Class Salt tolerance
+Rating
+of crops
+T1
+Clay
+4.0
+P1
+Sensitive
+3
+T2
+Clay loam
+3.5
+P2
+Semi-salt tolerant
+2
+T3
+Loam
+3.0
+T4
+Sandy loam
+2.5
+P3
+Salt tolerant
+1
+T
+Sandy
+2.0
+When the irrigation water does not contain appreciable amounts
+of nitrates, its safe use can be made so long as the sum total of all the
+indices of soil texture, plant tolerance and sodium and salinity hazards
+class number (water class) does not exceed 9.
+The following example of testing a water sample (from Delhi state)
+as regards its suitability for irrigation will help to understand the use of
+the rating indices:
+Test results
+pH
+7.5
+E.C. (mmhos/cm at 25°C)
+2.0
+Ca+Mg (m.e./1)
+8.6
+Carbonates (-do-)
+Nil
+Bicarbonates (-do-)
+8.0
+RSC (-do-)
+Nil
+SAR
+5.5
+Water class (from fig.2)
+C3S2
+On sandy soils (Ts) the textural rating (given in the table on the
+top) is 2.0. Using the concept of total of 9, the above water test results
+work out to give a figure of :
+C3S2+(T5)=3+2+2=7
+47
+rence of 2 (9-7-2), the water can be safely used for the two categories
+of crops in the ascending order i.e., Pa (salt tolerant) and P₂ (semi-salt
+tolerant). However, the same water sample on a loam (Ta) soil will be
+suitable for salt tolerant crops (P3) only (3+2+3=8 and 9-8-1).
+Similarly waters having the sum total of various ratings equal to or
+greater than 9, can not be recommended for any type of crop. A dilution
+in 1:1 ratio with good quality irrigation water may permit use of such
+water for salt tolerant crops only.
+This, of course, is just a general guideline and subject to adjust-
+ment according to local conditions particularly in relation to soil and
+plant characterisation.
+Section C
+INSTRUMENTS IN THE SOIL TESTING LABORATORY
+The analytical work in a soil testing laboratory mainly involves
+standard chemical methods, suitably modified to permit handling of a
+large number of soil samples with the required degree of accuracy and speed.
+Many of the analytical operations are carried out more conveniently with
+the help of common as well as (moderately) sophisticated instruments.
+The various instrumental measurements followed in soil and water
+testing work in the laboratory can be broadly divided into two groups:
+(i) Determination of pH and electrical conductivity; and
+(ii) colorimetry, spectrophotometry, flame photometry and atomic
+absorption spectrophotometry.
+1. pH
+The pH of a solution, a term introduced by Sørensen has been
+defined as the negative logarithm of the hydrogen ion activity which in
+very dilute solutions can be expressed as concentration, in gram mole per
+litre.
+pH=-log10[H+]
+Water even in the purest form dissociates into its component
+hydrogen and hydroxyl ions, but very slightly. The amount of undissoci-
+ated water is so large that its concentration can be regarded as constant.
+Therefore, in the equilibrium,
+H2OH++OH-
+the dissociation constant (K) is given by
+[H+]×[OH-]
+K = [H2O]
+48
+49
+Since the denominator (concentration of undissociated water) is
+virtually a constant the product [H+] × [OH-] is also a constant at a given
+temperature which is equal to 10-14 at 25°C or pKw=14.0.
+At the neutral point, [H+]=[OH-]=10-7gn ole per litre. Thus pH
+at neutrality is - log10 (10-7) that is=7. Some points on the Sørensen
+scale of pH are given below:
+pH
+[H+]
+[OH-]
+0
+10°(=1)
+10-14
+3
+10-3
+10-11
+7
+10-7
+10-7
+10
+10-10
+10-4
+14
+10-14
+10°(=1)
+The electrometric determination of pH by a pH meter is based on
+measuring the e.m.f. (electromotive force) of a pH cell with a reference
+buffer and then with a test solution. The pH cell consists of an electrode
+sensitive to hydrogen ions (platinum, glass, quinhydrone etc.) and a
+reference electrode, and can be broadly represented as :
+H+ sensitive
+electrode
+Reference
+buffer or
+test solution
+Salt
+bridge
+Reference
+electrode
+In the conventional instruments, the measuring electrode is of glass
+and the reference one is a calomel electrode.
+Note: Since the extent or degree of dissociation (here of water) is temperature
+dependent, this pH scale (0-14) is valid for a particular temperature only. For other
+temperatures, necessary adjustments for any difference (in temperature) are to be made.
+Glass electrode: This consists of a very thin-walled bulb of H+
+responsive (soft) glass sealed to a stem of non-H+ responsive glass. Both
+surfaces of the glass membrane are sensitive to changes in H+ ion con-
+centration. The inside of the bulb is filled with an electrolyte of high
+buffer capacity for example, a 0.1N solution of hydrochloric acid. An
+internal reference electrode, generally a calomel one, also dips into the
+test or buffer solution.
+50
+When the glass bulb is arppea
+concentration different from that of the solution within the electrode its
+outer and inner surfaces attain a difference in electrical potential.
+This difference is a function of the hydrogen ion concentration 
+of the
+outer solution, since the pH of the inner one is constant (
+remains
+unchanged).
+Calomel electrode: The electrode consists of mercury in contact
+with a solution of potassium chloride saturated with mercurous chloride
+(Hg2Cl2). It maintains a constant potential at a given 
+temperature.
+In commercial models, a paste of mercury and HgCl2 is 
+contained in
+an inner tube connected to the KCl solution in an outer 
+jacket. The lead
+wire is connected to the Hg2Cl2 paste through a column of mercury. 
+The
+outer tube ends in a fine capillary to provide a salt bridge through the
+test solution to the glass electrode. pH meter with single (
+actually
+combined) electrode is also available as in case of digital type 
+instrument
+.
+Measurement of pH
+A pH meter is actually a direct current amplifier that measures the
+e.m.f. which appears across the electrodes upon being immersed in a
+solution, soil suspension or irrigation water. The glass and 
+calomel
+electrodes are immersed in the test solution and the e.m.f. 
+determined by
+an electron tube voltmeter. The meter is graduated to read directly in
+pH units alongwith the e.m.f. (milli-volts) scale. A standard 
+buffer
+solution (of known pH) is used to calibrate the 
+instrument before
+determining the pH of test solutions.
+The measurement is registered on a suitably calibrated galvano-
+meter or milliammeter. The circuits of pH meters used in the soil
+testing laboratories are of high impedence type. Before taking the
+measurement, it is essential to set the instrument at the temperature of
+the test solution with the help of the temperature setting knob provided
+.
+Types of pH Meter
+A pH meter can be one of the four types:
+(i) Potentiometric or slide type: The glass electrode is incorpora-
+ted in an ordinary potentiometric circuit, and the off-balance
+currents are amplified electronically so that a milliammeter
+can be used to detect the balance point. The electronic
+amplifier thus serves only as a null-point indicator.
+51
+
+
+(ii) Direct reading: The e.m.f. of the glass electrode assembly is
+impressed across a high resistance and the direct current flow-
+ing through the resistance is amplified and then passed through
+a milliammeter; the deflection indicates the pH directly. It is
+basically a vacuum-tube type voltmeter. The direct reading
+instrument is characterised by greater rapidity of reading and
+is readily adopted for A.C. operation.
+(iii) Vacuum tube voltmeter (VTVM): VTVM with indicating
+scales in pH values is calibrated in voltage units for a glass
+reference electrode pair on the basis of the relationship for the
+e.m.f. of a pH cell. The apparent e.m.f./pH slope will be 59.15
+mV per pH unit at 25°C using the equation pH=pHs+ (E-Es)
+/0.000198T, where pHs and Es are the values in the standard
+state, and T is the absolute temperature (in degrees Kelvin).
+(iv) Balanced circuit: The circuit is balanced initially with the slide
+wire contactor at pH 7 and connected directly to the grid of
+the electron tube according to the relationship pH=pHs+
+(E-Es)/0.000198T, where pHs refer to the pH of a reference
+buffer solution. Instruments of this type are compact and
+portable and comparatively less expensive. Often the reading
+scale extends from 2 to 12 pH units with a reproducibility of
+0.1 unit. An example of the more sophisticated form of this
+type is the Beckman (U.S.A.) model G pH meter.
+Most of the pH meters used in the soil testing laboratories in India
+are vacuum tube voltmeters.
+Care and maintenance: The most delicate part of the pH meter is
+the glass electrode. It may crack or break if handled roughly or it may
+dry up when left out of water for a long period. In the latter case the
+electrode should be immersed in 0.1N HCl and then in distilled water for
+24 hours or more and checked again. To identify defective ones, the
+electrode jacks are short circuited with the special strap and the terminal
+connections are provided with the instrument. The pH meter is switched
+on and sufficient time (10-15 min.) is given for warming up. If the
+galvanometer needle reads pH of 7 or can be adjusted to pH 7 with the
+standardization control in either pH range, the electronic side of the pH
+meter is in order and the defect is in the electrodes and hence these may
+need replacement.
+52
+It is equally essential to see that there is always some solid KCl in
+the reference (calomel) electrode. The film of clay gels 
+deposited on the
+electrode needs to be removed with the help 
+of swab of cotton and
+distilled water.
+2. ELECTRICAL CONDUCTIVITY MEASUREMENT
+Ions being the carrier of electricity, electrical conductivity is a
+measure of the ability of a salt solution to carry electric 
+current by the
+migration of ions under the influence of an electric 
+field. Like a metallic
+conductor, solutions also obey Ohm's law. Increase 
+in temperature
+promotes dissociation with a consequent rise 
+in conductivity. The unit
+of specific conductance is the reciprocal of specific 
+resistance in ohms/cm
+that is, mhos/cm.
+K
+Cs
+If Cs is the concentration of the solution in gram equivalents per
+litre, then the volume of solution in cubic centimeters 
+per equivalent is
+where K is the cell
+equal to 1000/Cs, so that conductance A=1000
+constant. At infinite dilution, the ions theoretically are independent of
+each other and each ion contributes its part 
+to total conductance. Thus
+Λα=2(1+)+2(-)
+where Aa is the total and + and - are the ionic conductances of
+cations and anions, respectively at infinite dilution.
+Determination of cell constant: The cell constant K of a conducti-
+vity cell is determined by measurement of the electrical 
+conductance of a
+standard KCl solution at the same temperature 
+according to the equa-
+tion:
+L
+K= in which L=known specific electrical conductance of
+C
+the standard solution, usually 0.02M KCl in millimhos/cm (1millimho=
+1/1000 mho) and C=conductance of the standard 
+solution measured in
+the given cell (mmhos/cm).
+The specific conductance L, of 0.02M KCl is 2.39 mmhos/cm at
+18°C, and 2.77 mmhos/cm at 25°C. The measured conductance 
+C, of 
+a
+test solution in mmhos/cm multiplied by the cell 
+constant (K) gives the
+specific conductance, L in mmhos/cm of the test 
+solution (L=KC).
+53
+The instrument used for this purpose is known as conductivity
+bridge. A typical system consists of an alternating current (A.C.)
+Wheatstone bridge, a primary element of conductivity cell and a null
+balance 
+indicator (as in "Solubridge") or an electronic "eye" in the
+conductivity meter.
+Care and maintenance: The conductivity meter or the solubridge
+(or salt-bridge) has a long life and it rarely goes wrong. If it does, the
+metallic cover of the meter may be unscrewed and the internal wiring
+examined for any loose contact, or the vacuum tube may be checked.
+Quite often, the trouble is found in the conductivity cell. The essential
+component of the cell is the two electrodes coated with platinum black,
+and 
+rigidly set at a specific distance (5 mm or so). Sometimes, due to
+careless handling or inadequate washing, a film of clay is deposited on
+these electrodes. It can be removed by repeated washings with distilled
+water or two or three washings with dilute nitric acid (1+4) followed by
+distilled water. In case the cell needs drastic cleaning then freshly
+prepared chromic sulphuric acid which is always quite warm is used and
+the cell finally washed several times with distilled water. The chromic
+acid must not be allowed to get in contact with the rubber bulb of the
+conductivity cell or any metallic parts.
+Various types of Conductivity Meters
+Salt bridge or electrical resistance bridge is manufactured by Wood
+and Metal Products Co., Bloomfield Hills, Michigan, U.S.A. and Instru-
+ment Development and Manufacturing Corp., East Pasadena, California,
+U.S.A. Industrial Instruments Inc., Jersey City, N.J., U.S.A. and
+Mullard Equipment Ltd., Mullard House, Torrington Place, London,
+England are suppliers of conductance bridge suitable for measurement
+of 
+soluble salt content of soil solution as well as gypsum block resistance
+(Jackson 1973).
+Cambridge conductivity meter (bridge) is a mains (A.C.) operated
+Wheatstone bridge; there is a built-in 1000 cycles per second oscillator.
+This instrument is supplied by Cambridge Instrument Co. Ltd., Grosvenor
+Place, London, U.K. A high precision, conductance bridge is marketed
+by W.G. Pye and Co. Ltd., New Market Road, Cambridge, England.
+Messers ELICO (India) Private Ltd. have also developed a conductivity
+bridge (50 c/s to 1000 c/s) which has a similar type of 'magic eye'
+detector as in the case of Solubridge, soil test model RD-26 of Industrial
+54
+Instruments Inc. of U.S.A. Recently, M/s Systronics and some other
+manufacturers in the country have come out with similar products
+which, however, need to be tested for their performance.
+3. COLORIMETRY
+Colorimetric analysis is based on the measurement of intensity of
+radiant energy after it passes through a (coloured) solution. The pro-
+cedure consists of passing a monochromatic light beam of known inten-
+sity through the sample solution and determining the intensity of the
+transmitted beam with the help of a photo-electric cell. In other words,
+colorimetry can be considered as absorption spectrophotometry in the
+visible range of light.
+The quantitative law basic to colorimetric analysis is Beer's law
+which may be stated as follows:
+where I
+It
+Io
+log = k.C.
+It
+......(1)
+intensity of incident radiation
+intensity of transmitted radiation
+C = concentration in solution
+ka constant
+The term (1) is the absorbance or optical density of the sample.
+It must be realised that the above relationship holds good only
+where absorption of the incident light occurs in the sample 
+i.e., when
+the light is of the wavelength at which the sample 
+absorbs. Thus, mono-
+chromation (to a very narrow wave-band) of the 
+incident light through
+suitable filter or grating is an essential requisite of colorimetry/
+absorption
+spectrophotometry (Willard et al, 1965).
+Types of Colorimeter
+Instruments for absorption photometry may be classified as visual
+comparators, filter photometers and spectrophotometers. In terms of
+construction one also recognises the difference between single 
+beam and
+double beam light paths and whether the particular (photo-electric)
+instrument is direct reading or employs balanced circuit. Special features
+include double mono-chromation and dual wavelength mono-chromators
+,
+55
+plus arrangement for automatic recording (Jackson 1973). In the
+selection of an instrument, one should consider the initial cost, main-
+tenance, flexibility of operation and adaptation to special situations.
+The simplest type of colour comparators work on side-by-side
+viewing of light from a common source, through a pair of matching
+flat bottom tubes, one containing the unknown solution and the other
+the standard for comparison. On matching the two, the ratio of the
+height (vertical depth) of the solutions would be inversely related to the
+ratio of their intensity. The Duboscq colorimeter was probably the
+most widely used colour comparator before the advent of photo-electric
+instruments (Willard et al. 1965).
+In a single beam direct reading photo-electric colorimeter, the
+optical path is simply from the light source, through the filter and sample
+holder, and finally to the detector. EEL colorimeter, Hilgard Biochem,
+Evelyn photoelectric colorimeter, Lumetron colorimeter model 450 are
+the various instruments of this type. Several indigenous make (AIMIL,
+ELICO, Systronics) instruments are also available.
+Double beam photo-electric colorimeters employ barrier-layer
+matching photo cells; colorimeters of this type are Fisher electro-photo-
+meter, Klett-Summerson photo-electric colorimeter and Lumetron photo-
+electric colorimeter model 402. The incident filtered light is divided into
+two parallel beams, one passing through the solution in the cuvette (tube)
+before falling on the measuring photocell and the other part passing
+directly on to the reference photocell through an adjustable slit, operated
+by a control knob.
+A typical colorimeter will have (i) a light source, usually a tung-
+sten lamp, (ii) monochromator (filter, prism or diffraction grating), (iii)
+absorption cell, and (iv) photometric system for measurement of intensity
+of the light beam in terms of electric current generated.
+Analytical Procedure
+Since Beer's law (more precisely the Beer-Lambert's law as it is
+employed in colorimetry) relates the concentration to the logarithm of
+the ratio of incident intensity to the transmitted one, the absolute
+intensities need not be determined.
+The photocurrent from the photo-electric cell is adjusted to a
+convenient reading (Go) on the measuring galvanometer with the blank
+56
+solution in the absorption cell. The blank is replaced by the test solution
+and the galvanometer reading is taken (Gt). Since the photoelectric cell
+is chosen to give a linear response to light intensity, therefore
+Go Io
+Gt It
+In actual practice, the light with the blank solution is adjusted to
+give 100% reading on a transmittance scale or zero on an absorbance
+scale. The readings are continued with a series of standard solutions
+and then with the test solutions. A calibration curve is drawn relating
+the concentration of the standards to the absorbance values, using the
+relationship,
+Per cent T =
+It
+Io
+×100
+where, T is the transmittance. Thus,
+log (% T) = log 100 + log
+Io
+It
+= 2-log
+It
+Io
+; and
+the concentrations of the test solutions are obtained from the corres-
+ponding absorbance values.
+Care and maintenance: No attempt should ever be made to touch
+the galvanometer assembly of the photoelectric colorimeter. If accidently
+damaged by mechanical shock or ingress of corrosive liquids, the instru-
+ment should be examined by a competent person or sent to an authorised
+workshop. When the electric bulb (usually 100 watt) fails to light and
+if there is a dangling wire, the bulb has been damaged (fused) beyond
+repair and needs replacement. If the bulb filament is intact, any loose
+connections are to be set right.
+Care must be taken while replacing the
+projection bulb with one of the same wattage (100 W) and of the same
+dimensions. If photo-cells fitted in the instrument lose their sensitivity for
+any reason, they may be surface cleaned or replaced as may be necessary
+but never to be opened. It is always advisable to use an automatic
+voltage stabilizer in the AC supply line. An important part of the instru-
+ment is the test tube (absorption cell) for holding the coloured solution
+to be measured. When filled with a liquid the test tube acts as a cylindri-
+cal lens, converging the light to a sharp line on the photo-electric cell.
+57
+If it is not exactly circular in cross section, its focal length will change at
+different angles and so also will the intensity of the light falling on the
+photo-cell. A perfectly circular tube will not show any deflection of the
+galvanometer needle, at any angle of rotation when filled with distilled
+water. It is also equally important that the walls of the tube are
+absolutely clear and free from scratches and no liquid is sticking to the
+outer side while placing it in the socket provided in the colorimeter.
+4. FLAME PHOTOMETRY
+When a substance is heated, it emits radiant energy. The emission
+becomes stronger with greater excitation of the molecules/atoms. This
+energy (electromagnetic radiation) is composed of radiations of different
+wavelengths; the assemblage of radiation is the emission spectrum of
+the substance. There are three kinds of emission spectra :
+(i) Continuous spectrum, given out by incandescent solids, consist-
+ing of continuous wavelength range, where individual lines are
+absent;
+(ii) Band spectrum, emitted by excited molecules, consisting of
+individual bands which are actually composed of groups of lines
+very close to one another; and
+(iii) Line spectrum, originating from excited atoms or atomic ions
+(which exclude polyatomic ions or radicals). These spectra
+consist of distinct and often widely spaced lines.
+Analytical flame photometry is based on the measurement of the
+intensity of the characteristic line emission of the element to be deter-
+mined (Jackson 1973). When a solution of a salt is sprayed into a flame
+(acetylene, propane or liquefied petroleum gas) the salt gets separated
+into its component atoms because of the high temperature. The energy
+provided by the flame excites the atoms to higher energy levels. Actually,
+the orbital electrons are shifted to higher planes from their normal orienta-
+tion. When the electrons return back to the ground or unexcited state,
+they emit their characteristic radiation. Since the excitation can be to
+different levels, light (electromagnetic radiation) of several wavelengths
+can be emitted. However, the intensity of the wavelength corresponding
+to the most probable transition will be the highest. For each element,
+such characteristic lines have already been very well identified.
+58
+Each individual atom emits one quantum of radiation. Therefore,
+the intensity of radiation emitting from the flame (which must be other-
+wise steady and non-luminous) will be proportional to the number of
+atoms in the flame, that is, to the concentration of the 
+particular element
+in the flame. This concentration is, in turn, directly related 
+to the
+content of the element in the test solution.
+The instrumental set-up for flame photometric analysis consists of
+three parts:
+(a) Atomization assembly, comprising a nebulizer (atomizer) to
+produce a fine mist from the solution and a burner 
+which
+vaporizes the analyte (in atomized form);
+(b) Monochromation system (filter, prism) that separates out the
+analytical wavelength from the other radiations; and
+(c) Photometric system for measuring the intensity of the emitted
+radiation.
+Analytical Procedure
+A series of standard solutions are prepared and the intensity of
+emission determined for each concentration after zero 
+setting of the
+blank. A calibration curve is drawn from these 
+data.
+The intensity of emission from the test solution(s) is measured
+simultaneously and the concentration of the element 
+is read from the
+calibration curve. Only the linear or near linear 
+portion of the curve
+should be made use of.
+Various types of Flame Photometer
+Flame photometers or flame spectrometers are essentially of two
+basic designs which can be designated as single or double-beam 
+arrange-
+ment.
+Single-beam instrument: A single beam equipment referred to as
+direct reading type, comprises only one set of optics. Light 
+emitted from
+the core of the flame just above the inner cone is collected 
+by a reflector
+and focussed by a lens of heat-resistant glass through 
+interchangeable
+optical filters (interference type filter) on to a single 
+photo-detector
+.
+Alternatively, light from the burner passes into a 
+monochromator and
+59
+radiation leaving the exit slit is focussed on to the photo-detector unit
+(Jackson 1973).
+Double-beam equipment: In the double-beam type instrument, a
+second light path is provided for the radiation emitted by the internal
+standard element (e.g., lithium) that is added in a fixed amount to each
+test solution as well as calibration standard. The wave lengths of
+internal standard and analytical materials are isolated by means of
+special filters in a dual optical system and each beam is focussed on separ-
+ate photoelectric cell (Willard et al. 1965).
+The various types of flame photometers available commercially are
+classified into four main categories viz., (i) direct-reading, absorption
+filters, barrier-layer cell (Coleman, Evans Electroselenium, EEL-Corning
+models 2 and 3, Schukhnecht, Systronics, ELICO); (ii) internal stndard,
+interference filters, barrier-layer cell (Analytical Instruments, Baird
+model KY-2, Electrosynthese, Janke, Lange model 4, Norelco,
+Patwin, Barclay); (iii) prism mono-chromator, direct reading or record-
+ing, photo-multiplier tube (Beckman model B-DB, Beckman model DU,
+Unicam SP 900, Hilger UV Spek, Perkin-Elmer model 52C); and (iv)
+grating monochromator, recording photomultiplier tube (Jerrell-Ash,
+Ebert, Hitachi, Perkin-Elmer model 139).
+Care and maintenance: Although a very sensitive instrument, flame
+photometers are usually fairly sturdy and give trouble-free service for
+years if handled properly. The burner assembly has two external conn-
+ections, one leading in gas directly to the burner and the other taking
+compressed air through a spraying nozzle (atomizer). The air stream
+carries with it to the burner flame a spray of the solution under test. If
+any chocking or disconnection takes place it should be located and can
+be set right easily. The gas and air pressure must remain steady during
+the operation of the instrument and the connections and regulators
+should be checked before use. It is of utmost importance that only very
+clear solutions/extracts are fed in to avoid any possible chocking of the
+capillary. Burners of flame photometers should be cleaned periodically.
+While closing down, the gas supply should be first turned off and then
+the compressed air line. When large salt concentrations or strong acid
+solutions are to be fed in (which should be avoided as far as possible)
+distilled water should be run for some time and the burner cleaned
+immediately after use. The galvanometer assembly must not be touched
+and any repairs should be carried out at a competent workshop.
+5. ATOMIC ABSORPTION SPECTROPHOTOMETRY
+The principle behind analytical atomic absorption spectrophoto-
+metry (AAS) is the measurement of the absorption of light (radiant)
+energy by free atoms in the ground state, and its quantitative correlation
+with the concentration of the analyte in solution.
+Absorption of light by atoms: When a solution of a salt is aspirated
+into a flame the solute molecules dissociate into neutral atoms (fund-
+amental, ground or unexcited state) and excited neutral atoms and ions.
+In the present day atomic absorption spectrometry one is concerned with
+the fundamental state atoms only. The number of fundamental state
+atoms in the flame (acetylene, propane, LPG) is far in excess of that of
+excited ones. (Excited atoms are responsible for emission of radiations
+which are measured in analytical flame photometry, as described earlier
+under item 4).
+When light beam of the appropriate wavelength is passed through
+the cloud of atoms in the flame the incident radiation is subjected to
+absorption by the neutral fundamental state atoms. Obviously, these
+atoms now reach the excited state. The absorption follows the Beer-
+Lambert law, i.e., the absorbance is proportional to the number of
+ground state atoms (Willard et al. 1965). It must be noted that this
+relationship holds good only for the specific (resonance) wavelength
+(similar to absorption spectrophotometry of solutions where it is of
+course, molecular absorption).
+The atoms of the salt solution excited by absorption of the incident
+radiation, emit radiation when they return back to the ground state.
+Since the wavelength of this radiation is not the same as that of the
+incident light beam (absorbed radiation), this emission will interfere with
+absorbance measurement. In AAS this difficulty is obviated by employing
+a light source of a specific pulse frequency and matching it with an AC
+amplifier which will respond to signals of that particular frequency only
+(Willard et al. 1965). Thus, the emitted radiation (which is a continuous
+one) will not be measured by the photometric system.
+Instrumentation
+The component systems of an AAS unit are:
+(i) Light source
+(ii) Atomization assembly (including burner)
+61
+60
+(iii) Monochromator, and
+(iv) Detector and readout assembly.
+Light source: The lamp used should emit the resonance radiation
+of the element the content of which is to be determined. It should be
+sufficiently intense and stable to permit reliable measurement and must
+have a low background emission (low intensity of interfering lines).
+Hollow cathode lamps with the element to be analyzed as the
+cathode and filled with an inert gas at low pressure, usually constitute
+the light source. These give the characteristic emission spectrum of the
+cathode material. This spectrum contains the resonance wavelength
+radiation along with other light radiations.
+Atomization system: The atomization assembly consists of a
+nebulizer to produce uniformly fine fog of droplets from the solution to
+be analyzed, and a burner. The unit is more or less the same as that
+used in flame photometry, except that the burner has a long and narrow
+slot at the top (like a fish-tail burner) so that the flame which is analogous
+to the absorption cell in colorimetry, provides a long absorption path
+for the incident radiation. The fuel-oxidant system used may be acety-
+lene-air, acetylene-oxygen, acetylene-nitrous oxide, hydrogen-air,
+hydrogen-oxygen, propane-air, propane-oxygen or LPG-oxygen/air.
+Monochromator: The monochromator enables the isolation of the
+resonance wavelength from other radiations before measurement of inten-
+sity. A diffraction grating or prism is normally used. Filters are
+usually not adequate for complete monochromation.
+Detection and readout system: This unit consists of a photo-sensi-
+tive component (photo-multipliers are commonly employed), an AC
+amplifier, and a sensitive galvanometer to measure the current.
+Analytical Procedure
+The absorbance values corresponding to known standard solutions
+are recorded after necessary blank setting and a calibration curve pre-
+pared. The absorbance of the test solution is determined and the con-
+centration read off from the calibration curve.
+The calibration must be done for each set of analysis since in
+practice it is not possible to reproduce exactly the nebulization and flame
+conditions.
+62
+AAS technique of analysis of non-metals is not easily done since
+their resonance lines mostly occur in the vacuum ultraviolet region.
+However, some indirect methods can be developed based on the effect of
+anions on the absorption by metals but these may not be as sensitive.
+For some elements special types of burners and lamps have been
+developed with variable degree of success.
+Types of Atomic Absorption Spectrophotometer
+Some of the established manufacturers of the different types and
+models of atomic absorption spectrophotometers are :
+(1) Atomic Absorption and Electronics Corporation, New York,
+(2) Aztec Instruments Inc., Westport, Conn., (3) Bausch & Laumb Inc.,
+Rochester, New York, (4) Beckman Instruments Inc., Fullerton, Calif.,
+all from U.S A., (5) Evans Electro Selenium Ltd., Essex, England, (6)
+Hewlett-Packard, Dayton, Ohio., (7) Jerrell-Ash Co., Waltham, Mass,
+both of U. S. A., (8) Hilger and Watts Ltd., London, England, (9)
+Optica S. P. A., Milano, Italy, (10) Perkin-Elmer Corporation, Norwalk,
+Conn., U. S. A., (11) Techtron Pty. Ltd., East Oakleigh, Victoria,
+Australia, (12) Unicam Instruments Ltd., Cambridge, England, (13)
+Carl Zeiss, Oberkochen, East Germany, (14) Jobin-Yvon Arcueil (Seine),
+France, and (15) Hitachi Instrument Co., Tokyo, Japan.
+Important points regarding operation and maintenance of the atomic
+absorption spectrophotometer: Being one of the quite sophisticated, high
+precision and fairly expensive type of measuring instrument, the AAS,
+requires very careful handling and maintenance.
+The light source is a critical component. There should not be any
+erratic fluctuations in the intensity. Any fluctuations in the line voltage
+must be taken care of. Lamps are generally operated at low currents to
+improve linearity of response and maintain narrow emission lines, as
+much as possible.
+While extinguishing the flame the fuel supply should be first turned
+off before stopping the oxygen or air line. The oxygen (or air) and fuel
+pressure must be adjusted to the value recommended in the instruction
+manual furnished by the manufacturer. The width of the slit is usually
+set at 0.02-0.05 mm as instructed in the working manual. The wavelength
+should also be set properly for each determination by making use of the
+relevant components like filter photometer monochromator.
+63
+The various aspects to be considered for optimum working con-
+ditions are the emission intensity, steady rate of atomization, the
+resolution of the spectral lines (or bands) from each other and from
+adjacent spectral features of other sample constituents, the magnitude
+of the background radiation, and steadiness of readings.
+The AAS can give reliable and trouble-free service only with careful
+handling. Erratic readings may come from fluctuations in gas and air pre-
+ssure and electric supply or the lamps becoming weak due to prolonged
+use. If something goes wrong, the instrument should never be opened
+except by a qualified mechanic/technician who should preferably be
+acredited by the manufacturers or their authorised agents for carrying out
+the repairing job.
+64
+REFERENCES
+Bray, R. H. and Kurtz, L. T. (1945) Determination of total, organic
+and available forms of phosphorus in soils. Soil Sci. 59: 39-45.
+Cheng, K.L. and Bray, R.H. (1951) Determination of calcium and
+magnesium in soil and plant material. Soil Sci. 72: 449-58.
+Datta, N.P., Khera, M.S. and Saini, T.R. (1962) A rapid colorimetric
+procedure for the determination of the organic carbon in soils.
+J. Indian Soc. Soil Sci. 10: 67-74.
+Dickman, S.R. and Bray, R.H. (1940) Colorimetric determination of
+phosphate. Indus. & Engg. Chem. (Anal.) 12: 665-68.
+Ensminger, L.E. (1954) Some factors affecting the adsorption of
+sulphate by Alabama soils. Proc Soil Sci. Soc. Am. 18: 259-62.
+Jackson, M.L. (1973) Soil Chemical Analysis, Prentice-Hall of India
+Pvt. Ltd., New Delhi.
+Keeney, D.R. and Bremner, J.M. (1966) Chemical index of soil nitrogen
+availability. Nature, Lond. 211: 892-93.
+Lindsay, W.L. and Norvell, W.A. (1969) Development of DTPA micro-
+nutrient soil test. Agron. Abstr. p. 84.
+Lindsay, W.L. and Norvell, WA. (1978) Development of a DTPA test
+for Zn, Fe, Mn and Cu. Soil Sci. Soc. Am. J. 42: 421-28.
+Massoumi, A. and Cornfield, A.H. (1963) А гapid method for determin-
+ing sulphate in water extracts of soils. Analyst, Lond. 88:
+321-22.
+Nemeth, K. (1964) Photoelectric determination of sulphate in soil ex-
+tracts. Z. PflErnaehr. Dueng. Bodenk. 103: 193-96.
+Olsen, S.R., Cole, C.V., Watanabe, F.S. and Dean, L.A. (1954) Esti-
+mation of available phosphorus in soils by extraction with sodium
+bicarbonate. Circ. U.S. Dep. Agric. 939.
+Palaskar, M.S., Babrekar, P.G. and Ghosh, A.B. (1981) A rapid analy-
+tical technique to estimate sulphur in soil and plant extracts.
+J. Indian Soc. Soil Sci. 29: 249-56.
+65
+Piper, C.S. (1966) Soil and Plant Analysis, Hans Publishers, Bombay.
+Richards, L.A. Ed. (1954) Diagnosis and improvement of saline-alkali
+soils. Agric. Handb. U.S. Dep. Agric. 60.
+Schoonover, W.R. (1952) Examination of soils for alkali. Extn. Bull.
+Univ. of California, Extension Services, Berkeley, California
+(mimeographed publication).
+Shoemaker, H.E., McLean, E.O. and Pratt, P.F. (1961) Buffer methods
+for determining lime requirement of soils with appreciable amounts
+of extractable aluminium. Proc. Soil Sci. Soc. Am. 25: 274-77.
+STCR (1968) Technical Programme of Work: All India Coordinated
+Project on Soil Test and Crop Response Correlation, I.C.A.R.,
+New Delhi.
+Subbiah, B.V. and Asija, G. L.
+determination of available
+259-60.
+(1956) A rapid procedure for the
+nitrogen in soils. Curr. Sci. 25:
+Subbiah, B.V. and Bajaj, J.C. (1962) A soil
+ment of available nitrogen in rice soils.
+test procedure for assess-
+Curr. Sci. 31, 196.
+Walkley, A.J. and Black, I.A. (1934) Estimation of soil organic carbon
+by the chromic acid titration method. Soil Sci. 37: 29-38.
+Waring, S.A. and Bremner, J.M. (1964) Ammonium production in
+soil under waterlogged conditions as an index of nitrogen availa-
+bility. Nature, Lond. 201: 951-52.
+Watanabe, F.S. and Olsen, S.R. (1965) Test of ascorbic acid method
+for determining phosphorus in water and sodium bicarbonate
+extracts of soil. Proc. Soil Sci. Soc. Am. 29: 677-78.
+Waugh, D.L. and Fitts, J.W. (1966) Soil test interpretation studies :
+Laboratory and potted plant. Tech. Bull. N. Carol. Ste agric.
+Exp. Stn (ISTP Series) No. 3.
+Willard, H.H., Merrit Jr., L.L. and Dean, J.A. (1965) Instrumental
+Methods of Analysis, Affiliated East-West Press Pvt. Ltd., New
+Delhi.
+Williams, C.H. and Steinbergs, A. (1959) Soil sulphur fractions as
+chemical indices of available sulphur in some Australian soils.
+Aust. J. agric. Res. 10: 340-52.
+Wood, L.K. and DeTurk, E.E. (1940) The absorption of potassium in
+soils in non-replaceable forms. Proc. Soil Sci. Soc. Am. 5:
+152-61.
+66
+Appendix I
+Division of Soil Science and Agricultural Chemistry
+Indian Agricultural Research Institute
+NEW DELHI - 110012
+INFORMATION SHEET TO ACCOMPANY SOIL SAMPLES
+Address
+PO.
+District
+State
+or identifica-
+Sample No.
+tion mark
+Depth of
+sampling
+Number of samples
+mixed to get repre-
+Area
+sentative sample
+(in acres/
+hectares)
+undulating)
+Slope
+(Level/
+3
+4
+5
+6
+7
+Name of farmer/owner_
+Village
+Serial
+No.
+1
+No. (To be given
+Laboratory
+at the ST Laby)
+2
+67
+...contd next page
+68
+Appendix I (contd)
+Elevation
+Drainage
+Irrigation
+Upland/
+lowland
+Good/poor
+Irrigated/
+rainfed
+60
+Source of
+irrigation
+If irrigated
+Salinity
+Saline/
+alkali or
+not
+12
+Crop growth
+Good/poor/
+average
+13
+Recommend
+tions
+(Sought f
+which cro
+14
+8
+9
+10
+11
+Any other relevant
+information to be furnished
+Place :
+Date:
+To
+SOIL TESTING LABORATORY
+(Location and address)
+Signature
+Appendix II
+RATING CHART FOR SOIL TEST DATA
+Fertility status rating*
+Low
+Medium
+High
+Nutrient
+Organic carbon: as a measure
+of available N (%)
+Below 0.50
+0.50-0.75
+Above 0.75
+Available P (kg/ha)
+Below 11
+11-25
+Above 25
+Available K (kg/ha)
+Below 120
+120-280
+Above 280
+*Subject to marginal adjustment as warranted by local conditions
+70
+FERTILIZER RECOMMENDATION SCHEDULE ON SOIL TEST BASIS
+(For the union territory of Delhi and neighbouring region)
+Appendix III
+The recommendations giving the dose of fertilizer nutrients (NPK) to be supplied according to the soil
+test values are meant for high yielding varieties of wheat, rice and maize grown under assured water supply
+and with an yield expectancy of 40 to 45 q/ha. These may be largely applicable to north Indian (alluvial) plains
+having more or less similar type of soil and climatic features.
+N.B. This schedule can also serve as a model. Necessary adjustments in fertilizer doses are to be made according to crops and
+their yield levels, soil, climate and other local conditions.
+PHOSPHORUS
+NITROGEN
+Soil test
+Kg N/ha
+value
+(per cent
+⚫as fertilizer
+Soil test
+value
+Kg P2O5/ha
+as fertilizer
+to be applied
+(Olsen's
+to be applied
+org. C)
+P: kg/ha)
+Up to 0.20**
+120**
+Up to 10
+80
+0.21-0.40
+120*
+11-20
+60
+0.41-0.60
+120
+21-30
+45
+0.61 - 0.80
+90
+31-40
+30
+0.81-1.00
+75
+41-55
+20
+Above 1.00
+60
+Above 55
+10
+71
+POTASSIUM
+Soil test
+Kg K₂O/ha
+value
+as fertilizer
+(amm. acetate-
+to be
+K: kg/ha)
+applied
+Up to 100
+60
+101-150
+50
+151-200
+40
+201-250
+30
+251-300
+20
+Above 300
+0
+**In soils with such low content of organic matter application of farmyard manure @ 20 tonnes per hectare
+must be made in the kharif (monsoon) season at least one month before sowing.
+*To be supplemented with FYM dose of 10 t/ha
+INDIAN AGRICULTURAL RESEARCH INSTITUTE, NEW DELHI
+DIVISION OF SOIL SCIENCE AND AGRICULTURAL CHEMISTRY
+(Soil Testing Laboratory)
+Soil test report and recommendation sheet
+Appendix IV
+Name:
+Village/Taluk:
+Org.
+Av.
+Sl. Lab.
+Sample
+PH
+(soil
+EC.
+carbon
+(m mhos/
+(%)
+No. No mark
+reaction)
+cm)
+P. O:
+District:
+State:
+phosphorus Av. potash Calcium Texture
+(lb/ac)
+(lb/ac)
+carbonate
+Crops
+...
+..
+(x 1.12
+(x 1.12
+FYM
+Urea
+(ton/ (kg/ec, (kg/ac
+вс.)
+CAN
+Fertilizer recommendation
+Single
+super-
+Muriate
+DAP
+phos- (kg/ac.)
+Remarks
+of
+potash
+kg P/ha)
+=kg K/ha)
+phate
+(kg/ac)
+(kg/ac)
+1
+2
+3
+4
+6
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+1
+..
+600
+Measure of total soluble salts
+Measure of available soil nitrogen
+Approximate values by rapid determination
+L: Low
+M Medium
+H: High
+The recommendations are for the high yielding varieties of crops (wheat, rice, maize etc.)
+For horticultural crops and flowering plants the concerned Specialjet or State Deptt may
+be consulted for specific recommendations.
+Scientist
+Soil texture
+SALINITY APPRAISAL OF SOIL FROM ELECTRICAL CONDUCTIVITY (EC)
+MEASUREMENT (1:2 SOIL - WATER EXTRACT)
+sensitive crops
+E.C. in mmhos/cm at 25°C
+Limit for
+semi-tolerant crops
+tolerant crops
+Clay
+1.2
+2.4
+4.8
+Clay loam
+0.8
+1.6
+3.2
+Loam
+0.7
+1.4
+2.8
+Sandy clay loam
+0.6
+1.2
+2.4
+Sandy loam
+0.4
+0.8
+1.6
+ELECTRICAL CONDUCTIVITY AND SALINITY CHARACTERISTICS
+AND THEIR RELATIONSHIPS
+Appendix V
+Appendix VI
+Soluble salts: In milliequivalents per litre (m.e./1) = EC in mmhos/cm × 10 (approx.)
+Conductivity and osmotic pressure
+O.P. (atm.) = 0.36 × EC in mmhos/cm for soil extract in the range 3 to 30 mmhos/cm at 25° C
+Conductivity to ppm ppm = 0.64 × EC × 10º for irrigation water in the range 100 to 5000 micromin
+(EC in mhos × 103 = millimhos and × 10º = micromhos)
+Gypsum in tons per acre foot of water (taf) = 0.000136 × ppm of calcium
+Saturated gypsum solution contains at 25°C 30.5 m e./1, 2.63 g/1, 2630 ppm and 3.5 tons of gypsum per
+acre foot of water.
+75
+VL
+Appendix VII
+Sensitive
+Field crops
+Fodders (forage)
+Vegetables
+Fruits
+Semi-tolerant
+Field crops
+Fodders (forage)
+Vegetables
+Fruits
+Salt tolerant
+Field crops
+Fodders (forage)
+Vegetables
+Fruits
+SALT TOLERANCE OF CROPS (in descending order)
+Field beans, green gram
+Red clover, white clover, guar (Cyamopsis sp.)
+Celery, radish (English var.), green bean
+Peach, apricot, pear, apple, plum, strawberry, blackberry, pineapple
+Oats, rice, jowar (sorghum), maize, bajra (pearl millet), wheat (impro-
+ved var.), arhar (pigeon pea), castor, flax, jute, soybean, rye, gram,
+castorbean
+Lucerne, senji (Metilotus sp.), mentha, jowar, maize, berseem, cowpea,
+ryegrass, sweet clover, Sudan grass, oat grass
+Tomato, cabbage, cauliflower, lettuce, potato, radish, carrot, onion, pea,
+cucumber, pumpkin, sweet potato, squash
+Grape, olive, fig, guava, mango, banana, pomegranate, orange,
+grapefruit, lemon, almond
+Barley, dhaincha (Sesbania sp.), sugarteet, tobacco, cotton, wheat ('ocal
+var.), sugarcane, taramira (Brassica compestris), rapeseed
+Salt grass, dub grass (Cyanodon sp.), Rhodes grass, Bermuda grass
+Beetroot, asparagus, spinach, kale, turnip
+Date palm, coconut, falsa (Grewia asiatica)
+NORMALITY, SPECIFIC GRAVITY AND PERCENT BY WEIGHT OF SOME
+COMMON REAGENTS IN 
+THE LABORATORY
+Appendix VIII
+Reagent
+Normality
+Specific
+gravity (20°C)
+Per cent
+by weight
+One ml
+contains (g)
+Acetic acid (glacial)
+17.5
+1.06
+99 H4C2O2
+1.06 HC₂O
+Ammonium hydroxide (conc.)
+15.0
+0.88
+28 NH3
+0.26 NH3
+Hydrochloric acid (conc.)
+11.8
+1.19
+39 HCI
+0.47 HCI
+Nitric acid (conc.)
+15.6
+1.42.
+71 ΗΝΟ3
+0.99 ΗΝΟ3
+Phosphoric acid (conc.)
+15.0
+1.70
+85 H3PO4
+1.45 H3PO4
+Sulphuric acid (conc.)
+36.0
+1.84
+96 H2SO4
+1.76 H2SO4
+Ethyl alcohol (ethanol)
+0.79
+0.79 C2H5OH
+Appendix VII
+Sensitive
+Field crops
+Fodders (forage)
+Vegetables
+Fruits
+Semi-tolerant
+Field crops
+Fodders (forage)
+Vegetables
+Fruits
+Salt tolerant
+Field crops
+Fodders (forage)
+Vegetables
+Fruits
+SALT TOLERANCE OF CROPS (in descending order)
+Field beans, green gram
+Red clover, white clover, guar (Cyamopsis sp.)
+Celery, radish (English var.), green bean
+Peach, apricot, pear, apple, plum, strawberry, blackberry, pineapple
+Oats, rice, jowar (sorghum), maize, bajra (pearl millet), wheat (impro-
+ved var.), arhar (pigeon pea), castor, flax, jute, soybean, rye, gram,
+castorbean
+Lucerne, senji (Metilotus sp.), mentha, jowar, maize, berseem, cowpea,
+ryegrass, sweet clover, Sudan grass, oat grass
+Tomato, cabbage, cauliflower, lettuce, potato, radish, carrot, onion, pea,
+cucumber, pumpkin, sweet potato, squash
+Grape, olive, fig, guava, mango, banana, pomegranate, orange,
+grapefruit, lemon, almond
+Barley, dhaincha (Sesbania sp.), sugarteet, tobacco, cotton, wheat ('ocal
+var.), sugarcane, taramira (Brassica compestris), rapeseed
+Salt grass, dub grass (Cyanodon sp.), Rhodes grass, Bermuda grass
+Beetroot, asparagus, spinach, kale, turnip
+Date palm, coconut, falsa (Grewia asiatica)
+74
+Appendix VIII
+NORMALITY, SPECIFIC GRAVITY AND PERCENT BY WEIGHT OF SOME
+COMMON REAGENTS IN THE LABORATORY
+Reagent
+Normality
+Specific
+gravity (20°C)
+Per cent
+by weight
+One ml
+contains (g)
+Acetic acid (glacial)
+17.5
+1.06
+99 H4C2O2
+1.06 H4C2O2
+Ammonium hydroxide (conc.)
+15.0
+0.88
+28 NH3
+0.26 NH3
+Hydrochloric acid (conc.)
+11.8
+1.19
+39 HCI
+0.47 HCl
+Nitric acid (conc.)
+15.6
+1.42.
+71 ΗΝΟ3
+0.99 ΗΝΟ3
+Phosphoric acid (conc.)
+15.0
+1.70
+85 H3PO4
+1.45 H3PO4
+Sulphuric acid (conc.)
+36.0
+1.84
+96 H2SO4
+1.76 H2SO4
+Ethyl alcohol (ethanol)
+0.79
+0.79 C2H5OH
+75
+Appendix IX
+Amount of AR grade chemical dissolved and
+made to one litre to give 0.1N solution
+SOME COMMONLY USED PRIMARY STANDARD SOLUTIONS
+Reagent
+Sodium carbonate, dehydrated at 260-70°C
+Oxalic acid, crystalline dihydrate
+Potassium hydrogen phthalate
+Potassium dichromate
+Borax (Na2B4O7.10H2O)
+Sodium chloride
+Per cent P
+X 2.29
+SOME CONVERSION FACTORS
+Per cent P2O5 × 0.44
+=
+Per cent P
+Per cent P205
+Per cent K₂O
+× 0.83
+Per cent K
+Per cent K
+× 1.20
+=
+Per cent K₂O
+Per cent Ca
+× 1.40
+=
+Per cent CaO
+Per cent Mg
+× 1.67
+=
+Per cent MgO
+ppm
+1 acre = 4840 sq. yd = 4047 sq. m=43560 sq. ft = 0.404686 hectare
+= microgram per ml or mg per litre
+milliequivalent/litre x equiv. wt
+m.e. per litre = ppm equivalent wt
+One lb
+1b/acre × 1.121 = kg/ha
+0.4536 kg: 1 kg = 2.2046 lb
+1 hectare 2.471 acre
+20.422 g
+3.165 g
+5.204 g
+4.904 g
+5.846 g
+19.070 g
+6
+Appendix X
+ANNEXURE I
+FERTILIZER RECOMMENDATIONS ON SOIL TEST
+BASIS--VARIOUS APPROACHES
+Several approaches on fertilizer recommendations based on soil
+test are being tried in India so as to maximise the 
+production of crops
+per unit of fertilizer input. One such is based 
+on the results of agronomic
+experiments on farmers' fields and categorizing 
+the soil (arbitrarily) into
+low, medium and high in respect of status of 
+available soil nutrients. This
+is being currently followed by a large number of soil 
+testing laboratories
+in the country. In some cases further sub-classifications 
+e.g., very low,
+low, medium, high, very high etc. have been made by 
+considering narrow
+ranges in the soil test values as given in appendix 
+III. The second one
+known as the critical level concept, advanced by 
+Cate and Nelson¹, is
+the status of available nutrient in the plough layer 
+of soil below which
+an economic response is expected from the application of that 
+particular
+nutrient and above which the probability of such 
+response is low.
+Although experimental data and follow up work are 
+rather limited,
+this approach has also proved quite useful (Goswami et al.2).
+The other two types of procedure envisage the evolving of soil
+and fertilizer nutrient adjustment equations viz., (i) multiple regression
+analysis of available soil nutrients (soil test values), fertilizer doses 
+and
+yield of crops for economic and optimum production and (ii) prescrip-
+tion procedure or the targetted yield concept (Ramamoorthy 
+et al.³
+)
+wherein fertilizer doses for a specific yield target are calculated 
+from
+1. Cate, R.B. Jr. and Nelson, L.A. A simple statistical procedure for partitioning
+soil test correlation data into two classes. Proc. Soil Sci. Soc. Am. 
+35:658-60
+;
+1971
+2. Goswami, N.N., Bapat, S.R. and Pathak, V.N. Studies on the relationship bet-
+ween soil tests and crop responses to phosphorus under field conditions. 
+Proc
+.
+int. Symp. Soil Fert. Evaln, 1: 351-59; 1971
+3. Ramamoorthy, B., Narasimhan, R.L. and Dinesh, R.S. Fertilizer application
+for specific yield targets of Sonora-64 wheat. Indian Fmg, 17 (5): 43-45; 1967
+77
+the nutrient requirement per quintal of grain production of a particular
+crop variety, percentage contribution of nutrients from the soil and that
+of fertilizers. Various other approaches for soil fertility evaluation and
+optimum fertilizer inputs have been discussed by Goswami and Biswas.
+A fairly large number of replicated experiments have been con-
+ducted on farmers' fields in the Union Territory of Delhi to evaluate
+these procedures and a few examples of the results obtained with wheat
+crop are cited in tables 1 and 2 (Bajaj5).
+Fertilizer recommendations on soil test basis have proved definitely
+more profitable than ad-hoc application of standard doses (according to
+the general package of practices). The response ratio was still higher
+where adjustment equation for economic yield by multiple regression
+technique was adopted (Table 1).
+Table 1: Some results of fertilizer recommendations based on soil tests for wheat
+(var. Sonalika)
+Soil test values
+(kg/ha)
+Location
+Fertilizer doses
+(kg/ha)
+Fertili-
+Yield
+zer res-
+(village)
+(q/ha)
+ponse
+N
+P
+K
+N P2O5 K2O
+ratio
+(i) Procedure adopted in the ST Laby, IARI (as in appendix III)
+Goela
+0.62*
+12.0
+210
+90
+60
+30
+37.5
+12.3
+Sanoth
+0.86*
+6.5
+220
+75
+80
+30
+38.0
+11.8
+Ghoga (1)
+0.82*
+15.0
+180
+75
+60
+40
+38.5
+11.1
+Ghoga (2)
+0.45*
+32.0
+350
+120
+30
+0
+36.0
+14.0
+Average:
+37.5
+12.3
+*Per cent organic carbon taken as the measure of available soil nitrogen
+(ii) Multiple regression technique
+Bawana
+156**
+4.5
+200
+220
+91
+0
+57.4
+10.2
+Jharoda (1)
+177**
+11.3 497
+185
+91
+0
+57.4
+10.8
+Jharoda (2)
+200**
+7.2
+300
+143
+91
+0
+52.0
+15.3
+Tajpur
+180**
+4.5
+154
+180
+91
+20
+53.8
+14.8
+Bharthal
+202**
+17.3
+320
+147
+73
+0
+55.7
+13.2
+Average:
+55.2
+12.9
+**Available N(kg/ha)
+4. Goswami, N.N. and Biswas, T.D. Soil testing for fertilizer recommendations.
+Fertil. News, 19(8): 24-37; 1974
+5. Bajaj, J.C. Evaluation of various methods of making fertilizer recommendations
+for cereal crops in the cultivators' fields. Trans, 12th int. Congr. Soil Sci. New
+Delhi, 6 p. 110 (Abstract); 1982
+78

@@ -492,10 +492,18 @@ bucket = storage.bucket()
 
 **RED → GREEN → REFACTOR.** One cycle per response.
 
-1. **RED:** Failing test. No implementation. `pytest` confirms failure.
+1. **RED:** Write a **stub** first (`raise NotImplementedError`), then write tests that fail on **behavior/logic** — not on missing module. A `ModuleNotFoundError` is not a meaningful RED. The failing test must tell you *what to build*.
 2. **GREEN:** Minimum code to pass. `pytest` confirms pass.
 3. **REFACTOR:** Clean up. `pytest` + `ruff check` + `mypy` all pass.
 4. **COMMIT GATE:** All three green before commit.
+
+**Stub pattern:**
+```python
+class Foo:
+    def __init__(self, path: str) -> None:
+        raise NotImplementedError
+```
+Write tests against this stub → tests fail on `NotImplementedError` → implement.
 
 **Mocking:** Mock Vertex AI (`ChatVertexAI`, `VertexAIEmbeddings`), Firebase (`firebase_admin`), all external APIs. No live connections in tests.
 
@@ -600,21 +608,49 @@ agromind-backend/
 - `beautifulsoup4` + `lxml` added to `pyproject.toml` (required by `imd_tool.py`)
 
 ### Phase 2: Geo-Resolution Layer
-**Status:** `TODO`
-- [ ] Inspect actual CSV headers before writing any loader (`head -3` each file)
-- [ ] RED/GREEN/REFACTOR: `LocationResolver` — `Location hierarchy.csv`
-- [ ] RED/GREEN/REFACTOR: `NeighbourGraph` — `District Neighbour Map India.csv`
-- [ ] RED/GREEN/REFACTOR: `IMDStationMapper` — `IMD Agromet advisory locations.csv`
-- [ ] RED/GREEN/REFACTOR: `MandiLocator` — `Agmark Mandis and locations.csv` + `Mandi (APMC) Map.csv`
-- [ ] RED/GREEN/REFACTOR: `CropNormalizer` — `Agmark crops.csv`
+**Status:** `COMPLETE` ✅ — 49 tests passing
+
+| Module | Class | CSV(s) |
+|---|---|---|
+| `geo/resolver.py` | `LocationResolver` | `Location hierarchy.csv` (8k+ blocks, 26 states) |
+| `geo/neighbours.py` | `NeighbourGraph` | `District Neighbour Map India.csv` |
+| `geo/imd_stations.py` | `IMDStationMapper` | `IMD Agromet advisory locations.csv` |
+| `geo/mandi_locator.py` | `MandiLocator` | `Agmark Mandis + Mandi (APMC) Map.csv` |
+| `geo/crop_normalizer.py` | `CropNormalizer` | `Agmark crops.csv` |
+
+**Key API surface:**
+- `LocationResolver.resolve(state, district, block)` → full record with IDs + IMD flag
+- `NeighbourGraph.get_neighbours(state, district)` / `are_neighbours(...)`
+- `IMDStationMapper.get_advisory_url(state, district, date, lang)` → IMD PDF URL
+- `MandiLocator.get_mandis_by_state(state)` / `get_apmc_mandis_by_state(state)`
+- `CropNormalizer.normalize(raw_name)` → `{crop_name, variety_name, crop_type}`
+
+**Notes:**
+- `Location hierarchy.csv` covers 26 states/UTs (not all 36) — data limitation
+- Neighbour CSV stores only district names (no state for neighbours)
+- IMD code format: `"<StateID>_<DistrictID>"` e.g. `"16_1603"` for Punjab/Ludhiana
 
 ### Phase 3: Context Enrichment — Wikipedia + ICAR RAG + KCC Bulk
 **Status:** `TODO`
-- [ ] Check each PDF for extractable text before ingesting (some may need OCR)
 - [ ] RED/GREEN/REFACTOR: Wikipedia multilingual loader
 - [ ] RED/GREEN/REFACTOR: PDF + MD ingestion → ChromaDB (Vertex AI embeddings via config)
 - [ ] RED/GREEN/REFACTOR: KCC bulk paginated → ChromaDB
 - [ ] RED/GREEN/REFACTOR: Unified retriever with metadata filtering
+
+**PDF status (pre-checked):**
+| PDF | Status | Notes |
+|---|---|---|
+| ICAR Annual Report 2024-25 | ✅ Extractable | 268 pages, 1M+ chars |
+| Integrated Plant Nutrition Mgmt | ✅ Extractable | 30 pages, 57k chars |
+| Indian Farming Nov 2025 | ✅ Extractable | 68 pages, pg 1 blank (cover) |
+| Methods Manual Soil Testing | ✅ Mostly extractable | 243 pages, minor OCR artifacts on foreword |
+| Soil & Water Testing (IARI) | ✅ OCR done | 45 pages → `dataset/iari_soil_water_testing_ocr.txt` (140k chars) |
+
+**OCR setup (done):**
+- Document AI API enabled on `agrowise-192e3`
+- OCR processor: `projects/779023846662/locations/us/processors/f0653ed0f68823ec`
+- Script: `src/agromind/ingest/ocr_processor.py` (reusable for any future scanned PDFs)
+- Output already saved: `dataset/iari_soil_water_testing_ocr.txt`
 
 ### Phase 4: Mandi Price Tool
 **Status:** `TODO`
