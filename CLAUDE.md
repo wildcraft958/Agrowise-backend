@@ -679,13 +679,16 @@ agromind-backend/
 **CIBRC banned set:** 88 chemicals loaded from `data/cibrc_database.csv` at startup
 
 ### Phase 6: Firebase Integration
-**Status:** `TODO`
-- [ ] RED/GREEN/REFACTOR: Admin SDK init (ApplicationDefault, toggled via config)
-- [ ] RED/GREEN/REFACTOR: Auth middleware
-- [ ] RED/GREEN/REFACTOR: Firestore CRUD (users, chats, diagnoses, alerts)
-- [ ] RED/GREEN/REFACTOR: Cloud Storage (signed URLs, image retrieval)
-- [ ] RED/GREEN/REFACTOR: FCM push
-- [ ] RED/GREEN/REFACTOR: Wire into agent — persist chat + diagnosis + tool trace
+**Status:** `COMPLETE` ✅ — 28 tests passing
+
+| Module | Purpose |
+|---|---|
+| `firebase/client.py` | `init_firebase(bucket, enabled)` — ApplicationDefault creds, idempotent |
+| `firebase/firestore_ops.py` | `FirestoreOps` — chats, diagnoses, alerts, users CRUD |
+| `firebase/storage_ops.py` | `StorageOps` — upload bytes (size-checked), signed URLs, delete |
+| `firebase/fcm.py` | `FCMClient` — single and multicast push, no-op when disabled |
+
+**Notes:** `enabled=False` disables Firebase entirely for local dev (no SA JSON needed)
 
 ### Phase 7: Disease Diagnosis
 **Status:** `TODO`
