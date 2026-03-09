@@ -33,33 +33,38 @@ def mock_llm():
 
 @pytest.fixture
 def agent(mock_llm):
-    with patch("agromind.agent.chain.ChatGoogleGenerativeAI"):
+    with patch("agromind.agent.chain.ChatGoogleGenerativeAI"), \
+         patch("agromind.agent.chain._rag_enabled", False):
         return AgroMindAgent()
 
 
 class TestAgroMindAgentInit:
     def test_instantiates(self):
-        with patch("agromind.agent.chain.ChatGoogleGenerativeAI"):
+        with patch("agromind.agent.chain.ChatGoogleGenerativeAI"), \
+             patch("agromind.agent.chain._rag_enabled", False):
             a = AgroMindAgent()
         assert a is not None
 
     def test_uses_config_model(self):
         from agromind.config import settings
-        with patch("agromind.agent.chain.ChatGoogleGenerativeAI") as MockLLM:
+        with patch("agromind.agent.chain.ChatGoogleGenerativeAI") as MockLLM, \
+             patch("agromind.agent.chain._rag_enabled", False):
             AgroMindAgent()
             call_kwargs = MockLLM.call_args[1]
             assert call_kwargs.get("model") == settings.models.chat
 
     def test_uses_config_temperature(self):
         from agromind.config import settings
-        with patch("agromind.agent.chain.ChatGoogleGenerativeAI") as MockLLM:
+        with patch("agromind.agent.chain.ChatGoogleGenerativeAI") as MockLLM, \
+             patch("agromind.agent.chain._rag_enabled", False):
             AgroMindAgent()
             call_kwargs = MockLLM.call_args[1]
             assert call_kwargs.get("temperature") == settings.models.temperature
 
     def test_all_tools_bound(self):
         from agromind.agent.tools import ALL_TOOLS
-        with patch("agromind.agent.chain.ChatGoogleGenerativeAI") as MockLLM:
+        with patch("agromind.agent.chain.ChatGoogleGenerativeAI") as MockLLM, \
+             patch("agromind.agent.chain._rag_enabled", False):
             instance = MagicMock()
             MockLLM.return_value = instance
             AgroMindAgent()
@@ -98,7 +103,8 @@ class TestAgroMindAgentInvoke:
         from langchain_core.messages import AIMessage as _AIMessage
         # Aldrin IS in cibrc_database.csv as BANNED
         bad_response = _AIMessage(content="You can use Aldrin for pest control.", tool_calls=[])
-        with patch("agromind.agent.chain.ChatGoogleGenerativeAI") as MockLLM:
+        with patch("agromind.agent.chain.ChatGoogleGenerativeAI") as MockLLM, \
+             patch("agromind.agent.chain._rag_enabled", False):
             instance = MagicMock()
             bound = MagicMock()
             bound.invoke.return_value = bad_response

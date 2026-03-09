@@ -106,9 +106,9 @@ def imd_weather_check(
             state=state,
             crop=crop,
             stage=stage,
-            max_temp=max_temp,
-            min_temp=min_temp,
-            humidity=humidity,
+            tmax=max_temp if max_temp is not None else 0.0,
+            tmin=min_temp if min_temp is not None else 0.0,
+            rh=humidity if humidity is not None else 0.0,
         )
         return _to_json(result)
     except Exception as e:
