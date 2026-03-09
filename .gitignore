@@ -215,3 +215,7 @@ agrowise-192e3-*.json
 
 # Vector store
 chroma_db/
+
+# Firebase
+firebase-debug.log
+.firebaserc

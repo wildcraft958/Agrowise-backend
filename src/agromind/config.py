@@ -138,7 +138,7 @@ class Settings(BaseSettings):
     data_gov_api_key: str = ""
     imd_api_base_url: str = ""
 
-    model_config = {"env_prefix": "AGRO_", "env_nested_delimiter": "__"}
+    model_config = {"env_prefix": "AGRO_", "env_nested_delimiter": "__", "env_file": ".env", "env_file_encoding": "utf-8"}
 
     @classmethod
     def settings_customise_sources(
@@ -152,6 +152,7 @@ class Settings(BaseSettings):
         return (
             init_settings,
             env_settings,
+            dotenv_settings,
             YamlSettingsSource(settings_cls, _YAML_PATH),
         )
 

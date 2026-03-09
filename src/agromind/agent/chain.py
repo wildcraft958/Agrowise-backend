@@ -105,7 +105,14 @@ class AgroMindAgent:
             response = self._bound.invoke(messages)
             messages.append(response)
 
-        answer = response.content if isinstance(response, AIMessage) else str(response)
+        raw = response.content if isinstance(response, AIMessage) else str(response)
+        if isinstance(raw, list):
+            answer = " ".join(
+                part.get("text", "") if isinstance(part, dict) else str(part)
+                for part in raw
+            ).strip()
+        else:
+            answer = str(raw)
         tool_trace = get_called_tool_names(messages)
 
         # CIBRC safety post-filter
