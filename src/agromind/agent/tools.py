@@ -22,6 +22,7 @@ if str(_ROOT) not in sys.path:
     sys.path.insert(0, str(_ROOT))
 
 from agromind.config import settings  # noqa: E402
+from agromind.market.agmarknet import AgmarknetClient  # noqa: E402
 from tools.cibrc_tool import CIBRCClient  # noqa: E402
 from tools.evapotranspiration_tool import EvapotranspirationClient  # noqa: E402
 from tools.imd_tool import IMDClient  # noqa: E402
@@ -37,6 +38,7 @@ _imd_client = IMDClient()
 _kcc_client = KCCClient(api_key=settings.data_gov_api_key or None)
 _soil_client = SoilMoistureClient(api_key=settings.data_gov_api_key or None)
 _et_client = EvapotranspirationClient(api_key=settings.data_gov_api_key or None)
+_mandi_client = AgmarknetClient(api_key=settings.data_gov_api_key or None)
 
 
 def _to_json(obj: object) -> str:
@@ -417,6 +419,34 @@ def imd_wheat_disease_risk(
 
 
 @tool
+def mandi_price_lookup(
+    state: str,
+    commodity: str,
+    market: str | None = None,
+) -> str:
+    """Get current wholesale mandi prices for a commodity from Agmarknet.
+
+    Fetches daily arrival prices (min, max, modal) from government-regulated
+    mandis in a given state. Use this when a farmer asks about market prices,
+    selling rates, or whether it is a good time to sell produce.
+
+    Args:
+        state: Indian state name, e.g. "Punjab", "Maharashtra"
+        commodity: Crop/commodity name, e.g. "Wheat", "Rice", "Onion"
+        market: Optional specific mandi name, e.g. "Ludhiana" (optional)
+
+    Returns:
+        JSON array of price records with min_price, max_price, modal_price,
+        arrival_date, and market name.
+    """
+    try:
+        records = _mandi_client.get_prices(state=state, commodity=commodity, market=market)
+        return _to_json(records)
+    except Exception as e:
+        return _to_json({"error": str(e), "state": state, "commodity": commodity})
+
+
+@tool
 def imd_pest_info(state: str, crop: str, stage: str) -> str:
     """Get pest information for a crop at a specific growth stage in a state.
 
@@ -458,5 +488,6 @@ OPTIONAL_TOOLS = [
     imd_crop_calendar,
     imd_wheat_disease_risk,
     imd_pest_info,
+    mandi_price_lookup,
 ]
 ALL_TOOLS = MANDATORY_TOOLS + OPTIONAL_TOOLS

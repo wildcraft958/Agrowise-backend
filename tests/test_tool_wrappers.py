@@ -21,6 +21,7 @@ from agromind.agent.tools import (
     imd_wheat_disease_risk,
     kcc_get_by_state,
     kcc_search,
+    mandi_price_lookup,
     soil_moisture_analysis,
 )
 
@@ -207,7 +208,7 @@ class TestIMDCropCalendar:
 
 
 def test_all_tools_count():
-    assert len(ALL_TOOLS) == 15  # 2 mandatory + 13 optional
+    assert len(ALL_TOOLS) == 16  # 2 mandatory + 14 optional
 
 
 # ---------------------------------------------------------------------------
@@ -341,3 +342,35 @@ class TestEvapotranspirationCalc:
             result = evapotranspiration_calc.invoke({"state": "Karnataka", "district": "Tumkur"})
         assert isinstance(result, str)
         json.loads(result)
+
+
+# ---------------------------------------------------------------------------
+# Mandi price tool
+# ---------------------------------------------------------------------------
+
+
+class TestMandiPriceLookup:
+    def test_is_langchain_tool(self):
+        assert isinstance(mandi_price_lookup, BaseTool)
+
+    def test_name(self):
+        assert mandi_price_lookup.name == "mandi_price_lookup"
+
+    def test_returns_json_string(self):
+        mock_records = [
+            {"commodity": "Wheat", "market": "Ludhiana", "modal_price": 2150.0,
+             "min_price": 2100.0, "max_price": 2200.0, "arrival_date": "2024-01-15"}
+        ]
+        with patch("agromind.agent.tools._mandi_client") as mock_client:
+            mock_client.get_prices.return_value = mock_records
+            result = mandi_price_lookup.invoke({"state": "Punjab", "commodity": "Wheat"})
+        assert isinstance(result, str)
+        data = json.loads(result)
+        assert isinstance(data, list)
+        assert data[0]["commodity"] == "Wheat"
+
+    def test_handles_client_exception(self):
+        with patch("agromind.agent.tools._mandi_client") as mock_client:
+            mock_client.get_prices.side_effect = RuntimeError("API down")
+            result = mandi_price_lookup.invoke({"state": "Punjab", "commodity": "Wheat"})
+        assert "error" in result.lower()

@@ -631,20 +631,26 @@ agromind-backend/
 - IMD code format: `"<StateID>_<DistrictID>"` e.g. `"16_1603"` for Punjab/Ludhiana
 
 ### Phase 3: Context Enrichment — Wikipedia + ICAR RAG + KCC Bulk
-**Status:** `TODO`
-- [ ] RED/GREEN/REFACTOR: Wikipedia multilingual loader
-- [ ] RED/GREEN/REFACTOR: PDF + MD ingestion → ChromaDB (Vertex AI embeddings via config)
-- [ ] RED/GREEN/REFACTOR: KCC bulk paginated → ChromaDB
-- [ ] RED/GREEN/REFACTOR: Unified retriever with metadata filtering
+**Status:** `COMPLETE` ✅ — 42 tests passing
 
-**PDF status (pre-checked):**
-| PDF | Status | Notes |
+| Module | Class | Purpose |
 |---|---|---|
-| ICAR Annual Report 2024-25 | ✅ Extractable | 268 pages, 1M+ chars |
-| Integrated Plant Nutrition Mgmt | ✅ Extractable | 30 pages, 57k chars |
-| Indian Farming Nov 2025 | ✅ Extractable | 68 pages, pg 1 blank (cover) |
-| Methods Manual Soil Testing | ✅ Mostly extractable | 243 pages, minor OCR artifacts on foreword |
-| Soil & Water Testing (IARI) | ✅ OCR done | 45 pages → `dataset/iari_soil_water_testing_ocr.txt` (140k chars) |
+| `rag/wiki_loader.py` | `WikiLoader` | Wikipedia multilingual fetch (any language via `language` param) |
+| `rag/pdf_loader.py` | `DocumentLoader` | Load PDFs/text/markdown → LangChain Documents + chunk |
+| `rag/kcc_loader.py` | `KCCLoader` | Convert KCC API records → Documents (skips empty answers) |
+| `rag/retriever.py` | `RAGRetriever` | ChromaDB wrapper: add/search/count with metadata filters |
+
+**Key API surface:**
+- `WikiLoader(language).fetch(topic)` → `{title, summary, url}` or `{}` on error
+- `DocumentLoader().load_pdf/load_text/load_markdown(path, metadata)` + `.chunk(docs)`
+- `KCCLoader(api_key).records_to_documents(records)` → Documents with state/year/month metadata
+- `RAGRetriever(collection, embeddings, persist_dir).search(query, k, filter)`
+
+**Notes:**
+- `DocumentLoader` uses `settings.rag.chunk_size` / `chunk_overlap` from `config.yaml`
+- `RAGRetriever` works with any LangChain Embeddings object (VertexAI in prod, mock in tests)
+- `wikipedia` package added to `pyproject.toml`
+- PDFs with extractable text: load directly. IARI OCR txt: `load_text()`
 
 **OCR setup (done):**
 - Document AI API enabled on `agrowise-192e3`
@@ -653,8 +659,11 @@ agromind-backend/
 - Output already saved: `dataset/iari_soil_water_testing_ocr.txt`
 
 ### Phase 4: Mandi Price Tool
-**Status:** `TODO`
-- [ ] RED/GREEN/REFACTOR: `AgmarknetClient` + `mandi_price_tool`
+**Status:** `COMPLETE` ✅ — 9 client tests + 4 tool wrapper tests
+
+- `src/agromind/market/agmarknet.py` — `AgmarknetClient` wrapping Agmarknet data.gov.in API
+- `mandi_price_lookup` `@tool` added to `agent/tools.py` (ALL_TOOLS now 16)
+- API: `get_prices(state, commodity, market)` / `get_latest_price(...)` — returns min/max/modal price + arrival_date
 
 ### Phase 5: Agent Assembly
 **Status:** `TODO`
