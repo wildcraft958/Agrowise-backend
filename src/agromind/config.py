@@ -6,8 +6,9 @@ with environment variable overrides for secrets.
 
 Usage:
     from agromind.config import settings
-    llm = ChatVertexAI(
-        model_name=settings.models.chat,
+    llm = ChatGoogleGenerativeAI(
+        model=settings.models.chat,
+        vertexai=True,
         project=settings.gcp.project_id,
         location=settings.gcp.location,
         temperature=settings.models.temperature,

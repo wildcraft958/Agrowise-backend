@@ -12,7 +12,7 @@ import json
 import logging
 
 from langchain_core.messages import HumanMessage
-from langchain_google_vertexai import ChatVertexAI
+from langchain_google_genai import ChatGoogleGenerativeAI
 
 from agromind.config import settings
 from agromind.diagnosis.image import encode_base64
@@ -38,8 +38,9 @@ class DiseaseDetector:
     """Gemini vision-based crop disease detector."""
 
     def __init__(self) -> None:
-        self._llm = ChatVertexAI(
-            model_name=settings.models.vision,
+        self._llm = ChatGoogleGenerativeAI(
+            model=settings.models.vision,
+            vertexai=True,
             project=settings.gcp.project_id,
             location=settings.gcp.location,
             temperature=0.1,  # deterministic for diagnosis

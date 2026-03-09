@@ -2,7 +2,7 @@
 
 Architecture:
     1. Build system prompt (mandatory tool instructions).
-    2. Bind all 16 tools to ChatVertexAI.
+    2. Bind all 16 tools to ChatGoogleGenerativeAI.
     3. Invoke with [SystemMessage, HumanMessage(context + user_query)].
     4. Post-validate: check mandatory tools were called; retry once if not.
     5. Post-filter: scan answer for banned chemicals (CIBRC safety).
@@ -23,7 +23,7 @@ import sys
 from pathlib import Path
 
 from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
-from langchain_google_vertexai import ChatVertexAI
+from langchain_google_genai import ChatGoogleGenerativeAI
 
 from agromind.agent.mandatory import get_called_tool_names, missing_mandatory_tools
 from agromind.agent.prompt import build_system_prompt
@@ -55,8 +55,9 @@ class AgroMindAgent:
     """Gemini-powered agricultural copilot with mandatory tool enforcement."""
 
     def __init__(self) -> None:
-        self._llm = ChatVertexAI(
-            model_name=settings.models.chat,
+        self._llm = ChatGoogleGenerativeAI(
+            model=settings.models.chat,
+            vertexai=True,
             project=settings.gcp.project_id,
             location=settings.gcp.location,
             temperature=settings.models.temperature,

@@ -11,22 +11,22 @@ _FAKE_IMAGE = b"\xff\xd8\xff\xe0" + b"\x00" * 20 + b"\xff\xd9"
 
 @pytest.fixture
 def detector():
-    with patch("agromind.diagnosis.detector.ChatVertexAI"):
+    with patch("agromind.diagnosis.detector.ChatGoogleGenerativeAI"):
         return DiseaseDetector()
 
 
 class TestDiseaseDetectorInit:
     def test_instantiates(self):
-        with patch("agromind.diagnosis.detector.ChatVertexAI"):
+        with patch("agromind.diagnosis.detector.ChatGoogleGenerativeAI"):
             d = DiseaseDetector()
         assert d is not None
 
     def test_uses_vision_model_from_config(self):
         from agromind.config import settings
-        with patch("agromind.diagnosis.detector.ChatVertexAI") as MockLLM:
+        with patch("agromind.diagnosis.detector.ChatGoogleGenerativeAI") as MockLLM:
             DiseaseDetector()
             kwargs = MockLLM.call_args[1]
-            assert kwargs.get("model_name") == settings.models.vision
+            assert kwargs.get("model") == settings.models.vision
 
 
 class TestDiagnose:

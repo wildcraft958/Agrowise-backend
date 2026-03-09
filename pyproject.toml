@@ -3,9 +3,10 @@ name = "agromind"
 version = "0.1.0"
 requires-python = ">=3.11"
 dependencies = [
-    # LangChain + Vertex AI
+    # LangChain + Vertex AI / Google GenAI
     "langchain>=0.3",
     "langchain-google-vertexai>=2.0",
+    "langchain-google-genai>=4.0",
     "langchain-community>=0.3",
     "langchain-chroma>=0.2",
     "chromadb>=0.5",
