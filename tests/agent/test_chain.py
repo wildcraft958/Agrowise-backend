@@ -94,12 +94,18 @@ class TestAgroMindAgentInvoke:
             result = agent.invoke("Pest control?")
         assert "tool_trace" in result
 
-    def test_strict_mode_flags_banned_chemical(self, agent, mock_llm):
-        # Response contains DDT — a banned chemical
-        mock_llm.bind_tools.return_value.invoke.return_value = _mock_llm_response(
-            "You can use DDT for pest control."
-        )
-        with patch("agromind.agent.chain.missing_mandatory_tools", return_value=[]):
-            result = agent.invoke("Pest control?")
+    def test_strict_mode_flags_banned_chemical(self):
+        from langchain_core.messages import AIMessage as _AIMessage
+        # Aldrin IS in cibrc_database.csv as BANNED
+        bad_response = _AIMessage(content="You can use Aldrin for pest control.", tool_calls=[])
+        with patch("agromind.agent.chain.ChatVertexAI") as MockLLM:
+            instance = MagicMock()
+            bound = MagicMock()
+            bound.invoke.return_value = bad_response
+            instance.bind_tools.return_value = bound
+            MockLLM.return_value = instance
+            agent = AgroMindAgent()
+            with patch("agromind.agent.chain.missing_mandatory_tools", return_value=[]):
+                result = agent.invoke("Pest control?")
         # In strict mode, response should be flagged or replaced
         assert result.get("safety_violation") is True or "banned" in result.get("answer", "").lower()

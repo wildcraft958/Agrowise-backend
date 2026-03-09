@@ -666,12 +666,17 @@ agromind-backend/
 - API: `get_prices(state, commodity, market)` / `get_latest_price(...)` — returns min/max/modal price + arrival_date
 
 ### Phase 5: Agent Assembly
-**Status:** `TODO`
-- [ ] RED/GREEN/REFACTOR: System prompt with mandatory tool instructions
-- [ ] RED/GREEN/REFACTOR: Context injection (wiki + ICAR + KCC + geo)
-- [ ] RED/GREEN/REFACTOR: `ChatVertexAI.bind_tools()` with all 15 tools
-- [ ] RED/GREEN/REFACTOR: Mandatory tool validator + retry
-- [ ] RED/GREEN/REFACTOR: CIBRC safety post-filter
+**Status:** `COMPLETE` ✅ — 38 tests passing
+
+| Module | Purpose |
+|---|---|
+| `agent/prompt.py` | `build_system_prompt(mandatory_names)` + `build_context_block(wiki, chunks, geo)` |
+| `agent/mandatory.py` | `get_called_tool_names(msgs)` / `missing_mandatory_tools(msgs, mandatory)` |
+| `agent/chain.py` | `AgroMindAgent` — ChatVertexAI + bind_tools(16) + retry + CIBRC post-filter |
+| `safety/validator.py` | `SafetyValidator` — whole-word regex scan, strict/lenient modes |
+
+**Flow:** `invoke(user_message)` → system prompt + context → LLM → check mandatory tools (retry once) → CIBRC post-filter → `{answer, tool_trace, safety_violation, violations}`
+**CIBRC banned set:** 88 chemicals loaded from `data/cibrc_database.csv` at startup
 
 ### Phase 6: Firebase Integration
 **Status:** `TODO`

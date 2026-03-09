@@ -1,12 +1,125 @@
-"""Agent chain stub."""
+"""AgroMind agent chain.
+
+Architecture:
+    1. Build system prompt (mandatory tool instructions).
+    2. Bind all 16 tools to ChatVertexAI.
+    3. Invoke with [SystemMessage, HumanMessage(context + user_query)].
+    4. Post-validate: check mandatory tools were called; retry once if not.
+    5. Post-filter: scan answer for banned chemicals (CIBRC safety).
+
+Returns:
+    {
+        "answer": str,
+        "tool_trace": list[str],   # tools called
+        "safety_violation": bool,  # True if banned chemical in answer
+        "violations": list[str],   # banned chemicals found
+    }
+"""
+
 from __future__ import annotations
 
-from langchain_core.messages import BaseMessage
+import logging
+import sys
+from pathlib import Path
+
+from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
+from langchain_google_vertexai import ChatVertexAI
+
+from agromind.agent.mandatory import get_called_tool_names, missing_mandatory_tools
+from agromind.agent.prompt import build_system_prompt
+from agromind.agent.tools import ALL_TOOLS
+from agromind.config import settings
+from agromind.safety.validator import SafetyValidator
+
+# Build banned chemical set from CIBRC client at startup
+_ROOT = Path(__file__).resolve().parents[3]
+if str(_ROOT) not in sys.path:
+    sys.path.insert(0, str(_ROOT))
+
+from tools.cibrc_tool import CIBRCClient  # noqa: E402
+
+logger = logging.getLogger(__name__)
+
+_MANDATORY_NAMES = settings.tools.mandatory
+_MAX_RETRIES = int(settings.tools.enforcement.get("max_retries", 2))
+
+# Pre-load banned chemical set for the safety validator
+try:
+    _cibrc = CIBRCClient(db_path=settings.safety.cibrc_csv_path)
+    _BANNED_CHEMICALS = set(_cibrc.list_banned())
+except Exception:
+    _BANNED_CHEMICALS = set()
 
 
 class AgroMindAgent:
+    """Gemini-powered agricultural copilot with mandatory tool enforcement."""
+
     def __init__(self) -> None:
-        raise NotImplementedError
+        self._llm = ChatVertexAI(
+            model_name=settings.models.chat,
+            project=settings.gcp.project_id,
+            location=settings.gcp.location,
+            temperature=settings.models.temperature,
+            max_output_tokens=settings.models.max_output_tokens,
+        )
+        self._bound = self._llm.bind_tools(ALL_TOOLS)
+        self._system_prompt = build_system_prompt(_MANDATORY_NAMES)
+        self._validator = SafetyValidator(
+            banned_chemicals=_BANNED_CHEMICALS,
+            strict_mode=settings.safety.strict_mode,
+        )
 
     def invoke(self, user_message: str, context: dict | None = None) -> dict:
-        raise NotImplementedError
+        """Run the agent pipeline for a single user message.
+
+        Args:
+            user_message: The farmer's question.
+            context: Optional pre-built context string to prepend.
+
+        Returns:
+            Dict with answer, tool_trace, safety_violation, violations.
+        """
+        human_content = user_message
+        if context and context.get("context_block"):
+            human_content = context["context_block"] + "\n\n## Question\n" + user_message
+
+        messages = [
+            SystemMessage(content=self._system_prompt),
+            HumanMessage(content=human_content),
+        ]
+
+        response = self._bound.invoke(messages)
+        messages.append(response)
+
+        # Enforce mandatory tools — retry once if missing
+        missing = missing_mandatory_tools(messages, _MANDATORY_NAMES)
+        if missing and _MAX_RETRIES > 0:
+            retry_msg = HumanMessage(
+                content=(
+                    f"You forgot to call mandatory tools: {missing}. "
+                    "Please call them now and provide your final answer."
+                )
+            )
+            messages.append(retry_msg)
+            response = self._bound.invoke(messages)
+            messages.append(response)
+
+        answer = response.content if isinstance(response, AIMessage) else str(response)
+        tool_trace = get_called_tool_names(messages)
+
+        # CIBRC safety post-filter
+        safety_result = self._validator.validate(answer)
+
+        if not safety_result["safe"] and settings.safety.strict_mode:
+            answer = (
+                "⚠️ This response mentioned a banned chemical and has been blocked. "
+                f"Banned substances detected: {', '.join(safety_result['violations'])}. "
+                "Please consult a licensed agronomist for safe alternatives."
+            )
+
+        return {
+            "answer": answer,
+            "tool_trace": tool_trace,
+            "safety_violation": not safety_result["safe"],
+            "violations": safety_result["violations"],
+        }
