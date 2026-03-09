@@ -1,0 +1,74 @@
+[
+  {
+    "id": "wheat",
+    "name": "Wheat",
+    "nameHindi": "गेहूँ",
+    "varieties": ["HD-2967", "PBW-343", "DBW-17", "WH-542"]
+  },
+  {
+    "id": "paddy",
+    "name": "Paddy",
+    "nameHindi": "धान",
+    "varieties": ["Basmati", "IR-64", "Sona Masuri", "Swarna"]
+  },
+  {
+    "id": "cotton",
+    "name": "Cotton",
+    "nameHindi": "कपास",
+    "varieties": ["Bt Cotton", "Desi Cotton", "American Cotton"]
+  },
+  {
+    "id": "sugarcane",
+    "name": "Sugarcane",
+    "nameHindi": "गन्ना",
+    "varieties": ["Co-0238", "CoJ-64", "CoS-767", "Co-86032"]
+  },
+  {
+    "id": "soybean",
+    "name": "Soybean",
+    "nameHindi": "सोयाबीन",
+    "varieties": ["JS-335", "JS-9560", "NRC-37", "JS-9752"]
+  },
+  {
+    "id": "maize",
+    "name": "Maize",
+    "nameHindi": "मक्का",
+    "varieties": ["DHM-117", "HQPM-1", "Vivek QPM-9", "Bio-9681"]
+  },
+  {
+    "id": "potato",
+    "name": "Potato",
+    "nameHindi": "आलू",
+    "varieties": ["Kufri Jyoti", "Kufri Pukhraj", "Kufri Bahar", "Kufri Chandramukhi"]
+  },
+  {
+    "id": "mustard",
+    "name": "Mustard",
+    "nameHindi": "सरसों",
+    "varieties": ["Pusa Bold", "Varuna", "RH-749", "NRCHB-101"]
+  },
+  {
+    "id": "chickpea",
+    "name": "Chickpea",
+    "nameHindi": "चना",
+    "varieties": ["Pusa-362", "JG-11", "KAK-2", "GNG-1581"]
+  },
+  {
+    "id": "rice",
+    "name": "Rice",
+    "nameHindi": "चावल",
+    "varieties": ["Pusa-1121", "Pusa-44", "MTU-7029", "BPT-5204"]
+  },
+  {
+    "id": "tomato",
+    "name": "Tomato",
+    "nameHindi": "टमाटर",
+    "varieties": ["Pusa Ruby", "Arka Vikas", "Arka Rakshak", "Pusa Rohini"]
+  },
+  {
+    "id": "onion",
+    "name": "Onion",
+    "nameHindi": "प्याज",
+    "varieties": ["Pusa Red", "Agrifound Dark Red", "N-53", "Bhima Shakti"]
+  }
+]

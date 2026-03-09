@@ -1,0 +1,65 @@
+# config.yaml — AgroWise Backend Configuration
+# Toggle features and select models without code changes.
+
+gcp:
+  project_id: "agrowise-192e3"
+  location: "us-central1"
+  storage_bucket: "agrowise-192e3.firebasestorage.app"
+
+models:
+  # Change model here to switch globally. No code changes needed.
+  chat: "gemini-2.5-flash"          # Main agent model (tool-calling)
+  vision: "gemini-2.5-flash"        # Diagnosis image analysis
+  embedding: "text-embedding-005"   # ChromaDB embeddings (Vertex AI)
+  temperature: 0.2                  # Lower = more deterministic for agriculture advice
+  max_output_tokens: 2048
+
+rag:
+  chunk_size: 1000
+  chunk_overlap: 200
+  top_k: 5                          # Number of context chunks to retrieve
+  chroma_persist_dir: "./chroma_db"
+  collections:
+    icar: "icar_knowledge"
+    kcc: "kcc_transcripts"
+
+safety:
+  cibrc_csv_path: "data/cibrc_database.csv"
+  post_filter_enabled: true         # Scan LLM output for banned chemicals
+  strict_mode: true                 # Reject response (not just warn) if banned chemical found
+
+tools:
+  mandatory:
+    - "cibrc_safety_check"
+    - "imd_weather_check"
+  optional:
+    - "kcc_search"
+    - "kcc_get_by_state"
+    - "soil_moisture_analysis"
+    - "evapotranspiration_calc"
+    - "mandi_price_lookup"
+    - "diagnosis_tool"
+  enforcement:
+    retry_on_missing: true          # Retry if mandatory tool not called
+    max_retries: 2
+
+voice:
+  provider: "sarvam"               # Switch to "bhashini" if needed
+  default_language: "hi"
+  supported_languages: ["en", "hi", "bn", "od"]
+
+firebase:
+  enabled: true                    # Set false to run backend without Firebase (testing)
+  fcm_enabled: true
+  storage_max_upload_mb: 5
+
+geo:
+  location_hierarchy_csv: "bolbhav-data/Location hierarchy.csv"
+  neighbour_map_csv: "bolbhav-data/District Neighbour Map India.csv"
+  imd_stations_csv: "bolbhav-data/IMD Agromet advisory locations.csv"
+  mandis_csv: "bolbhav-data/Agmark Mandis and locations.csv"
+  crops_csv: "bolbhav-data/Agmark crops.csv"
+  apmc_map_csv: "bolbhav-data/Mandi (APMC) Map.csv"
+
+logging:
+  level: "INFO"
