@@ -1,5 +1,5 @@
 # AgroMind API — Test Examples
-
+claude --resume de5fac85-d9c4-495f-bd65-467e0729b3f0                                       
 Base URL: `http://localhost:8000`
 
 ---

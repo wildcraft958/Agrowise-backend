@@ -219,3 +219,10 @@ chroma_db/
 # Firebase
 firebase-debug.log
 .firebaserc
+
+# Specific files to ignore
+examples.md
+Hacksagon_Team_NamoFans_Submission_compressed.pdf
+Hacksagon_Team_NamoFans_Submission_AI_Ready.md
+architecture.md
+CLAUDE.md
